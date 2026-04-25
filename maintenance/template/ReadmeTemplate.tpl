@@ -1,5 +1,5 @@
 # scoop-radar
-A collection of awesome resource for the scoop package manager for windows
+A data-driven, automated discovery and ranking engine for the Scoop package manager ecosystem on Windows
 
 # Build Status
 ![Tests & Linting](https://github.com/mcunha/scoop-radar/actions/workflows/test.yml/badge.svg)

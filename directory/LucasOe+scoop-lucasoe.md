@@ -1,0 +1,42 @@
+# LucasOe/scoop-lucasoe
+
+**Repository:** [https://github.com/LucasOe/scoop-lucasoe](https://github.com/LucasOe/scoop-lucasoe)
+**Score:** 1.0
+**Auto-Update:** 97%
+
+
+
+## 📦 Recipes (33)
+* [aerial.json](https://github.com/LucasOe/scoop-lucasoe/blob/master/aerial.json)
+* [ahk2exe.json](https://github.com/LucasOe/scoop-lucasoe/blob/master/ahk2exe.json)
+* [autohotkey.json](https://github.com/LucasOe/scoop-lucasoe/blob/master/autohotkey.json)
+* [betterdiscord.json](https://github.com/LucasOe/scoop-lucasoe/blob/master/betterdiscord.json)
+* [binsider.json](https://github.com/LucasOe/scoop-lucasoe/blob/master/binsider.json)
+* [discord-stable-openasar.json](https://github.com/LucasOe/scoop-lucasoe/blob/master/discord-stable-openasar.json)
+* [discord-stable.json](https://github.com/LucasOe/scoop-lucasoe/blob/master/discord-stable.json)
+* [eagle-beta.json](https://github.com/LucasOe/scoop-lucasoe/blob/master/eagle-beta.json)
+* [eagle.json](https://github.com/LucasOe/scoop-lucasoe/blob/master/eagle.json)
+* [gdlauncher.json](https://github.com/LucasOe/scoop-lucasoe/blob/master/gdlauncher.json)
+* [jpexs-decompiler.json](https://github.com/LucasOe/scoop-lucasoe/blob/master/jpexs-decompiler.json)
+* [lwin-remapper.json](https://github.com/LucasOe/scoop-lucasoe/blob/master/lwin-remapper.json)
+* [makemkv.json](https://github.com/LucasOe/scoop-lucasoe/blob/master/makemkv.json)
+* [mmultiplayer.json](https://github.com/LucasOe/scoop-lucasoe/blob/master/mmultiplayer.json)
+* [modrinth.json](https://github.com/LucasOe/scoop-lucasoe/blob/master/modrinth.json)
+* [nextcloud.json](https://github.com/LucasOe/scoop-lucasoe/blob/master/nextcloud.json)
+* [nvidia-profile-inspector-revamped.json](https://github.com/LucasOe/scoop-lucasoe/blob/master/nvidia-profile-inspector-revamped.json)
+* [oh-my-posh.json](https://github.com/LucasOe/scoop-lucasoe/blob/master/oh-my-posh.json)
+* [packwiz.json](https://github.com/LucasOe/scoop-lucasoe/blob/master/packwiz.json)
+* [proton-drive.json](https://github.com/LucasOe/scoop-lucasoe/blob/master/proton-drive.json)
+* [proton-pass.json](https://github.com/LucasOe/scoop-lucasoe/blob/master/proton-pass.json)
+* [psfzf.json](https://github.com/LucasOe/scoop-lucasoe/blob/master/psfzf.json)
+* [psreadline.json](https://github.com/LucasOe/scoop-lucasoe/blob/master/psreadline.json)
+* [rawaccel.json](https://github.com/LucasOe/scoop-lucasoe/blob/master/rawaccel.json)
+* [sfp.json](https://github.com/LucasOe/scoop-lucasoe/blob/master/sfp.json)
+* [sidekick.json](https://github.com/LucasOe/scoop-lucasoe/blob/master/sidekick.json)
+* [spotify.json](https://github.com/LucasOe/scoop-lucasoe/blob/master/spotify.json)
+* [tacky-borders.json](https://github.com/LucasOe/scoop-lucasoe/blob/master/tacky-borders.json)
+* [taskbar-hider.json](https://github.com/LucasOe/scoop-lucasoe/blob/master/taskbar-hider.json)
+* [vencord.json](https://github.com/LucasOe/scoop-lucasoe/blob/master/vencord.json)
+* [volume-control-voicemeeter.json](https://github.com/LucasOe/scoop-lucasoe/blob/master/volume-control-voicemeeter.json)
+* [yasb.json](https://github.com/LucasOe/scoop-lucasoe/blob/master/yasb.json)
+* [zotero.json](https://github.com/LucasOe/scoop-lucasoe/blob/master/zotero.json)

@@ -1,4 +1,4 @@
-from datetime import datetime
+from datetime import datetime, timezone
 
 from maintenance.repo import get_next_check_due, process_repo
 
@@ -6,17 +6,17 @@ from maintenance.repo import get_next_check_due, process_repo
 def test_get_next_check_due_disabled():
     entry = {"last_checked": "2023-01-01T00:00:00Z", "disabled": True}
     due = get_next_check_due(entry)
-    assert due == datetime(2023, 1, 31)
+    assert due == datetime(2023, 1, 31, tzinfo=timezone.utc)
 
 
 def test_get_next_check_due_recent_push():
     # If pushed recently, interval should be smaller
-    now = datetime.now()
+    now = datetime.now(timezone.utc)
     pushed = now.strftime("%Y-%m-%dT%H:%M:%SZ")
     entry = {"last_checked": "2023-01-01T00:00:00Z", "pushed_at": pushed}
     due = get_next_check_due(entry)
     # the interval will be the minimum, which is 6 hours
-    assert due == datetime(2023, 1, 1, 6, 0)
+    assert due == datetime(2023, 1, 1, 6, 0, tzinfo=timezone.utc)
 
 
 def test_process_repo_new_not_bucket(mocker):

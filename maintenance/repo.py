@@ -4,7 +4,7 @@ import concurrent.futures
 import json
 import os
 import shutil
-from datetime import datetime, timedelta
+from datetime import datetime, timedelta, timezone
 
 import jsonschema
 import requests
@@ -24,11 +24,15 @@ def is_manifest(path):
 def get_next_check_due(entry):
     """Calculate the next scheduled check time for a repository."""
     last_checked_str = entry.get("last_checked", "2000-01-01T00:00:00Z")
-    last_checked = datetime.strptime(last_checked_str, "%Y-%m-%dT%H:%M:%SZ")
+    last_checked = datetime.strptime(last_checked_str, "%Y-%m-%dT%H:%M:%SZ").replace(
+        tzinfo=timezone.utc
+    )
     if last_checked_str == "2000-01-01T00:00:00Z":
-        return datetime(2000, 1, 1)
+        return datetime(2000, 1, 1, tzinfo=timezone.utc)
     if "ignored_until" in entry:
-        return datetime.strptime(entry["ignored_until"], "%Y-%m-%dT%H:%M:%SZ")
+        return datetime.strptime(entry["ignored_until"], "%Y-%m-%dT%H:%M:%SZ").replace(
+            tzinfo=timezone.utc
+        )
     archived = entry.get("archived", False)
     disabled = entry.get("disabled", False)
     if archived or disabled:
@@ -37,8 +41,10 @@ def get_next_check_due(entry):
         pushed_at_str = entry.get("pushed_at", "2000-01-01T00:00:00Z")
         if not pushed_at_str:
             pushed_at_str = "2000-01-01T00:00:00Z"
-        pushed_at = datetime.strptime(pushed_at_str, "%Y-%m-%dT%H:%M:%SZ")
-        time_since_push = datetime.now() - pushed_at
+        pushed_at = datetime.strptime(pushed_at_str, "%Y-%m-%dT%H:%M:%SZ").replace(
+            tzinfo=timezone.utc
+        )
+        time_since_push = datetime.now(timezone.utc) - pushed_at
         interval_seconds = time_since_push.total_seconds() / 10
         interval_seconds = max((6 * 3600), min(((30 * 24) * 3600), interval_seconds))
         interval = timedelta(seconds=interval_seconds)
@@ -117,9 +123,11 @@ def process_repo(repofoldername, cache_entry, dir_path):
     cache_entry = upgrade_cache_entry(repofoldername, cache_entry)
     consecutive_failures = cache_entry.get("consecutive_failures", 0)
     if "ignored_until" in cache_entry:
-        ignored_until = datetime.strptime(cache_entry["ignored_until"], "%Y-%m-%dT%H:%M:%SZ")
-        if datetime.now() < ignored_until:
-            cache_entry["last_checked"] = datetime.now().strftime("%Y-%m-%dT%H:%M:%SZ")
+        ignored_until = datetime.strptime(
+            cache_entry["ignored_until"], "%Y-%m-%dT%H:%M:%SZ"
+        ).replace(tzinfo=timezone.utc)
+        if datetime.now(timezone.utc) < ignored_until:
+            cache_entry["last_checked"] = datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
             return (repofoldername, cache_entry, False)
         else:
             del cache_entry["ignored_until"]
@@ -177,13 +185,15 @@ def process_repo(repofoldername, cache_entry, dir_path):
             cache_entry["entries"] = entries
             cache_entry["checkver_count"] = checkver_count
             _probe_cache_entry(repo_path, entries, cache_entry)
-            cache_entry["last_checked"] = datetime.now().strftime("%Y-%m-%dT%H:%M:%SZ")
+            cache_entry["last_checked"] = datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
         else:
-            ignored_until = (datetime.now() + timedelta(days=30)).strftime("%Y-%m-%dT%H:%M:%SZ")
+            ignored_until = (datetime.now(timezone.utc) + timedelta(days=30)).strftime(
+                "%Y-%m-%dT%H:%M:%SZ"
+            )
             cache_entry["entries"] = []
             cache_entry["checkver_count"] = 0
             cache_entry["ignored_until"] = ignored_until
-            cache_entry["last_checked"] = datetime.now().strftime("%Y-%m-%dT%H:%M:%SZ")
+            cache_entry["last_checked"] = datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
             return (repofoldername, cache_entry, True)
     else:
         if state.abort_flag:
@@ -218,7 +228,7 @@ def process_repo(repofoldername, cache_entry, dir_path):
             cache_entry["entries"] = entries
             cache_entry["checkver_count"] = checkver_count
         _probe_cache_entry(repo_path, entries, cache_entry)
-        cache_entry["last_checked"] = datetime.now().strftime("%Y-%m-%dT%H:%M:%SZ")
+        cache_entry["last_checked"] = datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
     if not git_success:
         consecutive_failures += 1
     else:
@@ -236,7 +246,7 @@ def process_repo(repofoldername, cache_entry, dir_path):
                 state.evicted_repos.append(
                     {
                         "full_name": full_name,
-                        "evicted_at": datetime.now().strftime("%Y-%m-%dT%H:%M:%SZ"),
+                        "evicted_at": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
                     }
                 )
                 return (repofoldername, None, True)
@@ -316,7 +326,7 @@ def update_repositories(cache, dir_path):
     for k in repo_keys:
         cache[k] = upgrade_cache_entry(k, cache[k])
     repo_keys.sort(key=(lambda k: get_next_check_due(cache[k])))
-    now = datetime.now()
+    now = datetime.now(timezone.utc)
     due_repos = [k for k in repo_keys if (get_next_check_due(cache[k]) <= now)]
 
     repos_to_process = []

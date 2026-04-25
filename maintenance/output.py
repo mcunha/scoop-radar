@@ -2,7 +2,7 @@
 
 import json
 import os
-from datetime import datetime
+from datetime import datetime, timezone
 
 import pygal
 from jinja2 import Environment, FileSystemLoader
@@ -98,7 +98,7 @@ def write_api_file(filename, data_key, data_list, metrics, dir_path):
     api_data = {
         data_key: data_list,
         "metadata": {
-            "generated_at": datetime.now().strftime("%Y-%m-%dT%H:%M:%SZ"),
+            "generated_at": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
             "count": len(data_list),
             "global_metrics": metrics,
         },

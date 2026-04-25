@@ -1,89 +1,107 @@
 import concurrent.futures
-import hashlib
 import json
 import os
 import subprocess
+from datetime import datetime, timedelta, timezone
 
 
-def hash_recipe(repo_full_name, recipe_name):
-    """Generate a short hash for a repository and recipe combination."""
-    key = f"{repo_full_name}:{recipe_name}"
-    return hashlib.md5(key.encode()).hexdigest()[:12]
+def get_daily_snapshots(repo_path, full_name, is_shovel_bucket):
+    """Get the state of the repository for the last 91 days."""
+    snapshots = {}
 
+    # Use UTC to align with our crawler logic
+    today = datetime.now(timezone.utc).replace(hour=23, minute=59, second=59)
+    dates = []
+    for i in range(91, -1, -1):
+        d = today - timedelta(days=i)
+        dates.append((d, d.strftime("%Y-%m-%d")))
 
-def get_file_creation_date(repo_path, file_path):
-    """Get the creation Unix timestamp of a file using git."""
-    try:
-        # git log --diff-filter=A --format="%at" -1 -- <file>
-        # This gets the author date of the commit that added the file
-        result = subprocess.run(
-            ["git", "log", "--diff-filter=A", "--format=%at", "-1", "--", file_path],
-            cwd=repo_path,
-            capture_output=True,
-            text=True,
-            check=True,
-        )
-        out = result.stdout.strip()
-        if out:
-            # If multiple commits are returned (e.g., added, deleted, re-added), take the oldest
-            dates = [int(line) for line in out.splitlines() if line.strip().isdigit()]
-            if dates:
-                return min(dates)
-    except subprocess.CalledProcessError:
-        pass
-    return None
+    for d, date_str in dates:
+        git_date = d.strftime("%Y-%m-%d %H:%M:%S")
+        try:
+            result = subprocess.run(
+                ["git", "rev-list", "-1", f"--before={git_date}", "HEAD"],
+                cwd=repo_path,
+                capture_output=True,
+                text=True,
+                check=True,
+            )
+            commit_hash = result.stdout.strip()
+            if commit_hash:
+                tree_result = subprocess.run(
+                    ["git", "ls-tree", "-r", "--name-only", commit_hash],
+                    cwd=repo_path,
+                    capture_output=True,
+                    text=True,
+                    check=True,
+                )
+                files = tree_result.stdout.strip().splitlines()
+
+                valid_files = set()
+                valid_shovel = set()
+                valid_scoop = set()
+
+                for f in files:
+                    if f.endswith(".json") or f.endswith(".yaml") or f.endswith(".yml"):
+                        parts = f.split("/")
+                        if len(parts) == 1 or (len(parts) == 2 and parts[0] == "bucket"):
+                            recipe_name = parts[-1]
+                            item = f"{full_name}:{recipe_name}"
+
+                            is_shovel = (
+                                is_shovel_bucket or f.endswith(".yaml") or f.endswith(".yml")
+                            )
+
+                            valid_files.add(item)
+                            if is_shovel:
+                                valid_shovel.add(item)
+                            else:
+                                valid_scoop.add(item)
+
+                snapshots[date_str] = {
+                    "all": valid_files,
+                    "scoop": valid_scoop,
+                    "shovel": valid_shovel,
+                }
+            else:
+                snapshots[date_str] = {"all": set(), "scoop": set(), "shovel": set()}
+        except subprocess.CalledProcessError:
+            snapshots[date_str] = {"all": set(), "scoop": set(), "shovel": set()}
+
+    return snapshots
 
 
 def process_repository(repo):
-    """Clone a repository, find all recipes, and determine their creation dates."""
+    """Clone a repository and get its historical snapshots."""
     full_name = repo["full_name"]
     git_url = repo["git_url"]
+    topics = repo.get("topics", [])
+    is_shovel_bucket = "shovel-bucket" in topics
 
-    # We need a deep clone for this, but we can put it in a temp dir
     repo_dir = f"temp_seed_clones/{full_name.replace('/', '+')}"
 
     print(f"[*] Seeding {full_name}...")
 
     if not os.path.exists(repo_dir):
         try:
-            # We need full history to find creation dates, so no depth limit
             subprocess.run(["git", "clone", "--quiet", git_url, repo_dir], check=True)
         except subprocess.CalledProcessError:
             print(f"[!] Failed to clone {full_name}")
-            return {}
+            return None
+    else:
+        try:
+            subprocess.run(["git", "pull", "--quiet"], cwd=repo_dir, check=True)
+        except subprocess.CalledProcessError:
+            pass
 
-    ages = {}
+    snapshots = get_daily_snapshots(repo_dir, full_name, is_shovel_bucket)
 
-    # Find manifests
-    for root_dir in [repo_dir, os.path.join(repo_dir, "bucket")]:
-        if os.path.isdir(root_dir):
-            for file_name in os.listdir(root_dir):
-                if (
-                    file_name.endswith(".json")
-                    or file_name.endswith(".yaml")
-                    or file_name.endswith(".yml")
-                ):
-                    file_path = os.path.join(root_dir, file_name)
-                    if os.path.isfile(file_path):
-                        # Get relative path for git command
-                        rel_path = os.path.relpath(file_path, repo_dir)
-                        # We must use forward slashes for git
-                        rel_path = rel_path.replace("\\", "/")
-
-                        creation_date = get_file_creation_date(repo_dir, rel_path)
-
-                        if creation_date is not None:
-                            recipe_hash = hash_recipe(full_name, file_name)
-                            ages[recipe_hash] = creation_date
-
-    # Clean up the clone to save disk space
     import shutil
+    import stat
 
     try:
-        # On Windows, we might need to handle read-only files created by git
-        def remove_readonly(func, path, _):
-            import stat
 
+        def remove_readonly(func, path, _):
             os.chmod(path, stat.S_IWRITE)
             func(path)
 
@@ -91,7 +109,7 @@ def process_repository(repo):
     except Exception as e:
         print(f"[!] Failed to clean up {repo_dir}: {e}")
 
-    return ages
+    return snapshots
 
 
 def main():
@@ -109,38 +127,72 @@ def main():
 
     os.makedirs("temp_seed_clones", exist_ok=True)
 
-    seed_data = {"last_seed_generation": 0, "ages": {}}
+    today = datetime.now(timezone.utc).replace(hour=23, minute=59, second=59)
+    dates = [(today - timedelta(days=i)).strftime("%Y-%m-%d") for i in range(91, -1, -1)]
 
-    # If we already have a seed file, load it so we don't start from scratch
-    if os.path.exists("recipe_ages.json"):
-        with open("recipe_ages.json", encoding="utf-8") as f:
-            try:
-                seed_data = json.load(f)
-                print(f"[*] Loaded existing seed data with {len(seed_data['ages'])} entries.")
-            except json.JSONDecodeError:
-                pass
+    global_snapshots = {
+        date_str: {"all": set(), "scoop": set(), "shovel": set()} for date_str in dates
+    }
 
-    # We only process a few repos at a time to save disk space
-    with concurrent.futures.ThreadPoolExecutor(max_workers=5) as executor:
+    # Process up to 10 repos concurrently
+    with concurrent.futures.ThreadPoolExecutor(max_workers=10) as executor:
         future_to_repo = {executor.submit(process_repository, repo): repo for repo in repos}
 
         for future in concurrent.futures.as_completed(future_to_repo):
             repo = future_to_repo[future]
             try:
-                repo_ages = future.result()
-                if repo_ages:
-                    seed_data["ages"].update(repo_ages)
+                repo_snapshots = future.result()
+                if repo_snapshots:
+                    for date_str, snaps in repo_snapshots.items():
+                        if date_str in global_snapshots:
+                            global_snapshots[date_str]["all"].update(snaps["all"])
+                            global_snapshots[date_str]["scoop"].update(snaps["scoop"])
+                            global_snapshots[date_str]["shovel"].update(snaps["shovel"])
             except Exception as e:
                 print(f"[!] Exception processing {repo['full_name']}: {e}")
 
-    import time
+    timeseries = []
 
-    seed_data["last_seed_generation"] = int(time.time())
+    def calc_delta(curr, prev):
+        added = len(curr - prev)
+        deleted = len(prev - curr)
+        retained = len(curr & prev)
+        return {"added": added, "deleted": -deleted, "retained": retained}
 
-    with open("recipe_ages.json", "w", encoding="utf-8") as f:
-        json.dump(seed_data, f, separators=(",", ":"))
+    for i in range(1, len(dates)):
+        curr_date = dates[i]
+        prev_date = dates[i - 1]
 
-    print(f"[*] Seed generation complete. Indexed {len(seed_data['ages'])} recipes.")
+        curr_snap = global_snapshots[curr_date]
+        prev_snap = global_snapshots[prev_date]
+
+        daily_entry = {
+            "date": curr_date,
+            "all": calc_delta(curr_snap["all"], prev_snap["all"]),
+            "scoop": calc_delta(curr_snap["scoop"], prev_snap["scoop"]),
+            "shovel": calc_delta(curr_snap["shovel"], prev_snap["shovel"]),
+        }
+        timeseries.append(daily_entry)
+
+    # Inject into cache.pickle
+    import pickle
+
+    cache_path = os.path.join("maintenance", "cache.pickle")
+    if os.path.exists(cache_path):
+        with open(cache_path, "rb") as f:
+            cache = pickle.load(f)
+    else:
+        cache = {}
+
+    cache["timeseries_history"] = timeseries
+    cache["previous_recipes_set"] = list(global_snapshots[dates[-1]]["all"])
+    cache["previous_scoop_recipes_set"] = list(global_snapshots[dates[-1]]["scoop"])
+    cache["previous_shovel_recipes_set"] = list(global_snapshots[dates[-1]]["shovel"])
+
+    with open(cache_path, "wb") as f:
+        pickle.dump(cache, f)
+
+    print(f"[*] Seed generation complete. Timeseries rebuilt for last {len(timeseries)} days.")
 
     try:
         os.rmdir("temp_seed_clones")

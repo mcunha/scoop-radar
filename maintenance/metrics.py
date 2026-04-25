@@ -1,7 +1,7 @@
 """Functions for scoring and calculating metrics."""
 
 import math
-from datetime import datetime
+from datetime import datetime, timezone
 from urllib.parse import urlparse
 
 from maintenance.api import fetchjson
@@ -44,8 +44,8 @@ def get_repo_score(repo, official_recipes):
     pushed_at_str = repo.get("pushed_at", "2000-01-01T00:00:00Z")
     if not pushed_at_str:
         pushed_at_str = "2000-01-01T00:00:00Z"
-    pushed_at = datetime.strptime(pushed_at_str, "%Y-%m-%dT%H:%M:%SZ")
-    days_since_push = (datetime.now() - pushed_at).days
+    pushed_at = datetime.strptime(pushed_at_str, "%Y-%m-%dT%H:%M:%SZ").replace(tzinfo=timezone.utc)
+    days_since_push = (datetime.now(timezone.utc) - pushed_at).days
 
     # Flatten the recency curve for the first 14 days so automated checkver bots (0 days)
     # don't get a micro-advantage over manual maintainers who batch updates weekly.
@@ -178,11 +178,13 @@ def calculate_metrics(cache):
     hidden_gems = []
     for r in actual_repos:
         pushed_at_str = r.get("pushed_at", "2000-01-01T00:00:00Z")
-        pushed_at = datetime.strptime(pushed_at_str, "%Y-%m-%dT%H:%M:%SZ")
+        pushed_at = datetime.strptime(pushed_at_str, "%Y-%m-%dT%H:%M:%SZ").replace(
+            tzinfo=timezone.utc
+        )
         if (
             r["uniqueness_ratio"] >= 0.5
             and r["unique_count"] >= 5
-            and (datetime.now() - pushed_at).days <= 90
+            and (datetime.now(timezone.utc) - pushed_at).days <= 90
         ):
             hidden_gems.append(r)
 
@@ -216,8 +218,10 @@ def calculate_metrics(cache):
 
         # Count stale buckets (no push in > 365 days)
         pushed_at_str = repo.get("pushed_at", "2000-01-01T00:00:00Z")
-        pushed_at = datetime.strptime(pushed_at_str, "%Y-%m-%dT%H:%M:%SZ")
-        if (datetime.now() - pushed_at).days > 365:
+        pushed_at = datetime.strptime(pushed_at_str, "%Y-%m-%dT%H:%M:%SZ").replace(
+            tzinfo=timezone.utc
+        )
+        if (datetime.now(timezone.utc) - pushed_at).days > 365:
             stale_bucket_count += 1
 
     ecosystem_metrics = {

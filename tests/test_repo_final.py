@@ -1,4 +1,4 @@
-from datetime import datetime
+from datetime import datetime, timezone
 
 import pytest
 
@@ -17,7 +17,7 @@ def test_get_next_check_due_no_pushed_at():
     # Covers line 41
     entry = {"last_checked": "2023-01-01T00:00:00Z"}
     due = get_next_check_due(entry)
-    assert due > datetime(2023, 1, 1)
+    assert due > datetime(2023, 1, 1, tzinfo=timezone.utc)
 
 
 def test_validate_manifest_file_exception(tmp_path):

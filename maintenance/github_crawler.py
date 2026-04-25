@@ -116,18 +116,20 @@ def main():
 
     cache["global_metrics"] = global_metrics
 
-    from datetime import datetime, timedelta
+    from datetime import datetime, timedelta, timezone
 
     # Process recent evictions (last 90 days)
     evictions = cache.get("evictions", [])
     if state.evicted_repos:
         evictions.extend(state.evicted_repos)
 
-    cutoff_date = datetime.now() - timedelta(days=90)
+    cutoff_date = datetime.now(timezone.utc) - timedelta(days=90)
     recent_evictions = []
     for ev in evictions:
         try:
-            ev_date = datetime.strptime(ev["evicted_at"], "%Y-%m-%dT%H:%M:%SZ")
+            ev_date = datetime.strptime(ev["evicted_at"], "%Y-%m-%dT%H:%M:%SZ").replace(
+                tzinfo=timezone.utc
+            )
             if ev_date >= cutoff_date:
                 recent_evictions.append(ev)
         except (KeyError, ValueError):
@@ -168,7 +170,7 @@ def main():
         return {"added": added, "deleted": -deleted, "retained": retained}
 
     daily_entry = {
-        "date": datetime.now().strftime("%Y-%m-%d"),
+        "date": datetime.now(timezone.utc).strftime("%Y-%m-%d"),
         "all": calc_delta(current_recipes_set, previous_recipes_set),
         "scoop": calc_delta(current_scoop_recipes_set, previous_scoop_recipes_set),
         "shovel": calc_delta(current_shovel_recipes_set, previous_shovel_recipes_set),

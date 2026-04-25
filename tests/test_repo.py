@@ -1,4 +1,4 @@
-from datetime import datetime
+from datetime import datetime, timezone
 
 import maintenance.state as state
 from maintenance.repo import get_next_check_due, is_manifest, process_repo, validate_manifest_file
@@ -14,11 +14,11 @@ def test_is_manifest():
 def test_get_next_check_due():
     # First time check
     entry = {"last_checked": "2000-01-01T00:00:00Z"}
-    assert get_next_check_due(entry) == datetime(2000, 1, 1)
+    assert get_next_check_due(entry) == datetime(2000, 1, 1, tzinfo=timezone.utc)
 
     # Ignored until
     entry = {"last_checked": "2023-01-01T00:00:00Z", "ignored_until": "2025-01-01T00:00:00Z"}
-    assert get_next_check_due(entry) == datetime(2025, 1, 1)
+    assert get_next_check_due(entry) == datetime(2025, 1, 1, tzinfo=timezone.utc)
 
     # Archived
     entry = {"last_checked": "2023-01-01T00:00:00Z", "archived": True}
