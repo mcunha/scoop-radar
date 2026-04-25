@@ -46,4 +46,3 @@ jobs:
         uses: stefanzweifel/git-auto-commit-action@v7.1.0
         with:
           commit_message: "Automated README update [ci skip]"
-          file_pattern: README.md directory/
