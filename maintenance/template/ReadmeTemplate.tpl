@@ -68,10 +68,10 @@ These buckets are actively maintained and feature a high percentage of **unique*
 ## 🔥 Trending
 These active buckets are rapidly climbing the ranks due to recent, high-quality updates and growing recipe counts!
 
-{% for repo in trending %}
-### [{{repo.full_name}}]({{repo.html_url}})
-*   **Rank Change:** 📈 Up {{repo.rank_velocity}} spots! (Now Rank #{{repo.current_rank}})
-*   **Total Recipes:** {{ repo.entries|length }}
+| Repository | Rank Change | Current Rank | Recipes | Score | Auto-Update |
+| :--- | :---: | :---: | :---: | :---: | :---: |
+{% for repo in trending -%}
+| **[{{repo.full_name}}](directory/{{repo.full_name|replace('/', '+')}}.md)** | 📈 +{{repo.rank_velocity}} | 🏆 #{{repo.current_rank}} | 📦 {{ repo.entries|length }} | ⭐ {{repo.score}} | 🔄 {{ "%.0f"|format((repo.checkver_count / repo.entries|length * 100) if repo.entries|length > 0 else 0) }}% |
 {% endfor %}
 {% endif %}
 
