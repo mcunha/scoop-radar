@@ -2,6 +2,7 @@
 
 import math
 from datetime import datetime
+from urllib.parse import urlparse
 
 from maintenance.api import fetchjson
 
@@ -11,11 +12,17 @@ def extract_github_repos(url):
     data = fetchjson(url)
     repos = []
     for v in data.values():
-        if isinstance(v, str) and "github.com/" in v:
-            repo_path = v.split("github.com/")[1]
-            if repo_path.endswith(".git"):
-                repo_path = repo_path[:-4]
-            repos.append(repo_path)
+        if isinstance(v, str):
+            try:
+                parsed = urlparse(v)
+                if parsed.netloc == "github.com" or parsed.netloc == "www.github.com":
+                    path = parsed.path.lstrip("/")
+                    if path.endswith(".git"):
+                        path = path[:-4]
+                    if path:
+                        repos.append(path)
+            except ValueError:
+                pass
     return repos
 
 
