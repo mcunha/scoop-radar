@@ -49,7 +49,9 @@ def make_request(url, headers):
                 wait_time = 60
 
             if wait_time > 0:
-                if wait_time > 900:  # Abort if wait is > 15 minutes to save CI minutes
+                if (
+                    wait_time > 60
+                ):  # Abort if wait is > 60 seconds to save CI minutes and avoid thread spam
                     print(
                         f"[!] Rate limit reached. Required wait time {wait_time}s is too long. Aborting gracefully."
                     )

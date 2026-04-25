@@ -46,3 +46,10 @@ jobs:
         uses: stefanzweifel/git-auto-commit-action@v7.1.0
         with:
           commit_message: "Automated README update [ci skip]"
+
+      - name: Upload cache artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: crawler-cache
+          path: maintenance/cache.pickle
+          retention-days: 7
