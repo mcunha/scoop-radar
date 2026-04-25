@@ -48,7 +48,7 @@ jobs:
           commit_message: "Automated README update [ci skip]"
 
       - name: Upload cache artifact
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: crawler-cache
           path: maintenance/cache.pickle
