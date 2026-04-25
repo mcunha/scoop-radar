@@ -38,6 +38,8 @@ jobs:
             ${{ runner.os }}-crawler-cache-
 
       - name: Run crawler
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           python maintenance/github-crawler.py
 
