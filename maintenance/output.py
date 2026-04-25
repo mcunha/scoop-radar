@@ -106,6 +106,7 @@ def write_api_file(filename, data_key, data_list, metrics, out_dir):
     }
     with open(os.path.join(out_dir, filename), "w", encoding="utf-8") as json_file:
         json.dump(api_data, json_file, indent=2, ensure_ascii=False)
+        json_file.write("\n")
 
 
 def generate_apis(
