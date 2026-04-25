@@ -11,6 +11,7 @@ This project was heavily inspired by the original `awesome-scoop` directories ma
 # 📊 Ecosystem Health
 * **Total Unique Recipes**: 0
 * **Ecosystem Auto-Update Health**: 0.0%
+* **Ecosystem Reliability**: 100.0% (Sampled URL Health)
 * **Official vs. Community**: 0 Official / 0 Community
 * **Bucket Ecosystem**: 0 Scoop / 0 Shovel
 * **Bucket Graveyard (Stale > 1 Year)**: 🪦 0
@@ -24,19 +25,19 @@ This project was heavily inspired by the original `awesome-scoop` directories ma
   <img src="growth_shovel.svg" width="49%">
 </p>
 
-# 🛠️ Operational Health (Crawler Metrics)
-* **Total Crawler Runs**: 4
-* **Total Repo Updates**: 1
-* **Ecosystem Growth (Since Last Run)**:
-  * 🪣 +0 Buckets
-  * 📦 +0 Recipes
-* **Eviction Count**: 🗑️ 0
-* **API Rate Limit Retries**: ⏳ 0
-* **Cache Size**: 💾 0.02 MB
-* **Pipeline Times (Last Run)**:
-  * 🔍 Discovery: 0.28s
-  * 📥 Update: 0.00s
-* **Cumulative Compute Time**: 0.0 minutes
+# 🚀 Getting Started
+To add and use any of the buckets listed below, simply run the following command in your terminal:
+```powershell
+scoop bucket add <bucket-name> <bucket-url>
+```
+For example, to add a specific bucket, find its URL from the list below and run:
+```powershell
+scoop bucket add my-awesome-bucket https://github.com/user/my-awesome-bucket
+```
+After adding the bucket, you can install any of its applications like this:
+```powershell
+scoop install my-awesome-bucket/<app-name>
+```
 
 # Third party buckets by popularity
 
@@ -56,3 +57,19 @@ These buckets utilize Shovel-specific features (like native YAML manifests) or a
 
 ## 📦 All Known Buckets
 A combined list of every bucket discovered in the ecosystem.
+
+
+
+# 🛠️ Operational Health (Crawler Metrics)
+* **Total Crawler Runs**: 1
+* **Total Repo Updates**: 0
+* **Ecosystem Growth (Since Last Run)**:
+  * 🪣 +0 Buckets
+  * 📦 +0 Recipes
+* **Eviction Count**: 🗑️ 0
+* **API Rate Limit Retries**: ⏳ 0
+* **Cache Size**: 💾 0.02 MB
+* **Pipeline Times (Last Run)**:
+  * 🔍 Discovery: 0.25s
+  * 📥 Update: 0.00s
+* **Cumulative Compute Time**: 0.0 minutes
