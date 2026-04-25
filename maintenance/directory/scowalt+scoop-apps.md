@@ -7,8 +7,8 @@
 
 
 ## 📦 Recipes (5)
-* [powerpanel-personal-np.json](https://github.com/scowalt/scoop-apps/blob/main/powerpanel-personal-np.json)
-* [cerebro.json](https://github.com/scowalt/scoop-apps/blob/main/cerebro.json)
-* [sparkmail.json](https://github.com/scowalt/scoop-apps/blob/main/sparkmail.json)
-* [postbox.json](https://github.com/scowalt/scoop-apps/blob/main/postbox.json)
-* [gomerge.json](https://github.com/scowalt/scoop-apps/blob/main/gomerge.json)
+* [powerpanel-personal-np.json](https://github.com/scowalt/scoop-apps/blob/main/bucket/powerpanel-personal-np.json)
+* [cerebro.json](https://github.com/scowalt/scoop-apps/blob/main/bucket/cerebro.json)
+* [sparkmail.json](https://github.com/scowalt/scoop-apps/blob/main/bucket/sparkmail.json)
+* [postbox.json](https://github.com/scowalt/scoop-apps/blob/main/bucket/postbox.json)
+* [gomerge.json](https://github.com/scowalt/scoop-apps/blob/main/bucket/gomerge.json)

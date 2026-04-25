@@ -7,4 +7,4 @@
 
 
 ## 📦 Recipes (1)
-* [app-switcher.json](https://github.com/ipatalas/scoop-bucket/blob/main/app-switcher.json)
+* [app-switcher.json](https://github.com/ipatalas/scoop-bucket/blob/main/bucket/app-switcher.json)

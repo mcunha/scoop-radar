@@ -7,5 +7,5 @@
 
 
 ## 📦 Recipes (2)
-* [upx-github.json](https://github.com/upyun/carrot/blob/master/upx-github.json)
-* [upx-upcdn.json](https://github.com/upyun/carrot/blob/master/upx-upcdn.json)
+* [upx-github.json](https://github.com/upyun/carrot/blob/master/bucket/upx-github.json)
+* [upx-upcdn.json](https://github.com/upyun/carrot/blob/master/bucket/upx-upcdn.json)

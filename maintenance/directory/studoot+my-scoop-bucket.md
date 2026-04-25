@@ -7,8 +7,8 @@
 
 
 ## 📦 Recipes (5)
-* [greenfish.json](https://github.com/studoot/my-scoop-bucket/blob/master/greenfish.json)
-* [xsltproc.json](https://github.com/studoot/my-scoop-bucket/blob/master/xsltproc.json)
-* [git-absorb.json](https://github.com/studoot/my-scoop-bucket/blob/master/git-absorb.json)
-* [ouch.json](https://github.com/studoot/my-scoop-bucket/blob/master/ouch.json)
-* [gitui.json](https://github.com/studoot/my-scoop-bucket/blob/master/gitui.json)
+* [greenfish.json](https://github.com/studoot/my-scoop-bucket/blob/master/bucket/greenfish.json)
+* [xsltproc.json](https://github.com/studoot/my-scoop-bucket/blob/master/bucket/xsltproc.json)
+* [git-absorb.json](https://github.com/studoot/my-scoop-bucket/blob/master/bucket/git-absorb.json)
+* [ouch.json](https://github.com/studoot/my-scoop-bucket/blob/master/bucket/ouch.json)
+* [gitui.json](https://github.com/studoot/my-scoop-bucket/blob/master/bucket/gitui.json)

@@ -7,5 +7,5 @@
 
 
 ## 📦 Recipes (2)
-* [gaphor.json](https://github.com/max-sn/personal-bucket/blob/master/gaphor.json)
-* [kroki-cli.json](https://github.com/max-sn/personal-bucket/blob/master/kroki-cli.json)
+* [gaphor.json](https://github.com/max-sn/personal-bucket/blob/master/bucket/gaphor.json)
+* [kroki-cli.json](https://github.com/max-sn/personal-bucket/blob/master/bucket/kroki-cli.json)

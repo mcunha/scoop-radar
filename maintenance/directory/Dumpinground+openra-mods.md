@@ -7,5 +7,5 @@
 
 
 ## 📦 Recipes (2)
-* [romanovs-vengeance-pe.json](https://github.com/Dumpinground/openra-mods/blob/master/romanovs-vengeance-pe.json)
-* [shatteredparadise-pe.json](https://github.com/Dumpinground/openra-mods/blob/master/shatteredparadise-pe.json)
+* [romanovs-vengeance-pe.json](https://github.com/Dumpinground/openra-mods/blob/master/bucket/romanovs-vengeance-pe.json)
+* [shatteredparadise-pe.json](https://github.com/Dumpinground/openra-mods/blob/master/bucket/shatteredparadise-pe.json)

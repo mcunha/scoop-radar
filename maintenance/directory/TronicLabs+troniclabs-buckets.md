@@ -7,4 +7,4 @@
 
 
 ## 📦 Recipes (1)
-* [VCV-RackFree.json](https://github.com/TronicLabs/troniclabs-buckets/blob/master/VCV-RackFree.json)
+* [VCV-RackFree.json](https://github.com/TronicLabs/troniclabs-buckets/blob/master/bucket/VCV-RackFree.json)

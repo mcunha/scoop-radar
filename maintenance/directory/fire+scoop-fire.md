@@ -7,4 +7,4 @@
 
 
 ## 📦 Recipes (1)
-* [fire-desktop-workspace.json](https://github.com/fire/scoop-fire/blob/master/fire-desktop-workspace.json)
+* [fire-desktop-workspace.json](https://github.com/fire/scoop-fire/blob/master/bucket/fire-desktop-workspace.json)

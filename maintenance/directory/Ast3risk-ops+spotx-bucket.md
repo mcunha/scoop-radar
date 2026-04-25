@@ -7,4 +7,4 @@
 
 
 ## 📦 Recipes (1)
-* [spotx.json](https://github.com/Ast3risk-ops/spotx-bucket/blob/master/spotx.json)
+* [spotx.json](https://github.com/Ast3risk-ops/spotx-bucket/blob/master/bucket/spotx.json)

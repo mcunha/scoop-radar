@@ -7,4 +7,4 @@
 
 
 ## 📦 Recipes (1)
-* [ionosctl.json](https://github.com/ionos-cloud/scoop-bucket/blob/main/ionosctl.json)
+* [ionosctl.json](https://github.com/ionos-cloud/scoop-bucket/blob/main/bucket/ionosctl.json)

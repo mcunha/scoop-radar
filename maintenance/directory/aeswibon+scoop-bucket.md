@@ -7,4 +7,4 @@
 
 
 ## 📦 Recipes (1)
-* [cloudfared.json](https://github.com/aeswibon/scoop-bucket/blob/master/cloudfared.json)
+* [cloudfared.json](https://github.com/aeswibon/scoop-bucket/blob/master/bucket/cloudfared.json)

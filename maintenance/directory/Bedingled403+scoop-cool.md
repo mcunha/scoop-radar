@@ -7,4 +7,4 @@
 
 
 ## 📦 Recipes (1)
-* [openlist-desktop.json](https://github.com/Bedingled403/scoop-cool/blob/main/openlist-desktop.json)
+* [openlist-desktop.json](https://github.com/Bedingled403/scoop-cool/blob/main/bucket/openlist-desktop.json)

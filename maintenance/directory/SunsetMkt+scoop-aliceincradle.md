@@ -7,4 +7,4 @@
 
 
 ## 📦 Recipes (1)
-* [aliceincradle.json](https://github.com/SunsetMkt/scoop-aliceincradle/blob/master/aliceincradle.json)
+* [aliceincradle.json](https://github.com/SunsetMkt/scoop-aliceincradle/blob/master/bucket/aliceincradle.json)

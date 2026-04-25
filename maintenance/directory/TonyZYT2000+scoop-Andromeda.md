@@ -7,9 +7,9 @@
 
 
 ## 📦 Recipes (6)
-* [monikai.json](https://github.com/TonyZYT2000/scoop-Andromeda/blob/master/monikai.json)
-* [tev.json](https://github.com/TonyZYT2000/scoop-Andromeda/blob/master/tev.json)
-* [dss.json](https://github.com/TonyZYT2000/scoop-Andromeda/blob/master/dss.json)
-* [siril.json](https://github.com/TonyZYT2000/scoop-Andromeda/blob/master/siril.json)
-* [fritzchess.json](https://github.com/TonyZYT2000/scoop-Andromeda/blob/master/fritzchess.json)
-* [codelite.json](https://github.com/TonyZYT2000/scoop-Andromeda/blob/master/codelite.json)
+* [monikai.json](https://github.com/TonyZYT2000/scoop-Andromeda/blob/master/bucket/monikai.json)
+* [tev.json](https://github.com/TonyZYT2000/scoop-Andromeda/blob/master/bucket/tev.json)
+* [dss.json](https://github.com/TonyZYT2000/scoop-Andromeda/blob/master/bucket/dss.json)
+* [siril.json](https://github.com/TonyZYT2000/scoop-Andromeda/blob/master/bucket/siril.json)
+* [fritzchess.json](https://github.com/TonyZYT2000/scoop-Andromeda/blob/master/bucket/fritzchess.json)
+* [codelite.json](https://github.com/TonyZYT2000/scoop-Andromeda/blob/master/bucket/codelite.json)

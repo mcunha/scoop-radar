@@ -7,4 +7,4 @@
 
 
 ## 📦 Recipes (1)
-* [wriftai.json](https://github.com/wriftai/scoop-bucket/blob/main/wriftai.json)
+* [wriftai.json](https://github.com/wriftai/scoop-bucket/blob/main/bucket/wriftai.json)

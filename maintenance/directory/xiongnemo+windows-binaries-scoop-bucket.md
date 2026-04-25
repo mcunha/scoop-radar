@@ -7,5 +7,5 @@
 
 
 ## 📦 Recipes (2)
-* [nermius-nightly.json](https://github.com/xiongnemo/windows-binaries-scoop-bucket/blob/master/nermius-nightly.json)
-* [SonicLair.Cli.json](https://github.com/xiongnemo/windows-binaries-scoop-bucket/blob/master/SonicLair.Cli.json)
+* [nermius-nightly.json](https://github.com/xiongnemo/windows-binaries-scoop-bucket/blob/master/bucket/nermius-nightly.json)
+* [SonicLair.Cli.json](https://github.com/xiongnemo/windows-binaries-scoop-bucket/blob/master/bucket/SonicLair.Cli.json)

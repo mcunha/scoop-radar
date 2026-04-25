@@ -7,4 +7,4 @@
 
 
 ## 📦 Recipes (1)
-* [duobolt.json](https://github.com/rnine/scoop-duobolt/blob/main/duobolt.json)
+* [duobolt.json](https://github.com/rnine/scoop-duobolt/blob/main/bucket/duobolt.json)

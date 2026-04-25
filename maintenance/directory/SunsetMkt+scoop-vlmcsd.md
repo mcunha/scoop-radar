@@ -7,4 +7,4 @@
 
 
 ## 📦 Recipes (1)
-* [vlmcsd.json](https://github.com/SunsetMkt/scoop-vlmcsd/blob/master/vlmcsd.json)
+* [vlmcsd.json](https://github.com/SunsetMkt/scoop-vlmcsd/blob/master/bucket/vlmcsd.json)

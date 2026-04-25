@@ -7,5 +7,5 @@
 
 
 ## 📦 Recipes (2)
-* [toffu.json](https://github.com/Madh93/scoop-bucket/blob/main/toffu.json)
-* [tpm.json](https://github.com/Madh93/scoop-bucket/blob/main/tpm.json)
+* [toffu.json](https://github.com/Madh93/scoop-bucket/blob/main/bucket/toffu.json)
+* [tpm.json](https://github.com/Madh93/scoop-bucket/blob/main/bucket/tpm.json)

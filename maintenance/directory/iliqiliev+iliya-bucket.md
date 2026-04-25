@@ -7,7 +7,7 @@
 
 
 ## 📦 Recipes (4)
-* [clink-gizmos.json](https://github.com/iliqiliev/iliya-bucket/blob/master/clink-gizmos.json)
-* [ics-lite.json](https://github.com/iliqiliev/iliya-bucket/blob/master/ics-lite.json)
-* [vdesk.json](https://github.com/iliqiliev/iliya-bucket/blob/master/vdesk.json)
-* [virtio-guest-tools.json](https://github.com/iliqiliev/iliya-bucket/blob/master/virtio-guest-tools.json)
+* [clink-gizmos.json](https://github.com/iliqiliev/iliya-bucket/blob/master/bucket/clink-gizmos.json)
+* [ics-lite.json](https://github.com/iliqiliev/iliya-bucket/blob/master/bucket/ics-lite.json)
+* [vdesk.json](https://github.com/iliqiliev/iliya-bucket/blob/master/bucket/vdesk.json)
+* [virtio-guest-tools.json](https://github.com/iliqiliev/iliya-bucket/blob/master/bucket/virtio-guest-tools.json)

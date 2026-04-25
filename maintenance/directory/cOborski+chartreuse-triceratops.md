@@ -7,5 +7,5 @@
 
 
 ## 📦 Recipes (2)
-* [deepgit.json](https://github.com/cOborski/chartreuse-triceratops/blob/master/deepgit.json)
-* [droppoint.json](https://github.com/cOborski/chartreuse-triceratops/blob/master/droppoint.json)
+* [deepgit.json](https://github.com/cOborski/chartreuse-triceratops/blob/master/bucket/deepgit.json)
+* [droppoint.json](https://github.com/cOborski/chartreuse-triceratops/blob/master/bucket/droppoint.json)

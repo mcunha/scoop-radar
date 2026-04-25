@@ -7,5 +7,5 @@
 
 
 ## 📦 Recipes (2)
-* [kicad-nightly-x86_64.json](https://github.com/Duckle29/duckles_bucket/blob/main/kicad-nightly-x86_64.json)
-* [sizer.json](https://github.com/Duckle29/duckles_bucket/blob/main/sizer.json)
+* [kicad-nightly-x86_64.json](https://github.com/Duckle29/duckles_bucket/blob/main/bucket/kicad-nightly-x86_64.json)
+* [sizer.json](https://github.com/Duckle29/duckles_bucket/blob/main/bucket/sizer.json)

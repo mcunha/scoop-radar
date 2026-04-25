@@ -7,5 +7,5 @@
 
 
 ## 📦 Recipes (2)
-* [sake.json](https://github.com/tbnguyen1407/scoop-bucket/blob/main/sake.json)
-* [mani.json](https://github.com/tbnguyen1407/scoop-bucket/blob/main/mani.json)
+* [sake.json](https://github.com/tbnguyen1407/scoop-bucket/blob/main/bucket/sake.json)
+* [mani.json](https://github.com/tbnguyen1407/scoop-bucket/blob/main/bucket/mani.json)

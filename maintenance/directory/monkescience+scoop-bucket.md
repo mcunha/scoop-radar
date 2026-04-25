@@ -7,4 +7,4 @@
 
 
 ## 📦 Recipes (1)
-* [yeet.json](https://github.com/monkescience/scoop-bucket/blob/main/yeet.json)
+* [yeet.json](https://github.com/monkescience/scoop-bucket/blob/main/bucket/yeet.json)

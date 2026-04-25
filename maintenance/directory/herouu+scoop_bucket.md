@@ -7,5 +7,5 @@
 
 
 ## 📦 Recipes (2)
-* [go-mysqlstat.json](https://github.com/herouu/scoop_bucket/blob/main/go-mysqlstat.json)
-* [go-stress-testing.json](https://github.com/herouu/scoop_bucket/blob/main/go-stress-testing.json)
+* [go-mysqlstat.json](https://github.com/herouu/scoop_bucket/blob/main/bucket/go-mysqlstat.json)
+* [go-stress-testing.json](https://github.com/herouu/scoop_bucket/blob/main/bucket/go-stress-testing.json)

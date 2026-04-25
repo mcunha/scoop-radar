@@ -7,4 +7,4 @@
 
 
 ## 📦 Recipes (1)
-* [kubri.json](https://github.com/kubri/scoop-bucket/blob/master/kubri.json)
+* [kubri.json](https://github.com/kubri/scoop-bucket/blob/master/bucket/kubri.json)

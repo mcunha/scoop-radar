@@ -7,4 +7,4 @@
 
 
 ## 📦 Recipes (1)
-* [psmux.json](https://github.com/psmux/scoop-psmux/blob/main/psmux.json)
+* [psmux.json](https://github.com/psmux/scoop-psmux/blob/main/bucket/psmux.json)

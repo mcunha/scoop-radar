@@ -7,4 +7,4 @@
 
 
 ## 📦 Recipes (1)
-* [anaconda3.json](https://github.com/jahanbani/scoop-anaconda3/blob/master/anaconda3.json)
+* [anaconda3.json](https://github.com/jahanbani/scoop-anaconda3/blob/master/bucket/anaconda3.json)

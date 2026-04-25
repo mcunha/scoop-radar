@@ -7,4 +7,4 @@
 
 
 ## 📦 Recipes (1)
-* [smaug.json](https://github.com/ereborstudios/scoop-bucket/blob/main/smaug.json)
+* [smaug.json](https://github.com/ereborstudios/scoop-bucket/blob/main/bucket/smaug.json)

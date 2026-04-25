@@ -7,6 +7,6 @@
 
 
 ## 📦 Recipes (3)
-* [vsbuildtools2022.json](https://github.com/tree-s/vsbuildtools/blob/master/vsbuildtools2022.json)
-* [vsbuildtools2019.json](https://github.com/tree-s/vsbuildtools/blob/master/vsbuildtools2019.json)
-* [vsbuildtools2017.json](https://github.com/tree-s/vsbuildtools/blob/master/vsbuildtools2017.json)
+* [vsbuildtools2022.json](https://github.com/tree-s/vsbuildtools/blob/master/bucket/vsbuildtools2022.json)
+* [vsbuildtools2019.json](https://github.com/tree-s/vsbuildtools/blob/master/bucket/vsbuildtools2019.json)
+* [vsbuildtools2017.json](https://github.com/tree-s/vsbuildtools/blob/master/bucket/vsbuildtools2017.json)

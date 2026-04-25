@@ -7,6 +7,6 @@
 
 
 ## 📦 Recipes (3)
-* [awl.json](https://github.com/SamTherapy/scoop/blob/master/awl.json)
-* [kepubify.json](https://github.com/SamTherapy/scoop/blob/master/kepubify.json)
-* [sshs.json](https://github.com/SamTherapy/scoop/blob/master/sshs.json)
+* [awl.json](https://github.com/SamTherapy/scoop/blob/master/bucket/awl.json)
+* [kepubify.json](https://github.com/SamTherapy/scoop/blob/master/bucket/kepubify.json)
+* [sshs.json](https://github.com/SamTherapy/scoop/blob/master/bucket/sshs.json)

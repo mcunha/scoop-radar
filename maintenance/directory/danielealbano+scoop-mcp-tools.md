@@ -7,4 +7,4 @@
 
 
 ## 📦 Recipes (1)
-* [mcp-for-azure-devops-boards.json](https://github.com/danielealbano/scoop-mcp-tools/blob/main/mcp-for-azure-devops-boards.json)
+* [mcp-for-azure-devops-boards.json](https://github.com/danielealbano/scoop-mcp-tools/blob/main/bucket/mcp-for-azure-devops-boards.json)

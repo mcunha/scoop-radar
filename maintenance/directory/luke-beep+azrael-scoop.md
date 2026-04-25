@@ -7,7 +7,7 @@
 
 
 ## 📦 Recipes (4)
-* [zen.json](https://github.com/luke-beep/azrael-scoop/blob/master/zen.json)
-* [gsr.json](https://github.com/luke-beep/azrael-scoop/blob/master/gsr.json)
-* [ca.json](https://github.com/luke-beep/azrael-scoop/blob/master/ca.json)
-* [av.json](https://github.com/luke-beep/azrael-scoop/blob/master/av.json)
+* [zen.json](https://github.com/luke-beep/azrael-scoop/blob/master/bucket/zen.json)
+* [gsr.json](https://github.com/luke-beep/azrael-scoop/blob/master/bucket/gsr.json)
+* [ca.json](https://github.com/luke-beep/azrael-scoop/blob/master/bucket/ca.json)
+* [av.json](https://github.com/luke-beep/azrael-scoop/blob/master/bucket/av.json)

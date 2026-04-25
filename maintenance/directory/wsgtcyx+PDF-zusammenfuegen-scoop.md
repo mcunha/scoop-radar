@@ -7,4 +7,4 @@
 
 
 ## 📦 Recipes (1)
-* [pdfzus-merge.json](https://github.com/wsgtcyx/PDF-zusammenfuegen-scoop/blob/main/pdfzus-merge.json)
+* [pdfzus-merge.json](https://github.com/wsgtcyx/PDF-zusammenfuegen-scoop/blob/main/bucket/pdfzus-merge.json)

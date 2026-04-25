@@ -7,9 +7,9 @@
 
 
 ## 📦 Recipes (6)
-* [arenabox-cli.json](https://github.com/mtpdx/scoop-bucket/blob/master/arenabox-cli.json)
-* [comfyui.json](https://github.com/mtpdx/scoop-bucket/blob/master/comfyui.json)
-* [mariadb.json](https://github.com/mtpdx/scoop-bucket/blob/master/mariadb.json)
-* [filebrowser.json](https://github.com/mtpdx/scoop-bucket/blob/master/filebrowser.json)
-* [redis8.json](https://github.com/mtpdx/scoop-bucket/blob/master/redis8.json)
-* [mariadb11.json](https://github.com/mtpdx/scoop-bucket/blob/master/mariadb11.json)
+* [arenabox-cli.json](https://github.com/mtpdx/scoop-bucket/blob/master/bucket/arenabox-cli.json)
+* [comfyui.json](https://github.com/mtpdx/scoop-bucket/blob/master/bucket/comfyui.json)
+* [mariadb.json](https://github.com/mtpdx/scoop-bucket/blob/master/bucket/mariadb.json)
+* [filebrowser.json](https://github.com/mtpdx/scoop-bucket/blob/master/bucket/filebrowser.json)
+* [redis8.json](https://github.com/mtpdx/scoop-bucket/blob/master/bucket/redis8.json)
+* [mariadb11.json](https://github.com/mtpdx/scoop-bucket/blob/master/bucket/mariadb11.json)

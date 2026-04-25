@@ -7,4 +7,4 @@
 
 
 ## 📦 Recipes (1)
-* [google-chrome-for-testing.json](https://github.com/BobH-Official/bobh-scoop-bucket/blob/master/google-chrome-for-testing.json)
+* [google-chrome-for-testing.json](https://github.com/BobH-Official/bobh-scoop-bucket/blob/master/bucket/google-chrome-for-testing.json)

@@ -7,6 +7,6 @@
 
 
 ## 📦 Recipes (3)
-* [iracing-config.json](https://github.com/JManch/scoop-bucket/blob/master/iracing-config.json)
-* [race-control.json](https://github.com/JManch/scoop-bucket/blob/master/race-control.json)
-* [bob.json](https://github.com/JManch/scoop-bucket/blob/master/bob.json)
+* [iracing-config.json](https://github.com/JManch/scoop-bucket/blob/master/bucket/iracing-config.json)
+* [race-control.json](https://github.com/JManch/scoop-bucket/blob/master/bucket/race-control.json)
+* [bob.json](https://github.com/JManch/scoop-bucket/blob/master/bucket/bob.json)

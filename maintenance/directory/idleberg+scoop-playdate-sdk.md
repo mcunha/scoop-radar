@@ -7,5 +7,5 @@
 
 
 ## 📦 Recipes (2)
-* [playdate-sdk-beta.json](https://github.com/idleberg/scoop-playdate-sdk/blob/main/playdate-sdk-beta.json)
-* [playdate-sdk.json](https://github.com/idleberg/scoop-playdate-sdk/blob/main/playdate-sdk.json)
+* [playdate-sdk-beta.json](https://github.com/idleberg/scoop-playdate-sdk/blob/main/bucket/playdate-sdk-beta.json)
+* [playdate-sdk.json](https://github.com/idleberg/scoop-playdate-sdk/blob/main/bucket/playdate-sdk.json)

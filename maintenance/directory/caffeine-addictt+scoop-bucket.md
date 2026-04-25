@@ -7,4 +7,4 @@
 
 
 ## 📦 Recipes (1)
-* [waku.json](https://github.com/caffeine-addictt/scoop-bucket/blob/main/waku.json)
+* [waku.json](https://github.com/caffeine-addictt/scoop-bucket/blob/main/bucket/waku.json)

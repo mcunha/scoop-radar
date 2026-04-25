@@ -7,4 +7,4 @@
 
 
 ## 📦 Recipes (1)
-* [nginx-prometheus-exporter.json](https://github.com/nginx/scoop-bucket/blob/main/nginx-prometheus-exporter.json)
+* [nginx-prometheus-exporter.json](https://github.com/nginx/scoop-bucket/blob/main/bucket/nginx-prometheus-exporter.json)

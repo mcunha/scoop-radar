@@ -7,5 +7,5 @@
 
 
 ## 📦 Recipes (2)
-* [rez2.json](https://github.com/MichaelHaussmann/scoop-play/blob/main/rez2.json)
-* [rez.json](https://github.com/MichaelHaussmann/scoop-play/blob/main/rez.json)
+* [rez2.json](https://github.com/MichaelHaussmann/scoop-play/blob/main/bucket/rez2.json)
+* [rez.json](https://github.com/MichaelHaussmann/scoop-play/blob/main/bucket/rez.json)

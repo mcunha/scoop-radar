@@ -7,5 +7,5 @@
 
 
 ## 📦 Recipes (2)
-* [winhugs.json](https://github.com/Kantouzin/scoop-bucketouzin/blob/master/winhugs.json)
-* [kuin.json](https://github.com/Kantouzin/scoop-bucketouzin/blob/master/kuin.json)
+* [winhugs.json](https://github.com/Kantouzin/scoop-bucketouzin/blob/master/bucket/winhugs.json)
+* [kuin.json](https://github.com/Kantouzin/scoop-bucketouzin/blob/master/bucket/kuin.json)

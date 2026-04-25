@@ -7,5 +7,5 @@
 
 
 ## 📦 Recipes (2)
-* [redot-engine.json](https://github.com/speratus/redot-engine-bucket/blob/master/redot-engine.json)
-* [redot-mono.json](https://github.com/speratus/redot-engine-bucket/blob/master/redot-mono.json)
+* [redot-engine.json](https://github.com/speratus/redot-engine-bucket/blob/master/bucket/redot-engine.json)
+* [redot-mono.json](https://github.com/speratus/redot-engine-bucket/blob/master/bucket/redot-mono.json)

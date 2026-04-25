@@ -7,6 +7,6 @@
 
 
 ## 📦 Recipes (3)
-* [odoo-lsp.json](https://github.com/Desdaemon/scoop-repo/blob/master/odoo-lsp.json)
-* [flutter_rust_bridge_codegen.json](https://github.com/Desdaemon/scoop-repo/blob/master/flutter_rust_bridge_codegen.json)
-* [kotlin-language-server.json](https://github.com/Desdaemon/scoop-repo/blob/master/kotlin-language-server.json)
+* [odoo-lsp.json](https://github.com/Desdaemon/scoop-repo/blob/master/bucket/odoo-lsp.json)
+* [flutter_rust_bridge_codegen.json](https://github.com/Desdaemon/scoop-repo/blob/master/bucket/flutter_rust_bridge_codegen.json)
+* [kotlin-language-server.json](https://github.com/Desdaemon/scoop-repo/blob/master/bucket/kotlin-language-server.json)

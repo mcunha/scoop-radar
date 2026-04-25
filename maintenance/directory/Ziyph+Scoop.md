@@ -7,6 +7,6 @@
 
 
 ## 📦 Recipes (3)
-* [equibop.json](https://github.com/Ziyph/Scoop/blob/main/equibop.json)
-* [masir.json](https://github.com/Ziyph/Scoop/blob/main/masir.json)
-* [winpaletter.json](https://github.com/Ziyph/Scoop/blob/main/winpaletter.json)
+* [equibop.json](https://github.com/Ziyph/Scoop/blob/main/bucket/equibop.json)
+* [masir.json](https://github.com/Ziyph/Scoop/blob/main/bucket/masir.json)
+* [winpaletter.json](https://github.com/Ziyph/Scoop/blob/main/bucket/winpaletter.json)

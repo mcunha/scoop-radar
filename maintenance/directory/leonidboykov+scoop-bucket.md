@@ -7,5 +7,5 @@
 
 
 ## 📦 Recipes (2)
-* [gosling.json](https://github.com/leonidboykov/scoop-bucket/blob/master/gosling.json)
-* [getmoe.json](https://github.com/leonidboykov/scoop-bucket/blob/master/getmoe.json)
+* [gosling.json](https://github.com/leonidboykov/scoop-bucket/blob/master/bucket/gosling.json)
+* [getmoe.json](https://github.com/leonidboykov/scoop-bucket/blob/master/bucket/getmoe.json)

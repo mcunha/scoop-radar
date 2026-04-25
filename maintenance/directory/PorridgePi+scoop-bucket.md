@@ -7,6 +7,6 @@
 
 
 ## 📦 Recipes (3)
-* [xiaomiadbtools.json](https://github.com/PorridgePi/scoop-bucket/blob/master/xiaomiadbtools.json)
-* [homeassistant-desktop.json](https://github.com/PorridgePi/scoop-bucket/blob/master/homeassistant-desktop.json)
-* [blobsaver.json](https://github.com/PorridgePi/scoop-bucket/blob/master/blobsaver.json)
+* [xiaomiadbtools.json](https://github.com/PorridgePi/scoop-bucket/blob/master/bucket/xiaomiadbtools.json)
+* [homeassistant-desktop.json](https://github.com/PorridgePi/scoop-bucket/blob/master/bucket/homeassistant-desktop.json)
+* [blobsaver.json](https://github.com/PorridgePi/scoop-bucket/blob/master/bucket/blobsaver.json)

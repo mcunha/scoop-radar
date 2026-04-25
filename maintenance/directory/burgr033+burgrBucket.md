@@ -7,9 +7,9 @@
 
 
 ## 📦 Recipes (6)
-* [tuifeed.json](https://github.com/burgr033/burgrBucket/blob/master/tuifeed.json)
-* [neochat.json](https://github.com/burgr033/burgrBucket/blob/master/neochat.json)
-* [todotxtui.json](https://github.com/burgr033/burgrBucket/blob/master/todotxtui.json)
-* [Code2RTF.json](https://github.com/burgr033/burgrBucket/blob/master/Code2RTF.json)
-* [MicMute.json](https://github.com/burgr033/burgrBucket/blob/master/MicMute.json)
-* [pydfmerger.json](https://github.com/burgr033/burgrBucket/blob/master/pydfmerger.json)
+* [tuifeed.json](https://github.com/burgr033/burgrBucket/blob/master/bucket/tuifeed.json)
+* [neochat.json](https://github.com/burgr033/burgrBucket/blob/master/bucket/neochat.json)
+* [todotxtui.json](https://github.com/burgr033/burgrBucket/blob/master/bucket/todotxtui.json)
+* [Code2RTF.json](https://github.com/burgr033/burgrBucket/blob/master/bucket/Code2RTF.json)
+* [MicMute.json](https://github.com/burgr033/burgrBucket/blob/master/bucket/MicMute.json)
+* [pydfmerger.json](https://github.com/burgr033/burgrBucket/blob/master/bucket/pydfmerger.json)

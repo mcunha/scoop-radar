@@ -7,4 +7,4 @@
 
 
 ## 📦 Recipes (1)
-* [zed.json](https://github.com/sbolch/ScoopZed/blob/master/zed.json)
+* [zed.json](https://github.com/sbolch/ScoopZed/blob/master/bucket/zed.json)

@@ -7,5 +7,5 @@
 
 
 ## 📦 Recipes (2)
-* [jpki-cli.json](https://github.com/siketyan/scoop-bucket/blob/main/jpki-cli.json)
-* [ghr.json](https://github.com/siketyan/scoop-bucket/blob/main/ghr.json)
+* [jpki-cli.json](https://github.com/siketyan/scoop-bucket/blob/main/bucket/jpki-cli.json)
+* [ghr.json](https://github.com/siketyan/scoop-bucket/blob/main/bucket/ghr.json)

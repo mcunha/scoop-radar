@@ -7,6 +7,6 @@
 
 
 ## 📦 Recipes (3)
-* [mmctl.json](https://github.com/DeltaLaboratory/lemon/blob/main/mmctl.json)
-* [opkssh.json](https://github.com/DeltaLaboratory/lemon/blob/main/opkssh.json)
-* [atlas.json](https://github.com/DeltaLaboratory/lemon/blob/main/atlas.json)
+* [mmctl.json](https://github.com/DeltaLaboratory/lemon/blob/main/bucket/mmctl.json)
+* [opkssh.json](https://github.com/DeltaLaboratory/lemon/blob/main/bucket/opkssh.json)
+* [atlas.json](https://github.com/DeltaLaboratory/lemon/blob/main/bucket/atlas.json)

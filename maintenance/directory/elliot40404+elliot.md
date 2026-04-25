@@ -7,5 +7,5 @@
 
 
 ## 📦 Recipes (2)
-* [sz.json](https://github.com/elliot40404/elliot/blob/master/sz.json)
-* [bonk.json](https://github.com/elliot40404/elliot/blob/master/bonk.json)
+* [sz.json](https://github.com/elliot40404/elliot/blob/master/bucket/sz.json)
+* [bonk.json](https://github.com/elliot40404/elliot/blob/master/bucket/bonk.json)

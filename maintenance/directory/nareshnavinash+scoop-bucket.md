@@ -7,4 +7,4 @@
 
 
 ## 📦 Recipes (1)
-* [shelldone.json](https://github.com/nareshnavinash/scoop-bucket/blob/main/shelldone.json)
+* [shelldone.json](https://github.com/nareshnavinash/scoop-bucket/blob/main/bucket/shelldone.json)

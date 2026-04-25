@@ -7,4 +7,4 @@
 
 
 ## 📦 Recipes (1)
-* [insomnium.json](https://github.com/rexlManu/scoop-bucket/blob/master/insomnium.json)
+* [insomnium.json](https://github.com/rexlManu/scoop-bucket/blob/master/bucket/insomnium.json)

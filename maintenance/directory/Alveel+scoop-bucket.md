@@ -7,5 +7,5 @@
 
 
 ## 📦 Recipes (2)
-* [docker-machine-driver-hetzner.json](https://github.com/Alveel/scoop-bucket/blob/master/docker-machine-driver-hetzner.json)
-* [openshift-client.json](https://github.com/Alveel/scoop-bucket/blob/master/openshift-client.json)
+* [docker-machine-driver-hetzner.json](https://github.com/Alveel/scoop-bucket/blob/master/bucket/docker-machine-driver-hetzner.json)
+* [openshift-client.json](https://github.com/Alveel/scoop-bucket/blob/master/bucket/openshift-client.json)

@@ -7,4 +7,4 @@
 
 
 ## 📦 Recipes (1)
-* [chronomod.json](https://github.com/jo12bar/scoop-bucket/blob/master/chronomod.json)
+* [chronomod.json](https://github.com/jo12bar/scoop-bucket/blob/master/bucket/chronomod.json)

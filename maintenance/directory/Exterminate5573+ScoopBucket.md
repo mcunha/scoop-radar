@@ -7,9 +7,9 @@
 
 
 ## 📦 Recipes (6)
-* [wootility.json](https://github.com/Exterminate5573/ScoopBucket/blob/master/wootility.json)
-* [artemis-rgb.json](https://github.com/Exterminate5573/ScoopBucket/blob/master/artemis-rgb.json)
-* [vb-cable.json](https://github.com/Exterminate5573/ScoopBucket/blob/master/vb-cable.json)
-* [wooting-analog-sdk.json](https://github.com/Exterminate5573/ScoopBucket/blob/master/wooting-analog-sdk.json)
-* [wooting-rgb-sdk.json](https://github.com/Exterminate5573/ScoopBucket/blob/master/wooting-rgb-sdk.json)
-* [soundux.json](https://github.com/Exterminate5573/ScoopBucket/blob/master/soundux.json)
+* [wootility.json](https://github.com/Exterminate5573/ScoopBucket/blob/master/bucket/wootility.json)
+* [artemis-rgb.json](https://github.com/Exterminate5573/ScoopBucket/blob/master/bucket/artemis-rgb.json)
+* [vb-cable.json](https://github.com/Exterminate5573/ScoopBucket/blob/master/bucket/vb-cable.json)
+* [wooting-analog-sdk.json](https://github.com/Exterminate5573/ScoopBucket/blob/master/bucket/wooting-analog-sdk.json)
+* [wooting-rgb-sdk.json](https://github.com/Exterminate5573/ScoopBucket/blob/master/bucket/wooting-rgb-sdk.json)
+* [soundux.json](https://github.com/Exterminate5573/ScoopBucket/blob/master/bucket/soundux.json)

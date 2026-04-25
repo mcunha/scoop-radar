@@ -7,4 +7,4 @@
 
 
 ## 📦 Recipes (1)
-* [lively-wallpaper.json](https://github.com/BenjaminMichaelis/Config/blob/main/lively-wallpaper.json)
+* [lively-wallpaper.json](https://github.com/BenjaminMichaelis/Config/blob/main/bucket/lively-wallpaper.json)

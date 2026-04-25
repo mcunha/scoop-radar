@@ -7,10 +7,10 @@
 
 
 ## 📦 Recipes (7)
-* [safe-mode-launcher.json](https://github.com/RemySkye/RemyScoop/blob/main/safe-mode-launcher.json)
-* [vb-cable-pack45.json](https://github.com/RemySkye/RemyScoop/blob/main/vb-cable-pack45.json)
-* [vb-cable-pack43.json](https://github.com/RemySkye/RemyScoop/blob/main/vb-cable-pack43.json)
-* [real-video-enhancer.json](https://github.com/RemySkye/RemyScoop/blob/main/real-video-enhancer.json)
-* [tcpoptimizer.json](https://github.com/RemySkye/RemyScoop/blob/main/tcpoptimizer.json)
-* [office-tool-plus-with-runtime.json](https://github.com/RemySkye/RemyScoop/blob/main/office-tool-plus-with-runtime.json)
-* [infiniv-voiceflow.json](https://github.com/RemySkye/RemyScoop/blob/main/infiniv-voiceflow.json)
+* [safe-mode-launcher.json](https://github.com/RemySkye/RemyScoop/blob/main/bucket/safe-mode-launcher.json)
+* [vb-cable-pack45.json](https://github.com/RemySkye/RemyScoop/blob/main/bucket/vb-cable-pack45.json)
+* [vb-cable-pack43.json](https://github.com/RemySkye/RemyScoop/blob/main/bucket/vb-cable-pack43.json)
+* [real-video-enhancer.json](https://github.com/RemySkye/RemyScoop/blob/main/bucket/real-video-enhancer.json)
+* [tcpoptimizer.json](https://github.com/RemySkye/RemyScoop/blob/main/bucket/tcpoptimizer.json)
+* [office-tool-plus-with-runtime.json](https://github.com/RemySkye/RemyScoop/blob/main/bucket/office-tool-plus-with-runtime.json)
+* [infiniv-voiceflow.json](https://github.com/RemySkye/RemyScoop/blob/main/bucket/infiniv-voiceflow.json)

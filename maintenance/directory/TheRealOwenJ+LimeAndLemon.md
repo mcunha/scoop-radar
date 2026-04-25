@@ -7,4 +7,4 @@
 
 
 ## 📦 Recipes (1)
-* [levilauncher.json](https://github.com/TheRealOwenJ/LimeAndLemon/blob/master/levilauncher.json)
+* [levilauncher.json](https://github.com/TheRealOwenJ/LimeAndLemon/blob/master/bucket/levilauncher.json)

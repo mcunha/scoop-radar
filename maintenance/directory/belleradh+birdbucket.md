@@ -7,4 +7,4 @@
 
 
 ## 📦 Recipes (1)
-* [gsudo.json](https://github.com/belleradh/birdbucket/blob/master/gsudo.json)
+* [gsudo.json](https://github.com/belleradh/birdbucket/blob/master/bucket/gsudo.json)

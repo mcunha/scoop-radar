@@ -7,8 +7,8 @@
 
 
 ## 📦 Recipes (5)
-* [explorerblurmica-gui.json](https://github.com/mistyrosetta/mistyscoop/blob/master/explorerblurmica-gui.json)
-* [dwmblurglass.json](https://github.com/mistyrosetta/mistyscoop/blob/master/dwmblurglass.json)
-* [explorerblurmica.json](https://github.com/mistyrosetta/mistyscoop/blob/master/explorerblurmica.json)
-* [splitwire-turkey.json](https://github.com/mistyrosetta/mistyscoop/blob/master/splitwire-turkey.json)
-* [imgbrd-grabber-nightly.json](https://github.com/mistyrosetta/mistyscoop/blob/master/imgbrd-grabber-nightly.json)
+* [explorerblurmica-gui.json](https://github.com/mistyrosetta/mistyscoop/blob/master/bucket/explorerblurmica-gui.json)
+* [dwmblurglass.json](https://github.com/mistyrosetta/mistyscoop/blob/master/bucket/dwmblurglass.json)
+* [explorerblurmica.json](https://github.com/mistyrosetta/mistyscoop/blob/master/bucket/explorerblurmica.json)
+* [splitwire-turkey.json](https://github.com/mistyrosetta/mistyscoop/blob/master/bucket/splitwire-turkey.json)
+* [imgbrd-grabber-nightly.json](https://github.com/mistyrosetta/mistyscoop/blob/master/bucket/imgbrd-grabber-nightly.json)

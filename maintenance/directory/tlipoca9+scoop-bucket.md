@@ -7,4 +7,4 @@
 
 
 ## 📦 Recipes (1)
-* [zsh.json](https://github.com/tlipoca9/scoop-bucket/blob/master/zsh.json)
+* [zsh.json](https://github.com/tlipoca9/scoop-bucket/blob/master/bucket/zsh.json)

@@ -7,5 +7,5 @@
 
 
 ## 📦 Recipes (2)
-* [arc10.json](https://github.com/tree-s/arc/blob/master/arc10.json)
-* [arc11.json](https://github.com/tree-s/arc/blob/master/arc11.json)
+* [arc10.json](https://github.com/tree-s/arc/blob/master/bucket/arc10.json)
+* [arc11.json](https://github.com/tree-s/arc/blob/master/bucket/arc11.json)

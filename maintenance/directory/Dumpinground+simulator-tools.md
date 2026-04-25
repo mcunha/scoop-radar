@@ -7,8 +7,8 @@
 
 
 ## 📦 Recipes (5)
-* [nsz.json](https://github.com/Dumpinground/simulator-tools/blob/master/nsz.json)
-* [gyro.json](https://github.com/Dumpinground/simulator-tools/blob/master/gyro.json)
-* [ps2-bios.json](https://github.com/Dumpinground/simulator-tools/blob/master/ps2-bios.json)
-* [switch-firmware.json](https://github.com/Dumpinground/simulator-tools/blob/master/switch-firmware.json)
-* [cdecrypt.json](https://github.com/Dumpinground/simulator-tools/blob/master/cdecrypt.json)
+* [nsz.json](https://github.com/Dumpinground/simulator-tools/blob/master/bucket/nsz.json)
+* [gyro.json](https://github.com/Dumpinground/simulator-tools/blob/master/bucket/gyro.json)
+* [ps2-bios.json](https://github.com/Dumpinground/simulator-tools/blob/master/bucket/ps2-bios.json)
+* [switch-firmware.json](https://github.com/Dumpinground/simulator-tools/blob/master/bucket/switch-firmware.json)
+* [cdecrypt.json](https://github.com/Dumpinground/simulator-tools/blob/master/bucket/cdecrypt.json)

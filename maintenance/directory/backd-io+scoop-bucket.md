@@ -7,4 +7,4 @@
 
 
 ## 📦 Recipes (1)
-* [cfd.json](https://github.com/backd-io/scoop-bucket/blob/main/cfd.json)
+* [cfd.json](https://github.com/backd-io/scoop-bucket/blob/main/bucket/cfd.json)

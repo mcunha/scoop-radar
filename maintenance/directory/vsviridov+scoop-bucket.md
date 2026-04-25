@@ -7,4 +7,4 @@
 
 
 ## 📦 Recipes (1)
-* [vim.json](https://github.com/vsviridov/scoop-bucket/blob/master/vim.json)
+* [vim.json](https://github.com/vsviridov/scoop-bucket/blob/master/bucket/vim.json)

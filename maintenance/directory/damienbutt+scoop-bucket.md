@@ -7,5 +7,5 @@
 
 
 ## 📦 Recipes (2)
-* [figlet.json](https://github.com/damienbutt/scoop-bucket/blob/master/figlet.json)
-* [emojify-go.json](https://github.com/damienbutt/scoop-bucket/blob/master/emojify-go.json)
+* [figlet.json](https://github.com/damienbutt/scoop-bucket/blob/master/bucket/figlet.json)
+* [emojify-go.json](https://github.com/damienbutt/scoop-bucket/blob/master/bucket/emojify-go.json)

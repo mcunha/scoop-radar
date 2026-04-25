@@ -7,9 +7,9 @@
 
 
 ## 📦 Recipes (6)
-* [control-my-monitor.json](https://github.com/arnos-stuff/arnos-scoop-bucket/blob/master/control-my-monitor.json)
-* [chrome-html-to-pdf.json](https://github.com/arnos-stuff/arnos-scoop-bucket/blob/master/chrome-html-to-pdf.json)
-* [conTeXt.json](https://github.com/arnos-stuff/arnos-scoop-bucket/blob/master/conTeXt.json)
-* [fn-themes.json](https://github.com/arnos-stuff/arnos-scoop-bucket/blob/master/fn-themes.json)
-* [quarto.wip.json](https://github.com/arnos-stuff/arnos-scoop-bucket/blob/master/quarto.wip.json)
-* [pandoc-sidenote.json](https://github.com/arnos-stuff/arnos-scoop-bucket/blob/master/pandoc-sidenote.json)
+* [control-my-monitor.json](https://github.com/arnos-stuff/arnos-scoop-bucket/blob/master/bucket/control-my-monitor.json)
+* [chrome-html-to-pdf.json](https://github.com/arnos-stuff/arnos-scoop-bucket/blob/master/bucket/chrome-html-to-pdf.json)
+* [conTeXt.json](https://github.com/arnos-stuff/arnos-scoop-bucket/blob/master/bucket/conTeXt.json)
+* [fn-themes.json](https://github.com/arnos-stuff/arnos-scoop-bucket/blob/master/bucket/fn-themes.json)
+* [quarto.wip.json](https://github.com/arnos-stuff/arnos-scoop-bucket/blob/master/bucket/quarto.wip.json)
+* [pandoc-sidenote.json](https://github.com/arnos-stuff/arnos-scoop-bucket/blob/master/bucket/pandoc-sidenote.json)

@@ -7,5 +7,5 @@
 
 
 ## 📦 Recipes (2)
-* [xmllint.json](https://github.com/ddanielsantos/dd-bucket/blob/master/xmllint.json)
-* [lazygit.json](https://github.com/ddanielsantos/dd-bucket/blob/master/lazygit.json)
+* [xmllint.json](https://github.com/ddanielsantos/dd-bucket/blob/master/bucket/xmllint.json)
+* [lazygit.json](https://github.com/ddanielsantos/dd-bucket/blob/master/bucket/lazygit.json)

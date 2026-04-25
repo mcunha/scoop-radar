@@ -7,4 +7,4 @@
 
 
 ## 📦 Recipes (1)
-* [exoscale-cli.json](https://github.com/exoscale/cli/blob/master/exoscale-cli.json)
+* [exoscale-cli.json](https://github.com/exoscale/cli/blob/master/bucket/exoscale-cli.json)

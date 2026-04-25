@@ -7,4 +7,4 @@
 
 
 ## 📦 Recipes (1)
-* [team-divider.json](https://github.com/Aldebaranoro/scoop-bucket/blob/main/team-divider.json)
+* [team-divider.json](https://github.com/Aldebaranoro/scoop-bucket/blob/main/bucket/team-divider.json)

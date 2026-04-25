@@ -7,10 +7,10 @@
 
 
 ## 📦 Recipes (7)
-* [psi.json](https://github.com/endowdly/endo-scoop/blob/main/psi.json)
-* [psparklines.json](https://github.com/endowdly/endo-scoop/blob/main/psparklines.json)
-* [gops.json](https://github.com/endowdly/endo-scoop/blob/main/gops.json)
-* [fitz.json](https://github.com/endowdly/endo-scoop/blob/main/fitz.json)
-* [workspacer.json](https://github.com/endowdly/endo-scoop/blob/main/workspacer.json)
-* [gotz.json](https://github.com/endowdly/endo-scoop/blob/main/gotz.json)
-* [dotfiles.json](https://github.com/endowdly/endo-scoop/blob/main/dotfiles.json)
+* [psi.json](https://github.com/endowdly/endo-scoop/blob/main/bucket/psi.json)
+* [psparklines.json](https://github.com/endowdly/endo-scoop/blob/main/bucket/psparklines.json)
+* [gops.json](https://github.com/endowdly/endo-scoop/blob/main/bucket/gops.json)
+* [fitz.json](https://github.com/endowdly/endo-scoop/blob/main/bucket/fitz.json)
+* [workspacer.json](https://github.com/endowdly/endo-scoop/blob/main/bucket/workspacer.json)
+* [gotz.json](https://github.com/endowdly/endo-scoop/blob/main/bucket/gotz.json)
+* [dotfiles.json](https://github.com/endowdly/endo-scoop/blob/main/bucket/dotfiles.json)

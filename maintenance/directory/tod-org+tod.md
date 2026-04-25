@@ -7,4 +7,4 @@
 
 
 ## 📦 Recipes (1)
-* [tod.json](https://github.com/tod-org/tod/blob/main/tod.json)
+* [tod.json](https://github.com/tod-org/tod/blob/main/bucket/tod.json)

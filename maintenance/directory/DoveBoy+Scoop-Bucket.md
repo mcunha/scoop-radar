@@ -7,6 +7,6 @@
 
 
 ## 📦 Recipes (3)
-* [pazq-thspc.json](https://github.com/DoveBoy/Scoop-Bucket/blob/main/pazq-thspc.json)
-* [zyyht.json](https://github.com/DoveBoy/Scoop-Bucket/blob/main/zyyht.json)
-* [whynotwin11.json](https://github.com/DoveBoy/Scoop-Bucket/blob/main/whynotwin11.json)
+* [pazq-thspc.json](https://github.com/DoveBoy/Scoop-Bucket/blob/main/bucket/pazq-thspc.json)
+* [zyyht.json](https://github.com/DoveBoy/Scoop-Bucket/blob/main/bucket/zyyht.json)
+* [whynotwin11.json](https://github.com/DoveBoy/Scoop-Bucket/blob/main/bucket/whynotwin11.json)

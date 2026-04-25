@@ -7,4 +7,4 @@
 
 
 ## 📦 Recipes (1)
-* [process-compose.json](https://github.com/xhorntail/xho-scoops/blob/master/process-compose.json)
+* [process-compose.json](https://github.com/xhorntail/xho-scoops/blob/master/bucket/process-compose.json)

@@ -7,4 +7,4 @@
 
 
 ## 📦 Recipes (1)
-* [hubfetch.json](https://github.com/PranavU-Coder/scoop-bucket/blob/master/hubfetch.json)
+* [hubfetch.json](https://github.com/PranavU-Coder/scoop-bucket/blob/master/bucket/hubfetch.json)

@@ -7,4 +7,4 @@
 
 
 ## 📦 Recipes (1)
-* [posh-theme.json](https://github.com/Dumpinground/themes/blob/master/posh-theme.json)
+* [posh-theme.json](https://github.com/Dumpinground/themes/blob/master/bucket/posh-theme.json)

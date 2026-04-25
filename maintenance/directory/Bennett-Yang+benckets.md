@@ -7,10 +7,10 @@
 
 
 ## 📦 Recipes (7)
-* [image2latex.json](https://github.com/Bennett-Yang/benckets/blob/master/image2latex.json)
-* [officetoolplus.json](https://github.com/Bennett-Yang/benckets/blob/master/officetoolplus.json)
-* [quicker.json](https://github.com/Bennett-Yang/benckets/blob/master/quicker.json)
-* [antdownloadmanager.json](https://github.com/Bennett-Yang/benckets/blob/master/antdownloadmanager.json)
-* [cherrystudio.json](https://github.com/Bennett-Yang/benckets/blob/master/cherrystudio.json)
-* [ptr.json](https://github.com/Bennett-Yang/benckets/blob/master/ptr.json)
-* [bilidown.json](https://github.com/Bennett-Yang/benckets/blob/master/bilidown.json)
+* [image2latex.json](https://github.com/Bennett-Yang/benckets/blob/master/bucket/image2latex.json)
+* [officetoolplus.json](https://github.com/Bennett-Yang/benckets/blob/master/bucket/officetoolplus.json)
+* [quicker.json](https://github.com/Bennett-Yang/benckets/blob/master/bucket/quicker.json)
+* [antdownloadmanager.json](https://github.com/Bennett-Yang/benckets/blob/master/bucket/antdownloadmanager.json)
+* [cherrystudio.json](https://github.com/Bennett-Yang/benckets/blob/master/bucket/cherrystudio.json)
+* [ptr.json](https://github.com/Bennett-Yang/benckets/blob/master/bucket/ptr.json)
+* [bilidown.json](https://github.com/Bennett-Yang/benckets/blob/master/bucket/bilidown.json)

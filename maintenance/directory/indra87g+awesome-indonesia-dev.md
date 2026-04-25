@@ -7,6 +7,6 @@
 
 
 ## 📦 Recipes (3)
-* [urban-cli.json](https://github.com/indra87g/awesome-indonesia-dev/blob/master/urban-cli.json)
-* [geminicommit.json](https://github.com/indra87g/awesome-indonesia-dev/blob/master/geminicommit.json)
-* [geeto.json](https://github.com/indra87g/awesome-indonesia-dev/blob/master/geeto.json)
+* [urban-cli.json](https://github.com/indra87g/awesome-indonesia-dev/blob/master/bucket/urban-cli.json)
+* [geminicommit.json](https://github.com/indra87g/awesome-indonesia-dev/blob/master/bucket/geminicommit.json)
+* [geeto.json](https://github.com/indra87g/awesome-indonesia-dev/blob/master/bucket/geeto.json)

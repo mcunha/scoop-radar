@@ -7,4 +7,4 @@
 
 
 ## 📦 Recipes (1)
-* [dsv-cli.json](https://github.com/DelineaXPM/scoop-bucket/blob/main/dsv-cli.json)
+* [dsv-cli.json](https://github.com/DelineaXPM/scoop-bucket/blob/main/bucket/dsv-cli.json)

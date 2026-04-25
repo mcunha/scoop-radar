@@ -7,4 +7,4 @@
 
 
 ## 📦 Recipes (1)
-* [progressquest.json](https://github.com/tree-s/progressquest/blob/master/progressquest.json)
+* [progressquest.json](https://github.com/tree-s/progressquest/blob/master/bucket/progressquest.json)

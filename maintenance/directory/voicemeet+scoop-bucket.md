@@ -7,4 +7,4 @@
 
 
 ## 📦 Recipes (1)
-* [voicemeet.json](https://github.com/voicemeet/scoop-bucket/blob/main/voicemeet.json)
+* [voicemeet.json](https://github.com/voicemeet/scoop-bucket/blob/main/bucket/voicemeet.json)

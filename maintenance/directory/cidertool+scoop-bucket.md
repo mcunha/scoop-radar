@@ -7,4 +7,4 @@
 
 
 ## 📦 Recipes (1)
-* [cider.json](https://github.com/cidertool/scoop-bucket/blob/main/cider.json)
+* [cider.json](https://github.com/cidertool/scoop-bucket/blob/main/bucket/cider.json)

@@ -7,5 +7,5 @@
 
 
 ## 📦 Recipes (2)
-* [brave.json](https://github.com/toddyoe/scoop-canary/blob/main/brave.json)
-* [chrome.json](https://github.com/toddyoe/scoop-canary/blob/main/chrome.json)
+* [brave.json](https://github.com/toddyoe/scoop-canary/blob/main/bucket/brave.json)
+* [chrome.json](https://github.com/toddyoe/scoop-canary/blob/main/bucket/chrome.json)

@@ -7,4 +7,4 @@
 
 
 ## 📦 Recipes (1)
-* [terraform-docs.json](https://github.com/terraform-docs/scoop-bucket/blob/main/terraform-docs.json)
+* [terraform-docs.json](https://github.com/terraform-docs/scoop-bucket/blob/main/bucket/terraform-docs.json)

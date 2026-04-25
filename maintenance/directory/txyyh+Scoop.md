@@ -7,5 +7,5 @@
 
 
 ## 📦 Recipes (2)
-* [steam-auto-crack.json](https://github.com/txyyh/Scoop/blob/master/steam-auto-crack.json)
-* [obs-studio-proxyhijack.json](https://github.com/txyyh/Scoop/blob/master/obs-studio-proxyhijack.json)
+* [steam-auto-crack.json](https://github.com/txyyh/Scoop/blob/master/bucket/steam-auto-crack.json)
+* [obs-studio-proxyhijack.json](https://github.com/txyyh/Scoop/blob/master/bucket/obs-studio-proxyhijack.json)

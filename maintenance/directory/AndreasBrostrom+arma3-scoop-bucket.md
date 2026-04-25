@@ -7,4 +7,4 @@
 
 
 ## 📦 Recipes (1)
-* [armake.json](https://github.com/AndreasBrostrom/arma3-scoop-bucket/blob/master/armake.json)
+* [armake.json](https://github.com/AndreasBrostrom/arma3-scoop-bucket/blob/master/bucket/armake.json)

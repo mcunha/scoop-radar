@@ -7,5 +7,5 @@
 
 
 ## 📦 Recipes (2)
-* [velodown.json](https://github.com/mlm-games/buckets-scoop/blob/master/velodown.json)
-* [imagot.json](https://github.com/mlm-games/buckets-scoop/blob/master/imagot.json)
+* [velodown.json](https://github.com/mlm-games/buckets-scoop/blob/master/bucket/velodown.json)
+* [imagot.json](https://github.com/mlm-games/buckets-scoop/blob/master/bucket/imagot.json)

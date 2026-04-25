@@ -7,4 +7,4 @@
 
 
 ## 📦 Recipes (1)
-* [konsole.json](https://github.com/tejasraman/Konsole-Scoop/blob/master/konsole.json)
+* [konsole.json](https://github.com/tejasraman/Konsole-Scoop/blob/master/bucket/konsole.json)

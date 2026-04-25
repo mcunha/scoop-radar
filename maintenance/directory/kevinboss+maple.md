@@ -7,6 +7,6 @@
 
 
 ## 📦 Recipes (3)
-* [watchex.json](https://github.com/kevinboss/maple/blob/main/watchex.json)
-* [port.json](https://github.com/kevinboss/maple/blob/main/port.json)
-* [reportify.json](https://github.com/kevinboss/maple/blob/main/reportify.json)
+* [watchex.json](https://github.com/kevinboss/maple/blob/main/bucket/watchex.json)
+* [port.json](https://github.com/kevinboss/maple/blob/main/bucket/port.json)
+* [reportify.json](https://github.com/kevinboss/maple/blob/main/bucket/reportify.json)

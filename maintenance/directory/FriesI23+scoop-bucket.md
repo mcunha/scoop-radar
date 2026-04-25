@@ -7,5 +7,5 @@
 
 
 ## 📦 Recipes (2)
-* [mhabit.json](https://github.com/FriesI23/scoop-bucket/blob/master/mhabit.json)
-* [mhabit-beta.json](https://github.com/FriesI23/scoop-bucket/blob/master/mhabit-beta.json)
+* [mhabit.json](https://github.com/FriesI23/scoop-bucket/blob/master/bucket/mhabit.json)
+* [mhabit-beta.json](https://github.com/FriesI23/scoop-bucket/blob/master/bucket/mhabit-beta.json)

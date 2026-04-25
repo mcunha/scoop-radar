@@ -7,4 +7,4 @@
 
 
 ## 📦 Recipes (1)
-* [bettercleartypetuner.json](https://github.com/arcturegulus/scoop/blob/main/bettercleartypetuner.json)
+* [bettercleartypetuner.json](https://github.com/arcturegulus/scoop/blob/main/bucket/bettercleartypetuner.json)

@@ -7,4 +7,4 @@
 
 
 ## 📦 Recipes (1)
-* [rsgain.json](https://github.com/aisair/scoop-bucket/blob/master/rsgain.json)
+* [rsgain.json](https://github.com/aisair/scoop-bucket/blob/master/bucket/rsgain.json)

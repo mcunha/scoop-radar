@@ -7,5 +7,5 @@
 
 
 ## 📦 Recipes (2)
-* [SnapKey.json](https://github.com/ypurpl/bucket/blob/main/SnapKey.json)
-* [quickbms.json](https://github.com/ypurpl/bucket/blob/main/quickbms.json)
+* [SnapKey.json](https://github.com/ypurpl/bucket/blob/main/bucket/SnapKey.json)
+* [quickbms.json](https://github.com/ypurpl/bucket/blob/main/bucket/quickbms.json)

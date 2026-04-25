@@ -7,4 +7,4 @@
 
 
 ## 📦 Recipes (1)
-* [keyguard.json](https://github.com/AChep/keyguard-repo-scoop/blob/master/keyguard.json)
+* [keyguard.json](https://github.com/AChep/keyguard-repo-scoop/blob/master/bucket/keyguard.json)

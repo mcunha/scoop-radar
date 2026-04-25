@@ -7,5 +7,5 @@
 
 
 ## 📦 Recipes (2)
-* [MufiZ-next.json](https://github.com/Mufi-Lang/mufi-bucket/blob/master/MufiZ-next.json)
-* [MufiZ.json](https://github.com/Mufi-Lang/mufi-bucket/blob/master/MufiZ.json)
+* [MufiZ-next.json](https://github.com/Mufi-Lang/mufi-bucket/blob/master/bucket/MufiZ-next.json)
+* [MufiZ.json](https://github.com/Mufi-Lang/mufi-bucket/blob/master/bucket/MufiZ.json)

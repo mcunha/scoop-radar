@@ -7,4 +7,4 @@
 
 
 ## 📦 Recipes (1)
-* [bitboxapp.json](https://github.com/tree-s/shiftcrypto/blob/master/bitboxapp.json)
+* [bitboxapp.json](https://github.com/tree-s/shiftcrypto/blob/master/bucket/bitboxapp.json)

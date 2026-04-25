@@ -7,5 +7,5 @@
 
 
 ## 📦 Recipes (2)
-* [dssh.json](https://github.com/madLinux7/scoop-bucket/blob/master/dssh.json)
-* [dstimer.json](https://github.com/madLinux7/scoop-bucket/blob/master/dstimer.json)
+* [dssh.json](https://github.com/madLinux7/scoop-bucket/blob/master/bucket/dssh.json)
+* [dstimer.json](https://github.com/madLinux7/scoop-bucket/blob/master/bucket/dstimer.json)

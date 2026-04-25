@@ -7,4 +7,4 @@
 
 
 ## 📦 Recipes (1)
-* [determined.json](https://github.com/sirredbeard/determined-bucket/blob/main/determined.json)
+* [determined.json](https://github.com/sirredbeard/determined-bucket/blob/main/bucket/determined.json)

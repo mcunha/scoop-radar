@@ -7,6 +7,6 @@
 
 
 ## 📦 Recipes (3)
-* [sub_share.json](https://github.com/Yukari0201/scoop-bucket/blob/master/sub_share.json)
-* [carton.json](https://github.com/Yukari0201/scoop-bucket/blob/master/carton.json)
-* [mpcvr.json](https://github.com/Yukari0201/scoop-bucket/blob/master/mpcvr.json)
+* [sub_share.json](https://github.com/Yukari0201/scoop-bucket/blob/master/bucket/sub_share.json)
+* [carton.json](https://github.com/Yukari0201/scoop-bucket/blob/master/bucket/carton.json)
+* [mpcvr.json](https://github.com/Yukari0201/scoop-bucket/blob/master/bucket/mpcvr.json)

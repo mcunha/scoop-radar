@@ -7,4 +7,4 @@
 
 
 ## 📦 Recipes (1)
-* [mIRC.json](https://github.com/tree-s/mIRC/blob/master/mIRC.json)
+* [mIRC.json](https://github.com/tree-s/mIRC/blob/master/bucket/mIRC.json)

@@ -7,4 +7,4 @@
 
 
 ## 📦 Recipes (1)
-* [agentop.json](https://github.com/mohitmishra786/scoop-bucket/blob/main/agentop.json)
+* [agentop.json](https://github.com/mohitmishra786/scoop-bucket/blob/main/bucket/agentop.json)

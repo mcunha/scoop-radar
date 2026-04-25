@@ -7,5 +7,5 @@
 
 
 ## 📦 Recipes (2)
-* [Beaver-Notes.json](https://github.com/Daniele-rolli/Beaver-Bucket/blob/master/Beaver-Notes.json)
-* [Beaver-Notes-arm.json](https://github.com/Daniele-rolli/Beaver-Bucket/blob/master/Beaver-Notes-arm.json)
+* [Beaver-Notes.json](https://github.com/Daniele-rolli/Beaver-Bucket/blob/master/bucket/Beaver-Notes.json)
+* [Beaver-Notes-arm.json](https://github.com/Daniele-rolli/Beaver-Bucket/blob/master/bucket/Beaver-Notes-arm.json)

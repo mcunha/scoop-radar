@@ -7,4 +7,4 @@
 
 
 ## 📦 Recipes (1)
-* [kobweb.json](https://github.com/varabyte/scoop-varabyte/blob/main/kobweb.json)
+* [kobweb.json](https://github.com/varabyte/scoop-varabyte/blob/main/bucket/kobweb.json)

@@ -7,4 +7,4 @@
 
 
 ## 📦 Recipes (1)
-* [vacuumtube.json](https://github.com/Gildedter/scoop-bucket/blob/master/vacuumtube.json)
+* [vacuumtube.json](https://github.com/Gildedter/scoop-bucket/blob/master/bucket/vacuumtube.json)

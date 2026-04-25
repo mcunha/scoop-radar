@@ -7,4 +7,4 @@
 
 
 ## 📦 Recipes (1)
-* [zen-browser.json](https://github.com/Excalian/scoop/blob/master/zen-browser.json)
+* [zen-browser.json](https://github.com/Excalian/scoop/blob/master/bucket/zen-browser.json)

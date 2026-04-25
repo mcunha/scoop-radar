@@ -7,4 +7,4 @@
 
 
 ## 📦 Recipes (1)
-* [dart_mutant.json](https://github.com/Nimblesite/scoop-bucket/blob/main/dart_mutant.json)
+* [dart_mutant.json](https://github.com/Nimblesite/scoop-bucket/blob/main/bucket/dart_mutant.json)

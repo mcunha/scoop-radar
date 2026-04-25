@@ -7,9 +7,9 @@
 
 
 ## 📦 Recipes (6)
-* [ferdium.json](https://github.com/Velgus/Scoop-Velgus/blob/master/ferdium.json)
-* [zentimings.json](https://github.com/Velgus/Scoop-Velgus/blob/master/zentimings.json)
-* [flawless-widescreen.json](https://github.com/Velgus/Scoop-Velgus/blob/master/flawless-widescreen.json)
-* [power-control-panel-v2.json](https://github.com/Velgus/Scoop-Velgus/blob/master/power-control-panel-v2.json)
-* [brogue-ce.json](https://github.com/Velgus/Scoop-Velgus/blob/master/brogue-ce.json)
-* [device-cleanup-tool.json](https://github.com/Velgus/Scoop-Velgus/blob/master/device-cleanup-tool.json)
+* [ferdium.json](https://github.com/Velgus/Scoop-Velgus/blob/master/bucket/ferdium.json)
+* [zentimings.json](https://github.com/Velgus/Scoop-Velgus/blob/master/bucket/zentimings.json)
+* [flawless-widescreen.json](https://github.com/Velgus/Scoop-Velgus/blob/master/bucket/flawless-widescreen.json)
+* [power-control-panel-v2.json](https://github.com/Velgus/Scoop-Velgus/blob/master/bucket/power-control-panel-v2.json)
+* [brogue-ce.json](https://github.com/Velgus/Scoop-Velgus/blob/master/bucket/brogue-ce.json)
+* [device-cleanup-tool.json](https://github.com/Velgus/Scoop-Velgus/blob/master/bucket/device-cleanup-tool.json)

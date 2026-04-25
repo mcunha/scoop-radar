@@ -7,10 +7,10 @@
 
 
 ## 📦 Recipes (7)
-* [neteasemusic.json](https://github.com/uxiew/scoop-fruit/blob/master/neteasemusic.json)
-* [figma.json](https://github.com/uxiew/scoop-fruit/blob/master/figma.json)
-* [MyChrome.json](https://github.com/uxiew/scoop-fruit/blob/master/MyChrome.json)
-* [utools.json](https://github.com/uxiew/scoop-fruit/blob/master/utools.json)
-* [virgo.json](https://github.com/uxiew/scoop-fruit/blob/master/virgo.json)
-* [hbuilderx.json](https://github.com/uxiew/scoop-fruit/blob/master/hbuilderx.json)
-* [scoop-completion.json](https://github.com/uxiew/scoop-fruit/blob/master/scoop-completion.json)
+* [neteasemusic.json](https://github.com/uxiew/scoop-fruit/blob/master/bucket/neteasemusic.json)
+* [figma.json](https://github.com/uxiew/scoop-fruit/blob/master/bucket/figma.json)
+* [MyChrome.json](https://github.com/uxiew/scoop-fruit/blob/master/bucket/MyChrome.json)
+* [utools.json](https://github.com/uxiew/scoop-fruit/blob/master/bucket/utools.json)
+* [virgo.json](https://github.com/uxiew/scoop-fruit/blob/master/bucket/virgo.json)
+* [hbuilderx.json](https://github.com/uxiew/scoop-fruit/blob/master/bucket/hbuilderx.json)
+* [scoop-completion.json](https://github.com/uxiew/scoop-fruit/blob/master/bucket/scoop-completion.json)

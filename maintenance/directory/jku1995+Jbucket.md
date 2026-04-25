@@ -7,4 +7,4 @@
 
 
 ## 📦 Recipes (1)
-* [keepass-plugin-quickunlock.json](https://github.com/jku1995/Jbucket/blob/master/keepass-plugin-quickunlock.json)
+* [keepass-plugin-quickunlock.json](https://github.com/jku1995/Jbucket/blob/master/bucket/keepass-plugin-quickunlock.json)
