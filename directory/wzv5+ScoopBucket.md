@@ -1,0 +1,43 @@
+# wzv5/ScoopBucket
+
+**Repository:** [https://github.com/wzv5/ScoopBucket](https://github.com/wzv5/ScoopBucket)
+**Score:** 1.0
+**Auto-Update:** 97%
+
+
+
+## 📦 Recipes (34)
+* [evernote.json](https://github.com/wzv5/ScoopBucket/blob/master/evernote.json)
+* [zabbix-agent.json](https://github.com/wzv5/ScoopBucket/blob/master/zabbix-agent.json)
+* [zabbix-agent2.json](https://github.com/wzv5/ScoopBucket/blob/master/zabbix-agent2.json)
+* [neteasemusic.json](https://github.com/wzv5/ScoopBucket/blob/master/neteasemusic.json)
+* [vnote.json](https://github.com/wzv5/ScoopBucket/blob/master/vnote.json)
+* [nodejs-bin.json](https://github.com/wzv5/ScoopBucket/blob/master/nodejs-bin.json)
+* [oleviewdotnet.json](https://github.com/wzv5/ScoopBucket/blob/master/oleviewdotnet.json)
+* [aliyundrive.json](https://github.com/wzv5/ScoopBucket/blob/master/aliyundrive.json)
+* [lx-music-desktop.json](https://github.com/wzv5/ScoopBucket/blob/master/lx-music-desktop.json)
+* [yy-thunks.json](https://github.com/wzv5/ScoopBucket/blob/master/yy-thunks.json)
+* [kazumi.json](https://github.com/wzv5/ScoopBucket/blob/master/kazumi.json)
+* [vc-ltl.json](https://github.com/wzv5/ScoopBucket/blob/master/vc-ltl.json)
+* [qqmusic.json](https://github.com/wzv5/ScoopBucket/blob/master/qqmusic.json)
+* [winsw.json](https://github.com/wzv5/ScoopBucket/blob/master/winsw.json)
+* [winscp.json](https://github.com/wzv5/ScoopBucket/blob/master/winscp.json)
+* [pspad.json](https://github.com/wzv5/ScoopBucket/blob/master/pspad.json)
+* [phpmyadmin.json](https://github.com/wzv5/ScoopBucket/blob/master/phpmyadmin.json)
+* [qqlive.json](https://github.com/wzv5/ScoopBucket/blob/master/qqlive.json)
+* [besttrace.json](https://github.com/wzv5/ScoopBucket/blob/master/besttrace.json)
+* [nattypetester.json](https://github.com/wzv5/ScoopBucket/blob/master/nattypetester.json)
+* [applicationinspector.json](https://github.com/wzv5/ScoopBucket/blob/master/applicationinspector.json)
+* [overture.json](https://github.com/wzv5/ScoopBucket/blob/master/overture.json)
+* [pping.json](https://github.com/wzv5/ScoopBucket/blob/master/pping.json)
+* [volumelock.json](https://github.com/wzv5/ScoopBucket/blob/master/volumelock.json)
+* [regex-tool.json](https://github.com/wzv5/ScoopBucket/blob/master/regex-tool.json)
+* [python.json](https://github.com/wzv5/ScoopBucket/blob/master/python.json)
+* [utools.json](https://github.com/wzv5/ScoopBucket/blob/master/utools.json)
+* [php.json](https://github.com/wzv5/ScoopBucket/blob/master/php.json)
+* [gost.json](https://github.com/wzv5/ScoopBucket/blob/master/gost.json)
+* [rathole.json](https://github.com/wzv5/ScoopBucket/blob/master/rathole.json)
+* [winobjex64.json](https://github.com/wzv5/ScoopBucket/blob/master/winobjex64.json)
+* [pyembed-downloader.json](https://github.com/wzv5/ScoopBucket/blob/master/pyembed-downloader.json)
+* [xnview.json](https://github.com/wzv5/ScoopBucket/blob/master/xnview.json)
+* [sni.json](https://github.com/wzv5/ScoopBucket/blob/master/sni.json)

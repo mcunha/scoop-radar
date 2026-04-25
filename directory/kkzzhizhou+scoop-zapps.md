@@ -1,0 +1,43 @@
+# kkzzhizhou/scoop-zapps
+
+**Repository:** [https://github.com/kkzzhizhou/scoop-zapps](https://github.com/kkzzhizhou/scoop-zapps)
+**Score:** 1.0
+**Auto-Update:** 94%
+
+
+
+## 📦 Recipes (34)
+* [nmap.json](https://github.com/kkzzhizhou/scoop-zapps/blob/master/nmap.json)
+* [lockhunter.json](https://github.com/kkzzhizhou/scoop-zapps/blob/master/lockhunter.json)
+* [Notepad3-mod.json](https://github.com/kkzzhizhou/scoop-zapps/blob/master/Notepad3-mod.json)
+* [Proxifier.json](https://github.com/kkzzhizhou/scoop-zapps/blob/master/Proxifier.json)
+* [SetUserFTA.json](https://github.com/kkzzhizhou/scoop-zapps/blob/master/SetUserFTA.json)
+* [wps.json](https://github.com/kkzzhizhou/scoop-zapps/blob/master/wps.json)
+* [rustdesk.json](https://github.com/kkzzhizhou/scoop-zapps/blob/master/rustdesk.json)
+* [Sandboxie-Classic.json](https://github.com/kkzzhizhou/scoop-zapps/blob/master/Sandboxie-Classic.json)
+* [officetool-dotnet.json](https://github.com/kkzzhizhou/scoop-zapps/blob/master/officetool-dotnet.json)
+* [Autoruns.json](https://github.com/kkzzhizhou/scoop-zapps/blob/master/Autoruns.json)
+* [officetool.json](https://github.com/kkzzhizhou/scoop-zapps/blob/master/officetool.json)
+* [Cache-Relocator.json](https://github.com/kkzzhizhou/scoop-zapps/blob/master/Cache-Relocator.json)
+* [electerm.json](https://github.com/kkzzhizhou/scoop-zapps/blob/master/electerm.json)
+* [CompileAHK.json](https://github.com/kkzzhizhou/scoop-zapps/blob/master/CompileAHK.json)
+* [homedale.json](https://github.com/kkzzhizhou/scoop-zapps/blob/master/homedale.json)
+* [coodesker.json](https://github.com/kkzzhizhou/scoop-zapps/blob/master/coodesker.json)
+* [WechatWork.json](https://github.com/kkzzhizhou/scoop-zapps/blob/master/WechatWork.json)
+* [utorrent.json](https://github.com/kkzzhizhou/scoop-zapps/blob/master/utorrent.json)
+* [TwomonUSB.json](https://github.com/kkzzhizhou/scoop-zapps/blob/master/TwomonUSB.json)
+* [googlechrome.json](https://github.com/kkzzhizhou/scoop-zapps/blob/master/googlechrome.json)
+* [DingTalk.json](https://github.com/kkzzhizhou/scoop-zapps/blob/master/DingTalk.json)
+* [TuBaTool.json](https://github.com/kkzzhizhou/scoop-zapps/blob/master/TuBaTool.json)
+* [BlueLifeHostsEditor.json](https://github.com/kkzzhizhou/scoop-zapps/blob/master/BlueLifeHostsEditor.json)
+* [linux-command.json](https://github.com/kkzzhizhou/scoop-zapps/blob/master/linux-command.json)
+* [termius.json](https://github.com/kkzzhizhou/scoop-zapps/blob/master/termius.json)
+* [sdkman.json](https://github.com/kkzzhizhou/scoop-zapps/blob/master/sdkman.json)
+* [ShadowsocksR.json](https://github.com/kkzzhizhou/scoop-zapps/blob/master/ShadowsocksR.json)
+* [QOwnNotes.json](https://github.com/kkzzhizhou/scoop-zapps/blob/master/QOwnNotes.json)
+* [multimarkdown.json](https://github.com/kkzzhizhou/scoop-zapps/blob/master/multimarkdown.json)
+* [AutoHotkey.json](https://github.com/kkzzhizhou/scoop-zapps/blob/master/AutoHotkey.json)
+* [Grub2.json](https://github.com/kkzzhizhou/scoop-zapps/blob/master/Grub2.json)
+* [tinyMediaManager.json](https://github.com/kkzzhizhou/scoop-zapps/blob/master/tinyMediaManager.json)
+* [chrome-with-flash.json](https://github.com/kkzzhizhou/scoop-zapps/blob/master/chrome-with-flash.json)
+* [WinSW.json](https://github.com/kkzzhizhou/scoop-zapps/blob/master/WinSW.json)
