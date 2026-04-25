@@ -1,12 +1,24 @@
 import os
+import time
 import requests
 import pickle
 from git import Repo
 from datetime import datetime, timedelta
 from jinja2 import Environment, FileSystemLoader
 import concurrent.futures
+from requests.adapters import HTTPAdapter
+from urllib3.util.retry import Retry
 
 dir_path = os.path.dirname(os.path.realpath(__file__))
+
+class RateLimitExceededException(Exception):
+    pass
+
+abort_flag = False
+
+session = requests.Session()
+retries = Retry(total=5, backoff_factor=1, status_forcelist=[500, 502, 503, 504])
+session.mount('https://', HTTPAdapter(max_retries=retries))
 
 def get_headers():
     headers = {}
@@ -14,8 +26,39 @@ def get_headers():
         headers['Authorization'] = f"token {os.environ['GITHUB_TOKEN']}"
     return headers
 
+def make_request(url, headers):
+    global abort_flag
+    while True:
+        if abort_flag:
+            raise RateLimitExceededException("Aborted by another thread.")
+            
+        response = session.get(url, headers=headers)
+        
+        if response.status_code in [403, 429]:
+            retry_after = response.headers.get('Retry-After')
+            if retry_after:
+                wait_time = int(retry_after)
+            elif response.headers.get('X-RateLimit-Remaining') == '0':
+                reset_time = int(response.headers.get('X-RateLimit-Reset', time.time() + 60))
+                wait_time = reset_time - int(time.time()) + 1
+            else:
+                # Secondary rate limit or abuse detection without explicit headers
+                wait_time = 60
+                
+            if wait_time > 0:
+                if wait_time > 900: # Abort if wait is > 15 minutes to save CI minutes
+                    print(f"[!] Rate limit reached. Required wait time {wait_time}s is too long. Aborting gracefully.")
+                    abort_flag = True
+                    raise RateLimitExceededException()
+                
+                print(f"[!] Rate limited (Status {response.status_code}). Waiting {wait_time}s before retrying...")
+                time.sleep(wait_time)
+                continue
+                
+        return response
+
 def fetchjson(urlstr):
-    response = requests.get(url=urlstr, headers=get_headers())
+    response = make_request(urlstr, headers=get_headers())
     if response.status_code == 200:
         return response.json()
     return {}
@@ -24,6 +67,10 @@ def is_manifest(path):
     return path.endswith('.json') or path.endswith('.yaml') or path.endswith('.yml')
 
 def process_repo(repo_data, last_run, dir_path, existing_cache_entry):
+    global abort_flag
+    if abort_flag:
+        return None
+
     name = repo_data['name']
     full_name = repo_data['full_name']
     repofoldername = full_name.replace('/','+')
@@ -43,7 +90,6 @@ def process_repo(repo_data, last_run, dir_path, existing_cache_entry):
     
     repo_path = os.path.join(dir_path, 'cache', repofoldername)
     entries = []
-    updated = False
     
     if not existing_cache_entry:
         topics = repo_data.get('topics', [])
@@ -52,18 +98,21 @@ def process_repo(repo_data, last_run, dir_path, existing_cache_entry):
         looks_like_bucket = is_official
         
         if not is_official:
-            # Quickly assess if it's a bucket without downloading everything
-            tree_url = f"https://api.github.com/repos/{full_name}/git/trees/{default_branch}"
-            resp = requests.get(tree_url, headers=get_headers())
-            if resp.status_code == 200:
-                tree_data = resp.json().get('tree', [])
-                for item in tree_data:
-                    if (item['path'] == 'bucket' and item['type'] == 'tree') or is_manifest(item['path']):
-                        looks_like_bucket = True
-                        break
+            try:
+                tree_url = f"https://api.github.com/repos/{full_name}/git/trees/{default_branch}"
+                resp = make_request(tree_url, headers=get_headers())
+                if resp.status_code == 200:
+                    tree_data = resp.json().get('tree', [])
+                    for item in tree_data:
+                        if (item['path'] == 'bucket' and item['type'] == 'tree') or is_manifest(item['path']):
+                            looks_like_bucket = True
+                            break
+            except RateLimitExceededException:
+                # Let the exception bubble up to the main executor thread
+                raise
         
         if looks_like_bucket:
-            # Once verified, use git clone to actually list and cache the repository files
+            if abort_flag: return None
             try:
                 Repo.clone_from(git_clone_url, repo_path, depth=1)
             except Exception:
@@ -79,13 +128,12 @@ def process_repo(repo_data, last_run, dir_path, existing_cache_entry):
                                 
             return repofoldername, {'name': name, 'url': html_url, 'score': float(repo_score), 'entries': entries}, True
         else:
-            # Doesn't look like a bucket, skip and ignore for 30 days
             ignored_until = (datetime.now() + timedelta(days=30)).strftime('%Y-%m-%dT%H:%M:%SZ')
             return repofoldername, {'name': name, 'url': html_url, 'score': float(repo_score), 'entries': [], 'ignored_until': ignored_until}, True
 
     else:
-        # Existing repo
         if last_updated > last_run:
+            if abort_flag: return None
             if os.path.isdir(repo_path):
                 try:
                     repo = Repo(repo_path)
@@ -114,7 +162,7 @@ def process_repo(repo_data, last_run, dir_path, existing_cache_entry):
             return repofoldername, existing_cache_entry, False
 
 def main():
-    # Load cache
+    global abort_flag
     try:
         with open(os.path.join(dir_path,'cache.pickle'), "rb") as input_file:
             cache = pickle.load(input_file)
@@ -126,27 +174,28 @@ def main():
     
     os.makedirs(os.path.join(dir_path, 'cache'), exist_ok=True)
 
-    # Fetch repos
     query = 'topic:scoop-bucket OR topic:shovel-bucket OR topic:scoop-apps OR scoop bucket in:name,description OR shovel bucket in:name,description OR scoop apps in:name,description'
     base_search_url = f'https://api.github.com/search/repositories?q={requests.utils.quote(query)}&per_page=100'
     
     repos_data = []
     page = 1
-    while True:
-        search_url = f"{base_search_url}&page={page}"
-        print(f"Fetching search page {page}...")
-        response_data = fetchjson(search_url)
-        items = response_data.get('items', [])
-        if not items:
-            break
-        repos_data.extend(items)
-        if len(items) < 100:
-            break # Reached the last page
-        page += 1
+    try:
+        while True:
+            search_url = f"{base_search_url}&page={page}"
+            print(f"Fetching search page {page}...")
+            response_data = fetchjson(search_url)
+            items = response_data.get('items', [])
+            if not items:
+                break
+            repos_data.extend(items)
+            if len(items) < 100:
+                break
+            page += 1
+    except RateLimitExceededException:
+        print("[!] Rate limit exceeded during repository search. Proceeding with currently fetched repos.")
     
     updated_count = 0
     
-    # Process concurrently
     with concurrent.futures.ThreadPoolExecutor(max_workers=10) as executor:
         futures = []
         for repo_data in repos_data:
@@ -155,13 +204,19 @@ def main():
             futures.append(executor.submit(process_repo, repo_data, last_run, dir_path, existing_entry))
             
         for future in concurrent.futures.as_completed(futures):
-            repofoldername, entry, updated = future.result()
-            cache[repofoldername] = entry
-            if updated:
-                updated_count += 1
+            try:
+                result = future.result()
+                if result:
+                    repofoldername, entry, updated = result
+                    cache[repofoldername] = entry
+                    if updated:
+                        updated_count += 1
+            except RateLimitExceededException:
+                print("[!] Rate limit exception caught in thread. Shutting down pool cleanly...")
+                abort_flag = True
 
-    # Update last run
-    cache['last_run'] = datetime.strftime(datetime.now().replace(hour=0, minute=0, second=0),'%Y-%m-%dT%H:%M:%SZ')
+    if not abort_flag:
+        cache['last_run'] = datetime.strftime(datetime.now().replace(hour=0, minute=0, second=0),'%Y-%m-%dT%H:%M:%SZ')
 
     try:
         with open(os.path.join(dir_path,'cache.pickle'), "wb") as input_file:
@@ -171,13 +226,11 @@ def main():
         
     print(f'{updated_count} repos updated')
 
-    # Sort Repos by github score
     repos = [repo for repo in cache.keys() if repo != 'last_run']
     actual_repos = [repo for repo in repos if len(cache[repo].get('entries', [])) > 0]
     actual_repos = sorted(actual_repos, key=lambda repo: cache[repo]['score'], reverse=True)
     print(f'{len(actual_repos)} valid repositories found.')
 
-    # Update Readme file
     TEMPLATE_ENVIRONMENT = Environment(
         autoescape=False,
         loader=FileSystemLoader(os.path.join(dir_path, 'template')),
