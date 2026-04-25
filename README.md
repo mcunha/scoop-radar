@@ -11,7 +11,7 @@ This project was heavily inspired by the original `awesome-scoop` directories ma
 # 📊 Ecosystem Health
 * **Total Unique Recipes**: 54665
 * **Ecosystem Auto-Update Health**: 85.86%
-* **Ecosystem Reliability**: 83.7% (Sampled URL Health)
+* **Ecosystem Reliability**: 88.2% (Sampled URL Health)
 * **Official vs. Community**: 31131 Official / 49149 Community
 * **Bucket Ecosystem**: 52 Scoop / 2 Shovel
 * **Bucket Graveyard (Stale > 1 Year)**: 🪦 3
@@ -138,11 +138,11 @@ These buckets are fully compatible with Scoop (and Shovel). They contain standar
 
 * **[tldrw/scoop-security](directory/tldrw+scoop-security.md)** — 📦 119 Recipes | ⭐ Score: 1.0 | 🔄 Auto-Update: 97%
 
+* **[amorphobia/siku](directory/amorphobia+siku.md)** — 📦 100 Recipes | ⭐ Score: 1.0 | 🔄 Auto-Update: 95%
+
 * **[akirco/aki-apps](directory/akirco+aki-apps.md)** — 📦 302 Recipes | ⭐ Score: 1.0 | 🔄 Auto-Update: 86%
 
 * **[Scoopforge/Extras-CN](directory/Scoopforge+Extras-CN.md)** — 📦 89 Recipes | ⭐ Score: 1.0 | 🔄 Auto-Update: 97%
-
-* **[amorphobia/siku](directory/amorphobia+siku.md)** — 📦 100 Recipes | ⭐ Score: 1.0 | 🔄 Auto-Update: 95%
 
 * **[niheaven/scoop-sysinternals](directory/niheaven+scoop-sysinternals.md)** — 📦 75 Recipes | ⭐ Score: 1.0 | 🔄 Auto-Update: 100% ⭐ Known Scoop Bucket
 
@@ -154,41 +154,41 @@ These buckets are fully compatible with Scoop (and Shovel). They contain standar
 
 * **[jonz94/scoop-sarasa-nerd-fonts](directory/jonz94+scoop-sarasa-nerd-fonts.md)** — 📦 49 Recipes | ⭐ Score: 1.0 | 🔄 Auto-Update: 100%
 
-* **[ScoopInstaller/Extras](directory/ScoopInstaller+Extras.md)** — 📦 2300 Recipes | ⭐ Score: 1.0 | 🔄 Auto-Update: 92% 👑 Official Scoop Bucket ⭐ Known Shovel Bucket
-
 * **[zhoujin7/tomato](directory/zhoujin7+tomato.md)** — 📦 52 Recipes | ⭐ Score: 1.0 | 🔄 Auto-Update: 85%
-
-* **[ScoopInstaller/Main](directory/ScoopInstaller+Main.md)** — 📦 1506 Recipes | ⭐ Score: 1.0 | 🔄 Auto-Update: 94% 👑 Official Scoop Bucket ⭐ Known Shovel Bucket
 
 * **[Paxxs/Cluttered-bucket](directory/Paxxs+Cluttered-bucket.md)** — 📦 46 Recipes | ⭐ Score: 1.0 | 🔄 Auto-Update: 91%
 
-* **[TheRandomLabs/Scoop-Python](directory/TheRandomLabs+Scoop-Python.md)** — 📦 25 Recipes | ⭐ Score: 1.0 | 🔄 Auto-Update: 100%
+* **[ScoopInstaller/Extras](directory/ScoopInstaller+Extras.md)** — 📦 2300 Recipes | ⭐ Score: 1.0 | 🔄 Auto-Update: 92% 👑 Official Scoop Bucket ⭐ Known Shovel Bucket
+
+* **[ScoopInstaller/Main](directory/ScoopInstaller+Main.md)** — 📦 1506 Recipes | ⭐ Score: 1.0 | 🔄 Auto-Update: 94% 👑 Official Scoop Bucket ⭐ Known Shovel Bucket
 
 * **[wzv5/ScoopBucket](directory/wzv5+ScoopBucket.md)** — 📦 34 Recipes | ⭐ Score: 1.0 | 🔄 Auto-Update: 97%
 
-* **[ScoopInstaller/Versions](directory/ScoopInstaller+Versions.md)** — 📦 571 Recipes | ⭐ Score: 1.0 | 🔄 Auto-Update: 74% 👑 Official Scoop Bucket ⭐ Known Shovel Bucket
+* **[TheRandomLabs/Scoop-Python](directory/TheRandomLabs+Scoop-Python.md)** — 📦 25 Recipes | ⭐ Score: 1.0 | 🔄 Auto-Update: 100%
 
 * **[ScoopInstaller/PHP](directory/ScoopInstaller+PHP.md)** — 📦 391 Recipes | ⭐ Score: 1.0 | 🔄 Auto-Update: 4% 👑 Official Scoop Bucket ⭐ Known Shovel Bucket
 
 * **[kkzzhizhou/scoop-zapps](directory/kkzzhizhou+scoop-zapps.md)** — 📦 34 Recipes | ⭐ Score: 1.0 | 🔄 Auto-Update: 94%
 
+* **[borger/scoop-galaxy-integrations](directory/borger+scoop-galaxy-integrations.md)** — 📦 21 Recipes | ⭐ Score: 1.0 | 🔄 Auto-Update: 100%
+
 * **[ScoopInstaller/Java](directory/ScoopInstaller+Java.md)** — 📦 329 Recipes | ⭐ Score: 1.0 | 🔄 Auto-Update: 86% 👑 Official Scoop Bucket ⭐ Known Shovel Bucket
 
 * **[noql-net/scoop](directory/noql-net+scoop.md)** — 📦 28 Recipes | ⭐ Score: 1.0 | 🔄 Auto-Update: 100%
 
+* **[ScoopInstaller/Versions](directory/ScoopInstaller+Versions.md)** — 📦 571 Recipes | ⭐ Score: 1.0 | 🔄 Auto-Update: 74% 👑 Official Scoop Bucket ⭐ Known Shovel Bucket
+
 * **[ScoopInstaller/Nirsoft](directory/ScoopInstaller+Nirsoft.md)** — 📦 290 Recipes | ⭐ Score: 1.0 | 🔄 Auto-Update: 100% 👑 Official Scoop Bucket
-
-* **[borger/scoop-galaxy-integrations](directory/borger+scoop-galaxy-integrations.md)** — 📦 21 Recipes | ⭐ Score: 1.0 | 🔄 Auto-Update: 100%
-
-* **[TheCjw/scoop-retools](directory/TheCjw+scoop-retools.md)** — 📦 19 Recipes | ⭐ Score: 1.0 | 🔄 Auto-Update: 79%
 
 * **[ScoopInstaller/Nonportable](directory/ScoopInstaller+Nonportable.md)** — 📦 131 Recipes | ⭐ Score: 1.0 | 🔄 Auto-Update: 88% 👑 Official Scoop Bucket
 
+* **[TheCjw/scoop-retools](directory/TheCjw+scoop-retools.md)** — 📦 19 Recipes | ⭐ Score: 1.0 | 🔄 Auto-Update: 79%
+
 * **[TheRandomLabs/scoop-nonportable](directory/TheRandomLabs+scoop-nonportable.md)** — 📦 73 Recipes | ⭐ Score: 1.0 | 🔄 Auto-Update: 86% ⭐ Known Shovel Bucket
 
-* **[tetradice/scoop-iyokan-jp](directory/tetradice+scoop-iyokan-jp.md)** — 📦 13 Recipes | ⭐ Score: 1.0 | 🔄 Auto-Update: 100%
-
 * **[TheRandomLabs/Scoop-Spotify](directory/TheRandomLabs+Scoop-Spotify.md)** — 📦 10 Recipes | ⭐ Score: 1.0 | 🔄 Auto-Update: 90%
+
+* **[tetradice/scoop-iyokan-jp](directory/tetradice+scoop-iyokan-jp.md)** — 📦 13 Recipes | ⭐ Score: 1.0 | 🔄 Auto-Update: 100%
 
 * **[EFLKumo/jam](directory/EFLKumo+jam.md)** — 📦 10 Recipes | ⭐ Score: 1.0 | 🔄 Auto-Update: 100%
 
@@ -332,11 +332,11 @@ A combined list of every bucket discovered in the ecosystem.
 
 * **[tldrw/scoop-security](directory/tldrw+scoop-security.md)** — 📦 119 Recipes | ⭐ Score: 1.0 | 🔄 Auto-Update: 97%
 
+* **[amorphobia/siku](directory/amorphobia+siku.md)** — 📦 100 Recipes | ⭐ Score: 1.0 | 🔄 Auto-Update: 95%
+
 * **[akirco/aki-apps](directory/akirco+aki-apps.md)** — 📦 302 Recipes | ⭐ Score: 1.0 | 🔄 Auto-Update: 86%
 
 * **[Scoopforge/Extras-CN](directory/Scoopforge+Extras-CN.md)** — 📦 89 Recipes | ⭐ Score: 1.0 | 🔄 Auto-Update: 97%
-
-* **[amorphobia/siku](directory/amorphobia+siku.md)** — 📦 100 Recipes | ⭐ Score: 1.0 | 🔄 Auto-Update: 95%
 
 * **[niheaven/scoop-sysinternals](directory/niheaven+scoop-sysinternals.md)** — 📦 75 Recipes | ⭐ Score: 1.0 | 🔄 Auto-Update: 100% ⭐ Known Scoop Bucket
 
@@ -350,43 +350,43 @@ A combined list of every bucket discovered in the ecosystem.
 
 * **[Small-Ku/turbo-bucket](directory/Small-Ku+turbo-bucket.md)** — 📦 49 Recipes | ⭐ Score: 1.0 | 🔄 Auto-Update: 96%
 
-* **[ScoopInstaller/Extras](directory/ScoopInstaller+Extras.md)** — 📦 2300 Recipes | ⭐ Score: 1.0 | 🔄 Auto-Update: 92% 👑 Official Scoop Bucket ⭐ Known Shovel Bucket
-
 * **[zhoujin7/tomato](directory/zhoujin7+tomato.md)** — 📦 52 Recipes | ⭐ Score: 1.0 | 🔄 Auto-Update: 85%
+
+* **[Paxxs/Cluttered-bucket](directory/Paxxs+Cluttered-bucket.md)** — 📦 46 Recipes | ⭐ Score: 1.0 | 🔄 Auto-Update: 91%
+
+* **[ScoopInstaller/Extras](directory/ScoopInstaller+Extras.md)** — 📦 2300 Recipes | ⭐ Score: 1.0 | 🔄 Auto-Update: 92% 👑 Official Scoop Bucket ⭐ Known Shovel Bucket
 
 * **[ScoopInstaller/Main](directory/ScoopInstaller+Main.md)** — 📦 1506 Recipes | ⭐ Score: 1.0 | 🔄 Auto-Update: 94% 👑 Official Scoop Bucket ⭐ Known Shovel Bucket
 
-* **[Paxxs/Cluttered-bucket](directory/Paxxs+Cluttered-bucket.md)** — 📦 46 Recipes | ⭐ Score: 1.0 | 🔄 Auto-Update: 91%
+* **[wzv5/ScoopBucket](directory/wzv5+ScoopBucket.md)** — 📦 34 Recipes | ⭐ Score: 1.0 | 🔄 Auto-Update: 97%
 
 * **[littleli/scoop-clojure](directory/littleli+scoop-clojure.md)** — 📦 27 Recipes | ⭐ Score: 1.0 | 🔄 Auto-Update: 100%
 
 * **[TheRandomLabs/Scoop-Python](directory/TheRandomLabs+Scoop-Python.md)** — 📦 25 Recipes | ⭐ Score: 1.0 | 🔄 Auto-Update: 100%
 
-* **[wzv5/ScoopBucket](directory/wzv5+ScoopBucket.md)** — 📦 34 Recipes | ⭐ Score: 1.0 | 🔄 Auto-Update: 97%
-
-* **[ScoopInstaller/Versions](directory/ScoopInstaller+Versions.md)** — 📦 571 Recipes | ⭐ Score: 1.0 | 🔄 Auto-Update: 74% 👑 Official Scoop Bucket ⭐ Known Shovel Bucket
-
 * **[ScoopInstaller/PHP](directory/ScoopInstaller+PHP.md)** — 📦 391 Recipes | ⭐ Score: 1.0 | 🔄 Auto-Update: 4% 👑 Official Scoop Bucket ⭐ Known Shovel Bucket
 
 * **[kkzzhizhou/scoop-zapps](directory/kkzzhizhou+scoop-zapps.md)** — 📦 34 Recipes | ⭐ Score: 1.0 | 🔄 Auto-Update: 94%
+
+* **[borger/scoop-galaxy-integrations](directory/borger+scoop-galaxy-integrations.md)** — 📦 21 Recipes | ⭐ Score: 1.0 | 🔄 Auto-Update: 100%
 
 * **[ScoopInstaller/Java](directory/ScoopInstaller+Java.md)** — 📦 329 Recipes | ⭐ Score: 1.0 | 🔄 Auto-Update: 86% 👑 Official Scoop Bucket ⭐ Known Shovel Bucket
 
 * **[noql-net/scoop](directory/noql-net+scoop.md)** — 📦 28 Recipes | ⭐ Score: 1.0 | 🔄 Auto-Update: 100%
 
+* **[ScoopInstaller/Versions](directory/ScoopInstaller+Versions.md)** — 📦 571 Recipes | ⭐ Score: 1.0 | 🔄 Auto-Update: 74% 👑 Official Scoop Bucket ⭐ Known Shovel Bucket
+
 * **[ScoopInstaller/Nirsoft](directory/ScoopInstaller+Nirsoft.md)** — 📦 290 Recipes | ⭐ Score: 1.0 | 🔄 Auto-Update: 100% 👑 Official Scoop Bucket
-
-* **[borger/scoop-galaxy-integrations](directory/borger+scoop-galaxy-integrations.md)** — 📦 21 Recipes | ⭐ Score: 1.0 | 🔄 Auto-Update: 100%
-
-* **[TheCjw/scoop-retools](directory/TheCjw+scoop-retools.md)** — 📦 19 Recipes | ⭐ Score: 1.0 | 🔄 Auto-Update: 79%
 
 * **[ScoopInstaller/Nonportable](directory/ScoopInstaller+Nonportable.md)** — 📦 131 Recipes | ⭐ Score: 1.0 | 🔄 Auto-Update: 88% 👑 Official Scoop Bucket
 
+* **[TheCjw/scoop-retools](directory/TheCjw+scoop-retools.md)** — 📦 19 Recipes | ⭐ Score: 1.0 | 🔄 Auto-Update: 79%
+
 * **[TheRandomLabs/scoop-nonportable](directory/TheRandomLabs+scoop-nonportable.md)** — 📦 73 Recipes | ⭐ Score: 1.0 | 🔄 Auto-Update: 86% ⭐ Known Shovel Bucket
 
-* **[tetradice/scoop-iyokan-jp](directory/tetradice+scoop-iyokan-jp.md)** — 📦 13 Recipes | ⭐ Score: 1.0 | 🔄 Auto-Update: 100%
-
 * **[TheRandomLabs/Scoop-Spotify](directory/TheRandomLabs+Scoop-Spotify.md)** — 📦 10 Recipes | ⭐ Score: 1.0 | 🔄 Auto-Update: 90%
+
+* **[tetradice/scoop-iyokan-jp](directory/tetradice+scoop-iyokan-jp.md)** — 📦 13 Recipes | ⭐ Score: 1.0 | 🔄 Auto-Update: 100%
 
 * **[EFLKumo/jam](directory/EFLKumo+jam.md)** — 📦 10 Recipes | ⭐ Score: 1.0 | 🔄 Auto-Update: 100%
 
@@ -419,6 +419,6 @@ A combined list of every bucket discovered in the ecosystem.
 * **API Rate Limit Retries**: ⏳ 0
 * **Cache Size**: 💾 1.60 MB
 * **Pipeline Times (Last Run)**:
-  * 🔍 Discovery: 2.39s
-  * 📥 Update: 511.27s
-* **Cumulative Compute Time**: 8.6 minutes
+  * 🔍 Discovery: 2.24s
+  * 📥 Update: 636.87s
+* **Cumulative Compute Time**: 10.7 minutes

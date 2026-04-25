@@ -1,11 +1,11 @@
 {
   "evictions": [],
   "metadata": {
-    "generated_at": "2026-04-25T18:13:47Z",
+    "generated_at": "2026-04-25T18:46:11Z",
     "count": 0,
     "global_metrics": {
       "total_runs": 2,
-      "total_run_time_seconds": 514.7241826057434,
+      "total_run_time_seconds": 640.2961134910583,
       "total_repo_updates": 60,
       "previous_total_buckets": 54,
       "previous_total_recipes": 80280,
@@ -13,9 +13,9 @@
       "recipe_velocity": 80280,
       "total_evictions": 0,
       "total_api_retries": 0,
-      "last_run_discover_time": 2.393153190612793,
-      "last_run_update_time": 511.27294278144836,
-      "ecosystem_reliability": 83.7,
+      "last_run_discover_time": 2.244016408920288,
+      "last_run_update_time": 636.8654451370239,
+      "ecosystem_reliability": 88.2,
       "cache_size_mb": 1.5992813110351562,
       "total_unique_recipes": 54665,
       "auto_update_percentage": 85.86,
