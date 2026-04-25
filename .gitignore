@@ -1,3 +1,11 @@
 venv/
 cache/
 *.pickle
+__pycache__/
+*.py[cod]
+*$py.class
+.coverage
+htmlcov/
+.pytest_cache/
+.ruff_cache/
+.venv/
