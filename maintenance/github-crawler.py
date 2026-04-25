@@ -66,35 +66,48 @@ def fetchjson(urlstr):
 def is_manifest(path):
     return path.endswith('.json') or path.endswith('.yaml') or path.endswith('.yml')
 
-def process_repo(repo_data, last_run, dir_path, existing_cache_entry):
+def upgrade_cache_entry(repofoldername, entry):
+    if 'full_name' not in entry:
+        entry['full_name'] = repofoldername.replace('+', '/')
+    if 'git_url' not in entry:
+        entry['git_url'] = f"git://github.com/{entry['full_name']}.git"
+    if 'html_url' not in entry:
+        entry['html_url'] = entry.get('url', f"https://github.com/{entry['full_name']}")
+    if 'default_branch' not in entry:
+        entry['default_branch'] = 'master'
+    if 'topics' not in entry:
+        entry['topics'] = []
+    if 'last_checked' not in entry:
+        entry['last_checked'] = '2000-01-01T00:00:00Z'
+    return entry
+
+def process_repo(repofoldername, cache_entry, dir_path):
     global abort_flag
     if abort_flag:
         return None
 
-    name = repo_data['name']
-    full_name = repo_data['full_name']
-    repofoldername = full_name.replace('/','+')
-    
-    if existing_cache_entry and 'ignored_until' in existing_cache_entry:
-        ignored_until = datetime.strptime(existing_cache_entry['ignored_until'], '%Y-%m-%dT%H:%M:%SZ')
-        if datetime.now() < ignored_until:
-            return repofoldername, existing_cache_entry, False
-        else:
-            existing_cache_entry = None
+    cache_entry = upgrade_cache_entry(repofoldername, cache_entry)
 
-    git_clone_url = repo_data['git_url']
-    html_url = repo_data['html_url']
-    repo_score = repo_data['score']
-    last_updated = datetime.strptime(repo_data['updated_at'],'%Y-%m-%dT%H:%M:%SZ')
-    default_branch = repo_data.get('default_branch', 'master')
+    if 'ignored_until' in cache_entry:
+        ignored_until = datetime.strptime(cache_entry['ignored_until'], '%Y-%m-%dT%H:%M:%SZ')
+        if datetime.now() < ignored_until:
+            cache_entry['last_checked'] = datetime.now().strftime('%Y-%m-%dT%H:%M:%SZ')
+            return repofoldername, cache_entry, False
+        else:
+            del cache_entry['ignored_until']
+
+    full_name = cache_entry['full_name']
+    git_clone_url = cache_entry['git_url']
+    default_branch = cache_entry['default_branch']
     
     repo_path = os.path.join(dir_path, 'cache', repofoldername)
     entries = []
     
-    if not existing_cache_entry:
-        topics = repo_data.get('topics', [])
+    is_first_time = cache_entry['last_checked'] == '2000-01-01T00:00:00Z'
+    
+    if is_first_time:
+        topics = cache_entry['topics']
         is_official = 'scoop-bucket' in topics or 'shovel-bucket' in topics or 'scoop-apps' in topics
-        
         looks_like_bucket = is_official
         
         if not is_official:
@@ -108,7 +121,6 @@ def process_repo(repo_data, last_run, dir_path, existing_cache_entry):
                             looks_like_bucket = True
                             break
             except RateLimitExceededException:
-                # Let the exception bubble up to the main executor thread
                 raise
         
         if looks_like_bucket:
@@ -126,82 +138,109 @@ def process_repo(repo_data, last_run, dir_path, existing_cache_entry):
                             if os.path.isfile(file_path) and is_manifest(f):
                                 entries.append(os.path.splitext(f)[0])
                                 
-            return repofoldername, {'name': name, 'url': html_url, 'score': float(repo_score), 'entries': entries}, True
+            cache_entry['entries'] = entries
+            cache_entry['last_checked'] = datetime.now().strftime('%Y-%m-%dT%H:%M:%SZ')
+            return repofoldername, cache_entry, True
         else:
             ignored_until = (datetime.now() + timedelta(days=30)).strftime('%Y-%m-%dT%H:%M:%SZ')
-            return repofoldername, {'name': name, 'url': html_url, 'score': float(repo_score), 'entries': [], 'ignored_until': ignored_until}, True
+            cache_entry['entries'] = []
+            cache_entry['ignored_until'] = ignored_until
+            cache_entry['last_checked'] = datetime.now().strftime('%Y-%m-%dT%H:%M:%SZ')
+            return repofoldername, cache_entry, True
 
     else:
-        if last_updated > last_run:
-            if abort_flag: return None
-            if os.path.isdir(repo_path):
-                try:
-                    repo = Repo(repo_path)
-                    o = repo.remotes.origin
-                    o.pull(depth=1)
-                except Exception:
-                    pass
-            else:
-                try:
-                    Repo.clone_from(git_clone_url, repo_path, depth=1)
-                except Exception:
-                    pass
-            
-            if os.path.isdir(repo_path):
-                for d in [repo_path, os.path.join(repo_path, 'bucket')]:
-                    if os.path.isdir(d):
-                        for f in os.listdir(d):
-                            file_path = os.path.join(d, f)
-                            if os.path.isfile(file_path) and is_manifest(f):
-                                entries.append(os.path.splitext(f)[0])
-                existing_cache_entry['entries'] = entries
-            existing_cache_entry['score'] = float(repo_score)
-            return repofoldername, existing_cache_entry, True
+        # Existing repo update
+        if abort_flag: return None
+        if os.path.isdir(repo_path):
+            try:
+                repo = Repo(repo_path)
+                o = repo.remotes.origin
+                o.pull(depth=1)
+            except Exception:
+                pass
         else:
-            existing_cache_entry['score'] = float(repo_score)
-            return repofoldername, existing_cache_entry, False
+            try:
+                Repo.clone_from(git_clone_url, repo_path, depth=1)
+            except Exception:
+                pass
+        
+        if os.path.isdir(repo_path):
+            for d in [repo_path, os.path.join(repo_path, 'bucket')]:
+                if os.path.isdir(d):
+                    for f in os.listdir(d):
+                        file_path = os.path.join(d, f)
+                        if os.path.isfile(file_path) and is_manifest(f):
+                            entries.append(os.path.splitext(f)[0])
+            cache_entry['entries'] = entries
+            
+        cache_entry['last_checked'] = datetime.now().strftime('%Y-%m-%dT%H:%M:%SZ')
+        return repofoldername, cache_entry, True
 
 def main():
     global abort_flag
+    MAX_REPOS_TO_PROCESS = 60 # Process 60 repos per hourly slice
+    
     try:
         with open(os.path.join(dir_path,'cache.pickle'), "rb") as input_file:
             cache = pickle.load(input_file)
     except (EnvironmentError, EOFError):
         cache = {}
-        cache['last_run'] = datetime(2000, 1, 1).strftime('%Y-%m-%dT%H:%M:%SZ')
-
-    last_run = datetime.strptime(cache.get('last_run', '2000-01-01T00:00:00Z'), '%Y-%m-%dT%H:%M:%SZ')
-    
+        
     os.makedirs(os.path.join(dir_path, 'cache'), exist_ok=True)
 
+    # 1. SEARCH SLICE (Find new repositories)
+    search_page = cache.get('search_page', 1)
     query = 'topic:scoop-bucket OR topic:shovel-bucket OR topic:scoop-apps OR scoop bucket in:name,description OR shovel bucket in:name,description OR scoop apps in:name,description'
-    base_search_url = f'https://api.github.com/search/repositories?q={requests.utils.quote(query)}&per_page=100'
+    search_url = f'https://api.github.com/search/repositories?q={requests.utils.quote(query)}&per_page=100&page={search_page}'
     
-    repos_data = []
-    page = 1
+    print(f"[*] Discovery Phase: Fetching search page {search_page}...")
     try:
-        while True:
-            search_url = f"{base_search_url}&page={page}"
-            print(f"Fetching search page {page}...")
-            response_data = fetchjson(search_url)
-            items = response_data.get('items', [])
-            if not items:
-                break
-            repos_data.extend(items)
-            if len(items) < 100:
-                break
-            page += 1
+        response_data = fetchjson(search_url)
+        items = response_data.get('items', [])
+        if not items:
+            print("[*] Reached end of search results. Resetting search page to 1.")
+            cache['search_page'] = 1
+        else:
+            cache['search_page'] = search_page + 1
+            for item in items:
+                repofoldername = item['full_name'].replace('/', '+')
+                if repofoldername not in cache:
+                    cache[repofoldername] = {
+                        'name': item['name'],
+                        'full_name': item['full_name'],
+                        'git_url': item['git_url'],
+                        'html_url': item['html_url'],
+                        'score': float(item['score']),
+                        'default_branch': item.get('default_branch', 'master'),
+                        'topics': item.get('topics', []),
+                        'last_checked': '2000-01-01T00:00:00Z',
+                        'entries': []
+                    }
+                else:
+                    # Refresh score and topics if it exists
+                    cache[repofoldername]['score'] = float(item['score'])
+                    cache[repofoldername]['topics'] = item.get('topics', [])
     except RateLimitExceededException:
-        print("[!] Rate limit exceeded during repository search. Proceeding with currently fetched repos.")
+        print("[!] Rate limit exceeded during repository search. Skipping search this run.")
+        abort_flag = False # Reset abort flag so we can try processing cached ones
+
+    # 2. PROCESSING SLICE (Update existing/new repositories)
+    repo_keys = [k for k in cache.keys() if k not in ('search_page', 'last_run')]
+    # Ensure they are cleanly upgraded
+    for k in repo_keys:
+        cache[k] = upgrade_cache_entry(k, cache[k])
+        
+    # Sort repos by 'last_checked' ascending (oldest checked first)
+    repo_keys.sort(key=lambda k: cache[k]['last_checked'])
+    
+    repos_to_process = repo_keys[:MAX_REPOS_TO_PROCESS]
+    print(f"[*] Processing Phase: Updating {len(repos_to_process)} out of {len(repo_keys)} total known repositories...")
     
     updated_count = 0
-    
     with concurrent.futures.ThreadPoolExecutor(max_workers=10) as executor:
         futures = []
-        for repo_data in repos_data:
-            repofoldername = repo_data['full_name'].replace('/', '+')
-            existing_entry = cache.get(repofoldername)
-            futures.append(executor.submit(process_repo, repo_data, last_run, dir_path, existing_entry))
+        for repofoldername in repos_to_process:
+            futures.append(executor.submit(process_repo, repofoldername, cache[repofoldername], dir_path))
             
         for future in concurrent.futures.as_completed(futures):
             try:
@@ -215,21 +254,19 @@ def main():
                 print("[!] Rate limit exception caught in thread. Shutting down pool cleanly...")
                 abort_flag = True
 
-    if not abort_flag:
-        cache['last_run'] = datetime.strftime(datetime.now().replace(hour=0, minute=0, second=0),'%Y-%m-%dT%H:%M:%SZ')
-
+    # Save cache
     try:
         with open(os.path.join(dir_path,'cache.pickle'), "wb") as input_file:
             pickle.dump(cache, input_file)
     except EnvironmentError:
         pass
         
-    print(f'{updated_count} repos updated')
+    print(f'[*] Slice complete. {updated_count} repos actually updated their data/files.')
 
-    repos = [repo for repo in cache.keys() if repo != 'last_run']
-    actual_repos = [repo for repo in repos if len(cache[repo].get('entries', [])) > 0]
-    actual_repos = sorted(actual_repos, key=lambda repo: cache[repo]['score'], reverse=True)
-    print(f'{len(actual_repos)} valid repositories found.')
+    # 3. GENERATE README (Always generate a fresh README with whatever state the cache is in)
+    actual_repos = [cache[repo] for repo in repo_keys if len(cache[repo].get('entries', [])) > 0]
+    actual_repos = sorted(actual_repos, key=lambda repo: repo['score'], reverse=True)
+    print(f'[*] {len(actual_repos)} valid repositories found.')
 
     TEMPLATE_ENVIRONMENT = Environment(
         autoescape=False,

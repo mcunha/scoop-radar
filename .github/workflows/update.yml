@@ -2,7 +2,7 @@ name: Update Awesome Scoop README
 
 on:
   schedule:
-    - cron: '0 0 * * *' # Run daily at midnight
+    - cron: '0 * * * *' # Run hourly
   workflow_dispatch: # Allow manual trigger
   push:
     branches:
