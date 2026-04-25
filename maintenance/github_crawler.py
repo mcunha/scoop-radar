@@ -201,7 +201,7 @@ def main():
     timeseries = cache.get("timeseries_history", [])
 
     # Inject historical seed data if we are missing it (e.g. running in CI for the first few times)
-    if len(timeseries) <= 1:
+    if len(timeseries) < 80:
         seed_path = os.path.join(dir_path, "seed_timeseries.json")
         if os.path.exists(seed_path):
             import json
