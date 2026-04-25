@@ -43,7 +43,7 @@ jobs:
           uv run scoop-radar-updater
 
       - name: Commit and push changes
-        uses: stefanzweifel/git-auto-commit-action@v6
+        uses: stefanzweifel/git-auto-commit-action@v7.1.0
         with:
           commit_message: "Automated README update [ci skip]"
           file_pattern: README.md

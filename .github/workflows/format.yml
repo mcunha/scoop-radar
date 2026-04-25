@@ -31,7 +31,7 @@ jobs:
           uv run ruff format .
 
       - name: Auto-commit formatting fixes
-        uses: stefanzweifel/git-auto-commit-action@v6
+        uses: stefanzweifel/git-auto-commit-action@v7.1.0
         with:
           commit_message: "style: auto-format code with Ruff"
           commit_user_name: "github-actions[bot]"
