@@ -2,7 +2,7 @@ import os
 import requests
 import pickle
 from git import Repo
-from datetime import datetime
+from datetime import datetime, timedelta
 from jinja2 import Environment, FileSystemLoader
 import concurrent.futures
 
@@ -27,6 +27,14 @@ def process_repo(repo_data, last_run, dir_path, existing_cache_entry):
     name = repo_data['name']
     full_name = repo_data['full_name']
     repofoldername = full_name.replace('/','+')
+    
+    if existing_cache_entry and 'ignored_until' in existing_cache_entry:
+        ignored_until = datetime.strptime(existing_cache_entry['ignored_until'], '%Y-%m-%dT%H:%M:%SZ')
+        if datetime.now() < ignored_until:
+            return repofoldername, existing_cache_entry, False
+        else:
+            existing_cache_entry = None
+
     git_clone_url = repo_data['git_url']
     html_url = repo_data['html_url']
     repo_score = repo_data['score']
@@ -71,8 +79,9 @@ def process_repo(repo_data, last_run, dir_path, existing_cache_entry):
                                 
             return repofoldername, {'name': name, 'url': html_url, 'score': float(repo_score), 'entries': entries}, True
         else:
-            # Doesn't look like a bucket, skip
-            return repofoldername, {'name': name, 'url': html_url, 'score': float(repo_score), 'entries': []}, True
+            # Doesn't look like a bucket, skip and ignore for 30 days
+            ignored_until = (datetime.now() + timedelta(days=30)).strftime('%Y-%m-%dT%H:%M:%SZ')
+            return repofoldername, {'name': name, 'url': html_url, 'score': float(repo_score), 'entries': [], 'ignored_until': ignored_until}, True
 
     else:
         # Existing repo
