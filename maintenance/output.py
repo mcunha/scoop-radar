@@ -6,7 +6,7 @@ from datetime import datetime
 
 import pygal
 from jinja2 import Environment, FileSystemLoader
-from pygal.style import CleanStyle
+from pygal.style import CleanStyle, DarkStyle
 
 
 def generate_growth_charts(timeseries, dir_path):
@@ -15,27 +15,30 @@ def generate_growth_charts(timeseries, dir_path):
         # We only want to show the last 30 data points so it doesn't get too squished
         display_series = timeseries[-30:] if len(timeseries) > 30 else timeseries
 
-        chart = pygal.StackedBar(
-            style=CleanStyle,
-            legend_at_bottom=True,
-            show_y_guides=True,
-            title=f"Recipe Churn: {ecosystem.capitalize()}",
-            x_label_rotation=45,
-            show_minor_y_labels=False,
-        )
+        for theme_name, theme_style in [("light", CleanStyle), ("dark", DarkStyle)]:
+            chart = pygal.StackedBar(
+                style=theme_style,
+                legend_at_bottom=True,
+                show_y_guides=True,
+                title=f"Recipe Churn: {ecosystem.capitalize()}",
+                x_label_rotation=45,
+                show_minor_y_labels=False,
+            )
 
-        # Don't show every single date label if we have lots of dates
-        chart.x_labels = [t["date"] for t in display_series]
+            # Don't show every single date label if we have lots of dates
+            chart.x_labels = [t["date"] for t in display_series]
 
-        retained = [t[ecosystem]["retained"] for t in display_series]
-        added = [t[ecosystem]["added"] for t in display_series]
-        deleted = [t[ecosystem]["deleted"] for t in display_series]  # these are negative
+            retained = [t[ecosystem]["retained"] for t in display_series]
+            added = [t[ecosystem]["added"] for t in display_series]
+            deleted = [t[ecosystem]["deleted"] for t in display_series]  # these are negative
 
-        chart.add("Retained", retained, color="#3498DB")
-        chart.add("Added (Net New)", added, color="#2ECC71")
-        chart.add("Deleted", deleted, color="#E74C3C")
+            chart.add("Retained", retained, color="#3498DB")
+            chart.add("Added (Net New)", added, color="#2ECC71")
+            chart.add("Deleted", deleted, color="#E74C3C")
 
-        chart.render_to_file(os.path.join(dir_path, "..", f"growth_{ecosystem}.svg"))
+            chart.render_to_file(
+                os.path.join(dir_path, "..", f"growth_{ecosystem}_{theme_name}.svg")
+            )
 
 
 def generate_readme(

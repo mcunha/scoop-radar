@@ -17,12 +17,24 @@ This project was heavily inspired by the original `awesome-scoop` directories ma
 * **Bucket Graveyard (Stale > 1 Year)**: 🪦 0
 
 ### Ecosystem Growth (All Recipes)
-![All Recipes Growth](growth_all.svg)
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="growth_all_dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="growth_all_light.svg">
+  <img alt="All Recipes Growth" src="growth_all_light.svg">
+</picture>
 
 ### Scoop vs Shovel Growth
 <p align="center">
-  <img src="growth_scoop.svg" width="49%">
-  <img src="growth_shovel.svg" width="49%">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="growth_scoop_dark.svg">
+    <source media="(prefers-color-scheme: light)" srcset="growth_scoop_light.svg">
+    <img alt="Scoop Recipes Growth" src="growth_scoop_light.svg" width="49%">
+  </picture>
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="growth_shovel_dark.svg">
+    <source media="(prefers-color-scheme: light)" srcset="growth_shovel_light.svg">
+    <img alt="Shovel Recipes Growth" src="growth_shovel_light.svg" width="49%">
+  </picture>
 </p>
 
 # 🚀 Getting Started

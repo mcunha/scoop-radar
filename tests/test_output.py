@@ -21,9 +21,12 @@ def test_generate_growth_charts(tmp_path):
     dummy_dir.mkdir()
     generate_growth_charts(timeseries, str(dummy_dir))
 
-    assert (tmp_path / "growth_all.svg").exists()
-    assert (tmp_path / "growth_scoop.svg").exists()
-    assert (tmp_path / "growth_shovel.svg").exists()
+    assert (tmp_path / "growth_all_light.svg").exists()
+    assert (tmp_path / "growth_scoop_light.svg").exists()
+    assert (tmp_path / "growth_shovel_light.svg").exists()
+    assert (tmp_path / "growth_all_dark.svg").exists()
+    assert (tmp_path / "growth_scoop_dark.svg").exists()
+    assert (tmp_path / "growth_shovel_dark.svg").exists()
 
 
 def test_generate_readme(tmp_path):

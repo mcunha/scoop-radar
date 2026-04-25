@@ -1,11 +1,11 @@
 {
   "evictions": [],
   "metadata": {
-    "generated_at": "2026-04-25T12:58:18Z",
+    "generated_at": "2026-04-25T15:19:07Z",
     "count": 0,
     "global_metrics": {
-      "total_runs": 4,
-      "total_run_time_seconds": 2.7790887355804443,
+      "total_runs": 5,
+      "total_run_time_seconds": 3.771352529525757,
       "total_repo_updates": 1,
       "full_name": "global_metrics",
       "git_url": "git://github.com/global_metrics.git",
@@ -26,16 +26,17 @@
       "consecutive_failures": 0,
       "total_evictions": 0,
       "total_api_retries": 0,
-      "last_run_discover_time": 0.2773575782775879,
-      "last_run_update_time": 0.002692699432373047,
-      "cache_size_mb": 0.022602081298828125,
+      "last_run_discover_time": 0.3168528079986572,
+      "last_run_update_time": 0.0009882450103759766,
+      "cache_size_mb": 0.022851943969726562,
       "total_unique_recipes": 0,
       "auto_update_percentage": 0.0,
       "official_recipes": 0,
       "community_recipes": 0,
       "stale_buckets": 0,
       "shovel_buckets": 0,
-      "scoop_buckets": 0
+      "scoop_buckets": 0,
+      "ecosystem_reliability": 100.0
     }
   }
 }
