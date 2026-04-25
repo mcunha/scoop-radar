@@ -341,8 +341,14 @@ def main():
         topics = repo.get('topics', [])
         entries = repo.get('entries', [])
         
-        repo['is_scoop_official'] = repo.get('full_name', '').lower() in [b.lower() for b in KNOWN_SCOOP_BUCKETS]
-        repo['is_shovel_official'] = repo.get('full_name', '').lower() in [b.lower() for b in KNOWN_SHOVEL_BUCKETS] or repo.get('full_name', '').lower().startswith('ash258/')
+        full_name_lower = repo.get('full_name', '').lower()
+        repo_org = full_name_lower.split('/')[0] if '/' in full_name_lower else ''
+        
+        repo['is_scoop_official'] = repo_org in OFFICIAL_SCOOP_ORGS
+        repo['is_scoop_known'] = full_name_lower in [b.lower() for b in KNOWN_SCOOP_BUCKETS]
+        
+        repo['is_shovel_official'] = repo_org in OFFICIAL_SHOVEL_ORGS
+        repo['is_shovel_known'] = full_name_lower in [b.lower() for b in KNOWN_SHOVEL_BUCKETS]
         
         is_shovel = 'shovel-bucket' in topics or any(e.endswith('.yaml') or e.endswith('.yml') for e in entries)
         if is_shovel:
