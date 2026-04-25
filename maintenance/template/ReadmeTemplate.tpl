@@ -75,18 +75,21 @@ These active buckets are rapidly climbing the ranks due to recent, high-quality 
 {% endfor %}
 {% endif %}
 
+{% macro render_bucket_table(repos) -%}
+| Repository | Recipes | Score | Auto-Update | Badges |
+| :--- | :---: | :---: | :---: | :--- |
+{% for repo in repos -%}
+| **[{{repo.full_name}}](directory/{{repo.full_name|replace('/', '+')}}.md)** | 📦 {{ repo.entries|length }} | ⭐ {{repo.score}} | 🔄 {{ "%.0f"|format((repo.checkver_count / repo.entries|length * 100) if repo.entries|length > 0 else 0) }}% | {% if repo.is_scoop_official %}👑 Official Scoop{% elif repo.is_scoop_known %}⭐ Known Scoop{% endif %}{% if repo.is_shovel_official %}<br>👑 Official Shovel{% elif repo.is_shovel_known %}<br>⭐ Known Shovel{% endif %} |
+{% endfor %}
+{%- endmacro %}
+
 ## 🥄 Scoop Compatible Buckets
 These buckets are fully compatible with Scoop (and Shovel). They contain standard JSON manifests.
 
 <details>
 <summary><b>Click to expand {{ scoop_repos|length }} Scoop buckets</b></summary>
 
-| Repository | Recipes | Score | Auto-Update | Badges |
-| :--- | :---: | :---: | :---: | :--- |
-{% for repo in scoop_repos -%}
-| **[{{repo.full_name}}](directory/{{repo.full_name|replace('/', '+')}}.md)** | 📦 {{ repo.entries|length }} | ⭐ {{repo.score}} | 🔄 {{ "%.0f"|format((repo.checkver_count / repo.entries|length * 100) if repo.entries|length > 0 else 0) }}% | {% if repo.is_scoop_official %}👑 Official Scoop{% elif repo.is_scoop_known %}⭐ Known Scoop{% endif %}{% if repo.is_shovel_official %}<br>👑 Official Shovel{% elif repo.is_shovel_known %}<br>⭐ Known Shovel{% endif %} |
-{% endfor %}
-
+{{ render_bucket_table(scoop_repos) }}
 </details>
 
 ## ⛏️ Shovel Specific Buckets
@@ -95,12 +98,7 @@ These buckets utilize Shovel-specific features (like native YAML manifests) or a
 <details>
 <summary><b>Click to expand {{ shovel_repos|length }} Shovel buckets</b></summary>
 
-| Repository | Recipes | Score | Auto-Update | Badges |
-| :--- | :---: | :---: | :---: | :--- |
-{% for repo in shovel_repos %}
-| **[{{repo.full_name}}](directory/{{repo.full_name|replace('/', '+')}}.md)** | 📦 {{ repo.entries|length }} | ⭐ {{repo.score}} | 🔄 {{ "%.0f"|format((repo.checkver_count / repo.entries|length * 100) if repo.entries|length > 0 else 0) }}% | {% if repo.is_scoop_official %}👑 Official Scoop{% elif repo.is_scoop_known %}⭐ Known Scoop{% endif %}{% if repo.is_shovel_official %}<br>👑 Official Shovel{% elif repo.is_shovel_known %}<br>⭐ Known Shovel{% endif %} |
-{% endfor %}
-
+{{ render_bucket_table(shovel_repos) }}
 </details>
 
 ## 📦 All Known Buckets
@@ -109,12 +107,7 @@ A combined list of every bucket discovered in the ecosystem.
 <details>
 <summary><b>Click to expand all {{ all_repos|length }} discovered buckets</b></summary>
 
-| Repository | Recipes | Score | Auto-Update | Badges |
-| :--- | :---: | :---: | :---: | :--- |
-{% for repo in all_repos -%}
-| **[{{repo.full_name}}](directory/{{repo.full_name|replace('/', '+')}}.md)** | 📦 {{ repo.entries|length }} | ⭐ {{repo.score}} | 🔄 {{ "%.0f"|format((repo.checkver_count / repo.entries|length * 100) if repo.entries|length > 0 else 0) }}% | {% if repo.is_scoop_official %}👑 Official Scoop{% elif repo.is_scoop_known %}⭐ Known Scoop{% endif %}{% if repo.is_shovel_official %}<br>👑 Official Shovel{% elif repo.is_shovel_known %}<br>⭐ Known Shovel{% endif %} |
-{% endfor %}
-
+{{ render_bucket_table(all_repos) }}
 </details>
 
 # 🛠️ Operational Health (Crawler Metrics)
