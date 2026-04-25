@@ -63,6 +63,8 @@ def test_generate_readme(tmp_path):
     template_file.write_text(
         "Test template with {{ all_repos[0].full_name }} and {{ metrics.total_runs }} runs"
     )
+    bucket_template_file = template_dir / "BucketTemplate.tpl"
+    bucket_template_file.write_text("Test bucket template")
 
     generate_readme(
         actual_repos, scoop_repos, shovel_repos, hidden_gems, trending, metrics, str(tmp_path)
