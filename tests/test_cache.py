@@ -26,7 +26,7 @@ def test_upgrade_cache_entry_defaults():
     upgraded = upgrade_cache_entry("user+repo", entry)
 
     assert upgraded["full_name"] == "user/repo"
-    assert upgraded["git_url"] == "git://github.com/user/repo.git"
+    assert upgraded["git_url"] == "https://github.com/user/repo.git"
     assert upgraded["html_url"] == "https://github.com/user/repo"
     assert upgraded["default_branch"] == "master"
     assert upgraded["topics"] == []

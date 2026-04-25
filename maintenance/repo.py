@@ -248,18 +248,36 @@ def process_repo(repofoldername, cache_entry, dir_path):
 
 def discover_repositories(cache):
     """Search for new repositories on GitHub."""
+    queries = [
+        "topic:scoop-bucket",
+        "topic:shovel-bucket",
+        "topic:scoop-apps",
+        "scoop bucket in:name,description",
+        "shovel bucket in:name,description",
+        "scoop apps in:name,description",
+    ]
+
+    query_index = cache.get("search_query_index", 0)
     search_page = cache.get("search_page", 1)
-    query = "topic:scoop-bucket OR topic:shovel-bucket OR topic:scoop-apps OR scoop bucket in:name,description OR shovel bucket in:name,description OR scoop apps in:name,description"
+
+    if query_index >= len(queries):
+        query_index = 0
+        search_page = 1
+
+    query = queries[query_index]
     search_url = f"https://api.github.com/search/repositories?q={requests.utils.quote(query)}&per_page=100&page={search_page}"
-    print(f"[*] Discovery Phase: Fetching search page {search_page}...")
+
+    print(f"[*] Discovery Phase: Fetching search page {search_page} for query '{query}'...")
     try:
         response_data = fetchjson(search_url)
         items = response_data.get("items", [])
         if not items:
-            print("[*] Reached end of search results. Resetting search page to 1.")
+            print("[*] Reached end of search results for this query. Advancing to next query.")
             cache["search_page"] = 1
+            cache["search_query_index"] = query_index + 1
         else:
             cache["search_page"] = search_page + 1
+            cache["search_query_index"] = query_index
             for item in items:
                 repofoldername = item["full_name"].replace("/", "+")
                 if repofoldername not in cache:

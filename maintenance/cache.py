@@ -26,8 +26,8 @@ def upgrade_cache_entry(repofoldername, entry):
     """Ensure a cache entry has all required default fields."""
     if "full_name" not in entry:
         entry["full_name"] = repofoldername.replace("+", "/")
-    if "git_url" not in entry:
-        entry["git_url"] = f"git://github.com/{entry['full_name']}.git"
+    if "git_url" not in entry or entry["git_url"].startswith("git://"):
+        entry["git_url"] = f"https://github.com/{entry['full_name']}.git"
     if "html_url" not in entry:
         entry["html_url"] = entry.get("url", f"https://github.com/{entry['full_name']}")
     if "default_branch" not in entry:
