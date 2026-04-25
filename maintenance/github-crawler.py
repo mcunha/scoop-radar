@@ -171,7 +171,7 @@ def process_repo(repofoldername, cache_entry, dir_path):
                         for f in os.listdir(d):
                             file_path = os.path.join(d, f)
                             if os.path.isfile(file_path) and is_manifest(f):
-                                entries.append(os.path.splitext(f)[0])
+                                entries.append(f)
                                 
             cache_entry['entries'] = entries
             cache_entry['last_checked'] = datetime.now().strftime('%Y-%m-%dT%H:%M:%SZ')
@@ -205,7 +205,7 @@ def process_repo(repofoldername, cache_entry, dir_path):
                     for f in os.listdir(d):
                         file_path = os.path.join(d, f)
                         if os.path.isfile(file_path) and is_manifest(f):
-                            entries.append(os.path.splitext(f)[0])
+                            entries.append(f)
             cache_entry['entries'] = entries
             
         cache_entry['last_checked'] = datetime.now().strftime('%Y-%m-%dT%H:%M:%SZ')
@@ -308,9 +308,35 @@ def main():
     print(f'[*] Slice complete. {updated_count} repos actually updated their data/files.')
 
     # 3. GENERATE README (Always generate a fresh README with whatever state the cache is in)
+    # Upgrade existing stripped extensions
+    for repofoldername in repo_keys:
+        entry = cache[repofoldername]
+        if 'entries' in entry:
+            new_entries = []
+            for e in entry['entries']:
+                if not e.endswith('.json') and not e.endswith('.yaml') and not e.endswith('.yml'):
+                    new_entries.append(e + '.json')
+                else:
+                    new_entries.append(e)
+            entry['entries'] = new_entries
+
     actual_repos = [cache[repo] for repo in repo_keys if len(cache[repo].get('entries', [])) > 0]
     actual_repos = sorted(actual_repos, key=lambda repo: repo['score'], reverse=True)
-    print(f'[*] {len(actual_repos)} valid repositories found.')
+    
+    scoop_repos = []
+    shovel_repos = []
+    
+    for repo in actual_repos:
+        topics = repo.get('topics', [])
+        entries = repo.get('entries', [])
+        
+        is_shovel = 'shovel-bucket' in topics or any(e.endswith('.yaml') or e.endswith('.yml') for e in entries)
+        if is_shovel:
+            shovel_repos.append(repo)
+        else:
+            scoop_repos.append(repo)
+
+    print(f'[*] {len(actual_repos)} total valid repositories ({len(scoop_repos)} Scoop, {len(shovel_repos)} Shovel).')
 
     TEMPLATE_ENVIRONMENT = Environment(
         autoescape=False,
@@ -318,8 +344,9 @@ def main():
         trim_blocks=False)
     
     context = {
-        'sortedrepos': actual_repos,
-        'cache': cache
+        'all_repos': actual_repos,
+        'scoop_repos': scoop_repos,
+        'shovel_repos': shovel_repos
     }
     
     markdown_content = TEMPLATE_ENVIRONMENT.get_template('ReadmeTemplate.tpl').render(context)
