@@ -1,0 +1,12 @@
+# nightshadecf/scoop-bucket
+
+**Repository:** [https://github.com/nightshadecf/scoop-bucket](https://github.com/nightshadecf/scoop-bucket)
+**Score:** 1.0
+**Auto-Update:** 100%
+
+
+
+## 📦 Recipes (3)
+* [elvish-persist.json](https://github.com/nightshadecf/scoop-bucket/blob/main/elvish-persist.json)
+* [httpie-gui.json](https://github.com/nightshadecf/scoop-bucket/blob/main/httpie-gui.json)
+* [yandex.json](https://github.com/nightshadecf/scoop-bucket/blob/main/yandex.json)

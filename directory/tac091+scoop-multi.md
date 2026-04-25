@@ -1,0 +1,40 @@
+# tac091/scoop-multi
+
+**Repository:** [https://github.com/tac091/scoop-multi](https://github.com/tac091/scoop-multi)
+**Score:** 1.0
+**Auto-Update:** 87%
+
+
+
+## 📦 Recipes (31)
+* [anki.json](https://github.com/tac091/scoop-multi/blob/main/anki.json)
+* [AnyTXTSearcher.json](https://github.com/tac091/scoop-multi/blob/main/AnyTXTSearcher.json)
+* [autodarkmode.json](https://github.com/tac091/scoop-multi/blob/main/autodarkmode.json)
+* [autodarkmodex.json](https://github.com/tac091/scoop-multi/blob/main/autodarkmodex.json)
+* [Capslock-plus.json](https://github.com/tac091/scoop-multi/blob/main/Capslock-plus.json)
+* [DevSidecar.json](https://github.com/tac091/scoop-multi/blob/main/DevSidecar.json)
+* [DuplicateCleanerPro.json](https://github.com/tac091/scoop-multi/blob/main/DuplicateCleanerPro.json)
+* [idm.json](https://github.com/tac091/scoop-multi/blob/main/idm.json)
+* [imewlconverter.json](https://github.com/tac091/scoop-multi/blob/main/imewlconverter.json)
+* [listary-beta.json](https://github.com/tac091/scoop-multi/blob/main/listary-beta.json)
+* [mouseinc.json](https://github.com/tac091/scoop-multi/blob/main/mouseinc.json)
+* [neteasemusic.json](https://github.com/tac091/scoop-multi/blob/main/neteasemusic.json)
+* [netsetman.json](https://github.com/tac091/scoop-multi/blob/main/netsetman.json)
+* [obsidian.json](https://github.com/tac091/scoop-multi/blob/main/obsidian.json)
+* [OfficeToolPlus.json](https://github.com/tac091/scoop-multi/blob/main/OfficeToolPlus.json)
+* [OneCommander.json](https://github.com/tac091/scoop-multi/blob/main/OneCommander.json)
+* [PixPin.json](https://github.com/tac091/scoop-multi/blob/main/PixPin.json)
+* [powershell.json](https://github.com/tac091/scoop-multi/blob/main/powershell.json)
+* [ProcessLasso.json](https://github.com/tac091/scoop-multi/blob/main/ProcessLasso.json)
+* [qimgv.json](https://github.com/tac091/scoop-multi/blob/main/qimgv.json)
+* [Quicker.json](https://github.com/tac091/scoop-multi/blob/main/Quicker.json)
+* [Rime.json](https://github.com/tac091/scoop-multi/blob/main/Rime.json)
+* [snipaste-beta.json](https://github.com/tac091/scoop-multi/blob/main/snipaste-beta.json)
+* [tagLyst.json](https://github.com/tac091/scoop-multi/blob/main/tagLyst.json)
+* [tai.json](https://github.com/tac091/scoop-multi/blob/main/tai.json)
+* [TIM.json](https://github.com/tac091/scoop-multi/blob/main/TIM.json)
+* [ventoy.json](https://github.com/tac091/scoop-multi/blob/main/ventoy.json)
+* [VMware.json](https://github.com/tac091/scoop-multi/blob/main/VMware.json)
+* [watttoolkit.json](https://github.com/tac091/scoop-multi/blob/main/watttoolkit.json)
+* [wubilex.json](https://github.com/tac091/scoop-multi/blob/main/wubilex.json)
+* [yesplaymusic.json](https://github.com/tac091/scoop-multi/blob/main/yesplaymusic.json)

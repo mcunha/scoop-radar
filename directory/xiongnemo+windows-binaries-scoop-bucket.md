@@ -1,0 +1,11 @@
+# xiongnemo/windows-binaries-scoop-bucket
+
+**Repository:** [https://github.com/xiongnemo/windows-binaries-scoop-bucket](https://github.com/xiongnemo/windows-binaries-scoop-bucket)
+**Score:** 1.0
+**Auto-Update:** 100%
+
+
+
+## 📦 Recipes (2)
+* [nermius-nightly.json](https://github.com/xiongnemo/windows-binaries-scoop-bucket/blob/master/nermius-nightly.json)
+* [SonicLair.Cli.json](https://github.com/xiongnemo/windows-binaries-scoop-bucket/blob/master/SonicLair.Cli.json)
