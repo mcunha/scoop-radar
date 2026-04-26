@@ -6,5 +6,6 @@
 
 
 
+
 ## 📦 Recipes (1)
 * [keepass-plugin-keechallenge.json](https://github.com/meenzen/scoop/blob/main/bucket/keepass-plugin-keechallenge.json)

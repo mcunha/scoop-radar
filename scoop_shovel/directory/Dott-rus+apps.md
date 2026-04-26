@@ -6,6 +6,7 @@
 
 
 
+
 ## 📦 Recipes (19)
 * [kanata.json](https://github.com/Dott-rus/apps/blob/master/bucket/kanata.json)
 * [obsidian.json](https://github.com/Dott-rus/apps/blob/master/bucket/obsidian.json)

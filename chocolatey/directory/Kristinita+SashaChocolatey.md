@@ -1,0 +1,47 @@
+# Kristinita/SashaChocolatey
+
+* **Repository:** [https://github.com/Kristinita/SashaChocolatey](https://github.com/Kristinita/SashaChocolatey)
+* **Score:** 1.0
+* **Auto-Update:** 0%
+
+
+
+
+## 📦 Recipes (37)
+* [cmdutils.nuspec](https://github.com/Kristinita/SashaChocolatey/blob/master/packages/CmdUtils/cmdutils.nuspec)
+* [wisemo.nuspec](https://github.com/Kristinita/SashaChocolatey/blob/master/packages/Wise Memory Optimizer/wisemo.nuspec)
+* [winaero-tweaker.nuspec](https://github.com/Kristinita/SashaChocolatey/blob/master/packages/Winaero Tweaker/winaero-tweaker.nuspec)
+* [x-fire.nuspec](https://github.com/Kristinita/SashaChocolatey/blob/master/packages/X-Fire/x-fire.nuspec)
+* [folder-marker.nuspec](https://github.com/Kristinita/SashaChocolatey/blob/master/packages/Folder Marker Free/folder-marker.nuspec)
+* [wassapp.nuspec](https://github.com/Kristinita/SashaChocolatey/blob/master/packages/Wassapp/wassapp.nuspec)
+* [winstep-nexus.nuspec](https://github.com/Kristinita/SashaChocolatey/blob/master/packages/Winstep Nexus/winstep-nexus.nuspec)
+* [4k-stogram.nuspec](https://github.com/Kristinita/SashaChocolatey/blob/master/packages/4K Stogram/4k-stogram.nuspec)
+* [powerresizer.nuspec](https://github.com/Kristinita/SashaChocolatey/blob/master/packages/PowerResizer/powerresizer.nuspec)
+* [permain.nuspec](https://github.com/Kristinita/SashaChocolatey/blob/master/packages/Performance Maintainer/permain.nuspec)
+* [racem.nuspec](https://github.com/Kristinita/SashaChocolatey/blob/master/packages/Robust Audio Converter Extractor Max/racem.nuspec)
+* [mpg123.nuspec](https://github.com/Kristinita/SashaChocolatey/blob/master/packages/mpg123/mpg123.nuspec)
+* [gtypist.nuspec](https://github.com/Kristinita/SashaChocolatey/blob/master/packages/GNU Typist/gtypist.nuspec)
+* [mega.nuspec](https://github.com/Kristinita/SashaChocolatey/blob/master/packages/MEGA/mega.nuspec)
+* [registry-backup.nuspec](https://github.com/Kristinita/SashaChocolatey/blob/master/packages/Registry Backup/registry-backup.nuspec)
+* [meazure.nuspec](https://github.com/Kristinita/SashaChocolatey/blob/master/packages/Meazure/meazure.nuspec)
+* [preme.nuspec](https://github.com/Kristinita/SashaChocolatey/blob/master/packages/Preme For Windows/preme.nuspec)
+* [gramblr.nuspec](https://github.com/Kristinita/SashaChocolatey/blob/master/packages/Gramblr/gramblr.nuspec)
+* [yandex.disk.nuspec](https://github.com/Kristinita/SashaChocolatey/blob/master/packages/Yandex.Disk/yandex.disk.nuspec)
+* [advanced-regedit.nuspec](https://github.com/Kristinita/SashaChocolatey/blob/master/packages/Advanced Regedit/advanced-regedit.nuspec)
+* [winaero-tweaker.install.nuspec](https://github.com/Kristinita/SashaChocolatey/blob/master/packages/Winaero Tweaker (Install)/winaero-tweaker.install.nuspec)
+* [winaero-tweaker-portable.nuspec](https://github.com/Kristinita/SashaChocolatey/blob/master/packages/Winaero Tweaker (Portable)/winaero-tweaker-portable.nuspec)
+* [sopcast.nuspec](https://github.com/Kristinita/SashaChocolatey/blob/master/packages/SopCast/sopcast.nuspec)
+* [gtm.nuspec](https://github.com/Kristinita/SashaChocolatey/blob/master/packages/Git Time Metric/gtm.nuspec)
+* [clipjump.nuspec](https://github.com/Kristinita/SashaChocolatey/blob/master/packages/Clipjump/clipjump.nuspec)
+* [wox.nuspec](https://github.com/Kristinita/SashaChocolatey/blob/master/packages/Wox/wox.nuspec)
+* [supd2.nuspec](https://github.com/Kristinita/SashaChocolatey/blob/master/packages/Samsung Universal Print Driver/supd2.nuspec)
+* [deimos-driver.nuspec](https://github.com/Kristinita/SashaChocolatey/blob/master/packages/Deimos Mouse Driver/deimos-driver.nuspec)
+* [Karen's Replicator.nuspec](https://github.com/Kristinita/SashaChocolatey/blob/master/packages/Karen's Replicator/Karen's Replicator.nuspec)
+* [jumpshare.nuspec](https://github.com/Kristinita/SashaChocolatey/blob/master/packages/Jumpshare/jumpshare.nuspec)
+* [vale.nuspec](https://github.com/Kristinita/SashaChocolatey/blob/master/packages/Vale/vale.nuspec)
+* [anvide-seal-folder.nuspec](https://github.com/Kristinita/SashaChocolatey/blob/master/packages/Anvide Seal Folder/anvide-seal-folder.nuspec)
+* [the wonderful icon.nuspec](https://github.com/Kristinita/SashaChocolatey/blob/master/packages/The Wonderful Icon/the wonderful icon.nuspec)
+* [vidi-dc.nuspec](https://github.com/Kristinita/SashaChocolatey/blob/master/packages/ViDi-DC/vidi-dc.nuspec)
+* [cursor-commander.nuspec](https://github.com/Kristinita/SashaChocolatey/blob/master/packages/Cursor Commander/cursor-commander.nuspec)
+* [smillaenlarger.nuspec](https://github.com/Kristinita/SashaChocolatey/blob/master/packages/SmillaEnlarger/smillaenlarger.nuspec)
+* [rpc.nuspec](https://github.com/Kristinita/SashaChocolatey/blob/master/packages/Restore Point Creator/rpc.nuspec)

@@ -6,6 +6,7 @@
 
 
 
+
 ## 📦 Recipes (6)
 * [orca-slicer.json](https://github.com/schmitzCatz/awesome-scoop-bucket/blob/master/bucket/orca-slicer.json)
 * [flipper-animation-manager.json](https://github.com/schmitzCatz/awesome-scoop-bucket/blob/master/bucket/flipper-animation-manager.json)

@@ -6,6 +6,7 @@
 
 
 
+
 ## 📦 Recipes (4)
 * [easinote.json](https://github.com/ShihaoShenDev/ScoopBucket/blob/main/bucket/easinote.json)
 * [classisland.json](https://github.com/ShihaoShenDev/ScoopBucket/blob/main/bucket/classisland.json)

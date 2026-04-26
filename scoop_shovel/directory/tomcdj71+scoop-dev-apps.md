@@ -6,6 +6,7 @@
 
 
 
+
 ## 📦 Recipes (146)
 * [eclipse-modeling.json](https://github.com/tomcdj71/scoop-dev-apps/blob/main/bucket/eclipse-modeling.json)
 * [lazygit.json](https://github.com/tomcdj71/scoop-dev-apps/blob/main/bucket/lazygit.json)

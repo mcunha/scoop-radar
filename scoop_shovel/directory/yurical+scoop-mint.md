@@ -6,6 +6,7 @@
 
 
 
+
 ## 📦 Recipes (29)
 * [smali.json](https://github.com/yurical/scoop-mint/blob/master/bucket/smali.json)
 * [xnbcli.json](https://github.com/yurical/scoop-mint/blob/master/bucket/xnbcli.json)

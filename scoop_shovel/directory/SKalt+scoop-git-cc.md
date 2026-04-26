@@ -6,5 +6,6 @@
 
 
 
+
 ## 📦 Recipes (1)
 * [git-cc.json](https://github.com/SKalt/scoop-git-cc/blob/main/git-cc.json)

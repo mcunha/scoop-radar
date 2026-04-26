@@ -6,6 +6,7 @@
 
 
 
+
 ## 📦 Recipes (41)
 * [poptracker.json](https://github.com/Spiraster/scoop-bucket/blob/main/bucket/poptracker.json)
 * [lockhunter.json](https://github.com/Spiraster/scoop-bucket/blob/main/bucket/lockhunter.json)

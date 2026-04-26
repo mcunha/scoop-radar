@@ -6,6 +6,7 @@
 
 
 
+
 ## 📦 Recipes (35)
 * [adobe-creative-cloud-cleaner-tool.json](https://github.com/maoyeedy/Scoop/blob/master/bucket/adobe-creative-cloud-cleaner-tool.json)
 * [koalageddon2.json](https://github.com/maoyeedy/Scoop/blob/master/bucket/koalageddon2.json)

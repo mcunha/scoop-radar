@@ -6,5 +6,6 @@
 
 
 
+
 ## 📦 Recipes (1)
 * [kdash.json](https://github.com/kdash-rs/scoop-kdash/blob/main/kdash.json)

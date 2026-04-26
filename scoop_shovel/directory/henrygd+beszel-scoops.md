@@ -6,5 +6,6 @@
 
 
 
+
 ## 📦 Recipes (1)
 * [beszel-agent.json](https://github.com/henrygd/beszel-scoops/blob/main/beszel-agent.json)

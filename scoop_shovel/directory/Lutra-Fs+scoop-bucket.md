@@ -6,6 +6,7 @@
 
 
 
+
 ## 📦 Recipes (38)
 * [JetBrainsMapleMono-XX-XX-XX.json](https://github.com/Lutra-Fs/scoop-bucket/blob/main/bucket/JetBrainsMapleMono-XX-XX-XX.json)
 * [JetBrainsMapleMono-NF-NR-HT.json](https://github.com/Lutra-Fs/scoop-bucket/blob/main/bucket/JetBrainsMapleMono-NF-NR-HT.json)

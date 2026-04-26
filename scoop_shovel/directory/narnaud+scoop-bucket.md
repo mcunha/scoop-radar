@@ -6,6 +6,7 @@
 
 
 
+
 ## 📦 Recipes (9)
 * [natvis4qt.json](https://github.com/narnaud/scoop-bucket/blob/master/bucket/natvis4qt.json)
 * [gh-dash.json](https://github.com/narnaud/scoop-bucket/blob/master/bucket/gh-dash.json)
