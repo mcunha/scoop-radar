@@ -6,6 +6,7 @@
 
 
 
+
 ## 📦 Recipes (15)
 * [observatory-plugin-bioinsights.json](https://github.com/nikkoura/scoop-bucket-elitedangerous/blob/main/bucket/observatory-plugin-bioinsights.json)
 * [edmc-screenshot.json](https://github.com/nikkoura/scoop-bucket-elitedangerous/blob/main/bucket/edmc-screenshot.json)

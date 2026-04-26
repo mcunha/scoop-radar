@@ -6,6 +6,7 @@
 
 
 
+
 ## 📦 Recipes (47)
 * [zipdu.json](https://github.com/suquiya/suquiya_bucket/blob/main/bucket/zipdu.json)
 * [MoralerspaceJPDOC.json](https://github.com/suquiya/suquiya_bucket/blob/main/bucket/MoralerspaceJPDOC.json)

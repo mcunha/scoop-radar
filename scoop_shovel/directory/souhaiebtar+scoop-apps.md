@@ -6,6 +6,7 @@
 
 
 
+
 ## 📦 Recipes (86)
 * [CascadiaMono-NF-Mono.json](https://github.com/souhaiebtar/scoop-apps/blob/master/bucket/CascadiaMono-NF-Mono.json)
 * [lazygit.json](https://github.com/souhaiebtar/scoop-apps/blob/master/bucket/lazygit.json)

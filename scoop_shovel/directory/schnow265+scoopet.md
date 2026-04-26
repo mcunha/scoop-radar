@@ -6,6 +6,7 @@
 
 
 
+
 ## 📦 Recipes (4)
 * [iamb.json](https://github.com/schnow265/scoopet/blob/master/bucket/iamb.json)
 * [opencode.json](https://github.com/schnow265/scoopet/blob/master/bucket/opencode.json)

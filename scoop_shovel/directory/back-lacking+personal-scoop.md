@@ -6,6 +6,7 @@
 
 
 
+
 ## 📦 Recipes (7)
 * [wabbitemu.json](https://github.com/back-lacking/personal-scoop/blob/master/bucket/wabbitemu.json)
 * [genericlogviewer.json](https://github.com/back-lacking/personal-scoop/blob/master/bucket/genericlogviewer.json)

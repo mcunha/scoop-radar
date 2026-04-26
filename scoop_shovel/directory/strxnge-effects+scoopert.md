@@ -6,6 +6,7 @@
 
 
 
+
 ## 📦 Recipes (21)
 * [wav2bar.json](https://github.com/strxnge-effects/scoopert/blob/main/bucket/wav2bar.json)
 * [nfopad.json](https://github.com/strxnge-effects/scoopert/blob/main/bucket/nfopad.json)

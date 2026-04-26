@@ -6,5 +6,6 @@
 
 
 
+
 ## 📦 Recipes (1)
 * [graalvm25.json](https://github.com/rafalohaki/oofscoop/blob/master/bucket/graalvm25.json)

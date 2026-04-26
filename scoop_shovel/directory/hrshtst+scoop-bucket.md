@@ -6,6 +6,7 @@
 
 
 
+
 ## 📦 Recipes (6)
 * [cubeice.json](https://github.com/hrshtst/scoop-bucket/blob/master/bucket/cubeice.json)
 * [inkscape-extension-textext.json](https://github.com/hrshtst/scoop-bucket/blob/master/bucket/inkscape-extension-textext.json)

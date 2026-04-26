@@ -6,5 +6,6 @@
 
 
 
+
 ## 📦 Recipes (1)
 * [AssetStudioMod.json](https://github.com/rayun56/scoop-bucket/blob/master/bucket/AssetStudioMod.json)

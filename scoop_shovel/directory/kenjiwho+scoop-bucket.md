@@ -6,6 +6,7 @@
 
 
 
+
 ## 📦 Recipes (10)
 * [libsixel.json](https://github.com/kenjiwho/scoop-bucket/blob/master/bucket/libsixel.json)
 * [pyautoclicker.json](https://github.com/kenjiwho/scoop-bucket/blob/master/bucket/pyautoclicker.json)

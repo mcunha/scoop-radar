@@ -6,6 +6,7 @@
 
 
 
+
 ## 📦 Recipes (6)
 * [uxplay.json](https://github.com/MANICX100/scoop/blob/main/uxplay.json)
 * [QRes.json](https://github.com/MANICX100/scoop/blob/main/QRes.json)

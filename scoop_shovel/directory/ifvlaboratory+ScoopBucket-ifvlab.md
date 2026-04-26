@@ -6,6 +6,7 @@
 
 
 
+
 ## 📦 Recipes (12)
 * [firefox-nightly.json](https://github.com/ifvlaboratory/ScoopBucket-ifvlab/blob/master/bucket/firefox-nightly.json)
 * [age-plugin-yubikey.json](https://github.com/ifvlaboratory/ScoopBucket-ifvlab/blob/master/bucket/age-plugin-yubikey.json)

@@ -6,6 +6,7 @@
 
 
 
+
 ## 📦 Recipes (32)
 * [ivanti-gsudo.json](https://github.com/nicerloop/scoop-nicerloop/blob/master/bucket/ivanti-gsudo.json)
 * [xdg-open.json](https://github.com/nicerloop/scoop-nicerloop/blob/master/bucket/xdg-open.json)

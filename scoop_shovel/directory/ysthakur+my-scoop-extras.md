@@ -6,5 +6,6 @@
 
 
 
+
 ## 📦 Recipes (1)
 * [mise.json](https://github.com/ysthakur/my-scoop-extras/blob/main/bucket/mise.json)

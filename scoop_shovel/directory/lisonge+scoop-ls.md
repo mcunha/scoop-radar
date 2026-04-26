@@ -6,6 +6,7 @@
 
 
 
+
 ## 📦 Recipes (2)
 * [KEmulator.json](https://github.com/lisonge/scoop-ls/blob/main/bucket/KEmulator.json)
 * [QKeyMapper.json](https://github.com/lisonge/scoop-ls/blob/main/bucket/QKeyMapper.json)
