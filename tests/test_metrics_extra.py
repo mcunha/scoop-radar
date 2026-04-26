@@ -1,4 +1,8 @@
+from maintenance.config import get_config
+MOCK_CONFIG = get_config('scoop_shovel')
+
 from maintenance.metrics import calculate_metrics, get_repo_score
+
 
 
 def test_get_repo_score_empty_pushed_at():
@@ -24,6 +28,6 @@ def test_calculate_metrics_missing_topics_and_entries():
     }
     # Doesn't have entries, so it will be filtered out of actual_repos
     actual_repos, scoop_repos, shovel_repos, trending, hidden_gems, ecosystem_metrics = (
-        calculate_metrics(cache)
+        calculate_metrics(cache, MOCK_CONFIG)
     )
     assert len(actual_repos) == 0

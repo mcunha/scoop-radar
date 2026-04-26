@@ -80,31 +80,13 @@ def get_repo_score(repo, official_recipes):
     )
 
 
-def calculate_metrics(cache):
+def calculate_metrics(cache, config):
     """Calculate metrics for all repositories and return categorized lists."""
     repo_keys = [k for k in cache.keys() if "+" in k]
 
-    KNOWN_SCOOP_BUCKETS = extract_github_repos(
-        "https://raw.githubusercontent.com/ScoopInstaller/Scoop/refs/heads/master/buckets.json"
-    )
-    KNOWN_SHOVEL_BUCKETS = extract_github_repos(
-        "https://raw.githubusercontent.com/Ash258/Scoop-Core/refs/heads/main/buckets.json"
-    )
-
-    OFFICIAL_SCOOP_ORGS = ["scoopinstaller"]
-    OFFICIAL_SHOVEL_ORGS = ["ash258", "shovel-org"]
-
-    # Upgrade existing stripped extensions
-    for repofoldername in repo_keys:
-        entry = cache[repofoldername]
-        if "entries" in entry:
-            new_entries = []
-            for e in entry["entries"]:
-                if not e.endswith(".json") and not e.endswith(".yaml") and not e.endswith(".yml"):
-                    new_entries.append(e + ".json")
-                else:
-                    new_entries.append(e)
-            entry["entries"] = new_entries
+    known_buckets = {}
+    for key, url in config.known_buckets_urls.items():
+        known_buckets[key] = extract_github_repos(url)
 
     # Build a set of official recipes for uniqueness scoring
     official_recipes = set()
@@ -112,7 +94,7 @@ def calculate_metrics(cache):
         repo = cache[k]
         full_name_lower = repo.get("full_name", "").lower()
         repo_org = full_name_lower.split("/")[0] if "/" in full_name_lower else ""
-        if repo_org in OFFICIAL_SCOOP_ORGS or repo_org in OFFICIAL_SHOVEL_ORGS:
+        if repo_org in config.official_orgs:
             for e in repo.get("entries", []):
                 official_recipes.add(e.split("/")[-1].lower())
 
@@ -152,16 +134,18 @@ def calculate_metrics(cache):
         full_name_lower = repo.get("full_name", "").lower()
         repo_org = full_name_lower.split("/")[0] if "/" in full_name_lower else ""
 
-        repo["is_scoop_official"] = repo_org in OFFICIAL_SCOOP_ORGS
-        repo["is_scoop_known"] = full_name_lower in [b.lower() for b in KNOWN_SCOOP_BUCKETS]
+        # For Scoop/Shovel Ecosystem compatibility, populate these specific keys.
+        # For Chocolatey, they will just be false, which is fine since the templates can be updated or will just ignore them.
+        repo["is_scoop_official"] = repo_org in ["scoopinstaller"] if config.name == "scoop_shovel" else (repo_org in config.official_orgs)
+        repo["is_scoop_known"] = full_name_lower in [b.lower() for b in known_buckets.get("scoop", [])] if config.name == "scoop_shovel" else False
 
-        repo["is_shovel_official"] = repo_org in OFFICIAL_SHOVEL_ORGS
-        repo["is_shovel_known"] = full_name_lower in [b.lower() for b in KNOWN_SHOVEL_BUCKETS]
+        repo["is_shovel_official"] = repo_org in ["ash258", "shovel-org"] if config.name == "scoop_shovel" else False
+        repo["is_shovel_known"] = full_name_lower in [b.lower() for b in known_buckets.get("shovel", [])] if config.name == "scoop_shovel" else False
 
         is_shovel = "shovel-bucket" in topics or any(
             e.endswith(".yaml") or e.endswith(".yml") for e in entries
         )
-        if is_shovel:
+        if is_shovel and config.name == "scoop_shovel":
             shovel_repos.append(repo)
         else:
             scoop_repos.append(repo)

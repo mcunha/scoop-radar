@@ -1,4 +1,8 @@
+from maintenance.config import get_config
+MOCK_CONFIG = get_config('scoop_shovel')
+
 from maintenance.repo import process_repo, update_repositories
+
 
 
 def test_process_repo_new_clone_exception(mocker):
@@ -11,7 +15,7 @@ def test_process_repo_new_clone_exception(mocker):
     }
     mocker.patch("maintenance.repo.Repo.clone_from", side_effect=Exception("Failed to clone"))
     mocker.patch("os.path.isdir", return_value=False)
-    name, updated_entry, updated = process_repo("user+repo", cache_entry, "/tmp")
+    name, updated_entry, updated = process_repo("user+repo", cache_entry, "/tmp", MOCK_CONFIG)
     assert updated is True
 
 
@@ -22,7 +26,7 @@ def test_process_repo_existing_clone_exception(mocker):
     mocker.patch(
         "maintenance.repo.Repo.clone_from", side_effect=Exception("Failed to clone existing")
     )
-    name, updated_entry, updated = process_repo("user+repo", cache_entry, "/tmp")
+    name, updated_entry, updated = process_repo("user+repo", cache_entry, "/tmp", MOCK_CONFIG)
     assert updated is True
 
 
@@ -44,7 +48,7 @@ def test_process_repo_new_not_bucket_manifest_in_tree(mocker):
     mocker.patch("maintenance.repo.Repo")
     mocker.patch("os.path.isdir", return_value=False)
 
-    name, updated_entry, updated = process_repo("user+repo", cache_entry, "/tmp")
+    name, updated_entry, updated = process_repo("user+repo", cache_entry, "/tmp", MOCK_CONFIG)
     assert updated is True
 
 
@@ -54,5 +58,5 @@ def test_update_repositories_with_results(mocker):
     mocker.patch(
         "maintenance.repo.process_repo", return_value=("user+repo", {"updated": True}, True)
     )
-    update_repositories(cache, "/tmp")
+    update_repositories(cache, "/tmp", MOCK_CONFIG)
     assert cache["user+repo"]["updated"] is True

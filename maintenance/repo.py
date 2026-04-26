@@ -116,7 +116,7 @@ def _probe_cache_entry(repo_path, entries, cache_entry):
     cache_entry["total_probes"] = total_probes
 
 
-def process_repo(repofoldername, cache_entry, dir_path):
+def process_repo(repofoldername, cache_entry, dir_path, config):
     """Process a single repository to discover and validate manifest files."""
     if state.abort_flag:
         return None
@@ -143,9 +143,7 @@ def process_repo(repofoldername, cache_entry, dir_path):
     git_success = False
     if is_first_time:
         topics = cache_entry["topics"]
-        is_official = (
-            ("scoop-bucket" in topics) or ("shovel-bucket" in topics) or ("scoop-apps" in topics)
-        )
+        is_official = any(t in topics for t in config.topics)
         looks_like_bucket = is_official
         if not is_official:
             try:
@@ -259,16 +257,10 @@ def process_repo(repofoldername, cache_entry, dir_path):
     return (repofoldername, cache_entry, True)
 
 
-def discover_repositories(cache):
+def discover_repositories(cache, config):
     """Search for new repositories on GitHub."""
-    queries = [
-        "topic:scoop-bucket",
-        "topic:shovel-bucket",
-        "topic:scoop-apps",
-        "scoop bucket in:name,description",
-        "shovel bucket in:name,description",
-        "scoop apps in:name,description",
-    ]
+    queries = [f"topic:{t}" for t in config.topics]
+    queries.extend([f"{t.replace('-', ' ')} in:name,description" for t in config.topics])
 
     query_index = cache.get("search_query_index", 0)
     search_page = cache.get("search_page", 1)
@@ -321,7 +313,7 @@ def discover_repositories(cache):
         state.abort_flag = False
 
 
-def update_repositories(cache, dir_path):
+def update_repositories(cache, dir_path, config):
     """Update existing or new repositories."""
     MAX_API_REPOS_TO_PROCESS = 60
     repo_keys = [k for k in cache.keys() if "+" in k]
@@ -355,7 +347,7 @@ def update_repositories(cache, dir_path):
         futures = []
         for repofoldername in repos_to_process:
             futures.append(
-                executor.submit(process_repo, repofoldername, cache[repofoldername], dir_path)
+                executor.submit(process_repo, repofoldername, cache[repofoldername], dir_path, config)
             )
         for future in concurrent.futures.as_completed(futures):
             try:

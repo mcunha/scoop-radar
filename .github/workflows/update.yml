@@ -31,11 +31,23 @@ jobs:
         uses: actions/cache@v5
         with:
           path: |
-            maintenance/cache
-            maintenance/cache.pickle
-          key: ${{ runner.os }}-crawler-cache-${{ github.run_id }}
+            scoop_shovel/cache
+            scoop_shovel/cache.pickle
+            chocolatey/cache
+            chocolatey/cache.pickle
+          key: ${{ runner.os }}-crawler-v2-cache-${{ github.run_id }}
           restore-keys: |
+            ${{ runner.os }}-crawler-v2-cache-
             ${{ runner.os }}-crawler-cache-
+
+      - name: Migrate old cache layout
+        run: |
+          if [ -d "maintenance/cache" ]; then
+            echo "Migrating maintenance/cache to scoop_shovel/cache..."
+            mkdir -p scoop_shovel
+            mv maintenance/cache scoop_shovel/
+            mv maintenance/cache.pickle scoop_shovel/ || true
+          fi
 
       - name: Run crawler
         env:
@@ -52,5 +64,7 @@ jobs:
         uses: actions/upload-artifact@v7
         with:
           name: crawler-cache
-          path: maintenance/cache.pickle
+          path: |
+            scoop_shovel/cache.pickle
+            chocolatey/cache.pickle
           retention-days: 7

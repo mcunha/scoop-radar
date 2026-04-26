@@ -1,4 +1,8 @@
+from maintenance.config import get_config
+MOCK_CONFIG = get_config('scoop_shovel')
+
 from maintenance.repo import discover_repositories, process_repo, update_repositories
+
 
 
 def test_process_repo_new(mocker):
@@ -12,7 +16,7 @@ def test_process_repo_new(mocker):
     mocker.patch("os.path.isfile", return_value=True)
     mocker.patch("maintenance.repo.validate_manifest_file", return_value=(True, True))
 
-    name, updated_entry, updated = process_repo("user+repo", cache_entry, "/tmp")
+    name, updated_entry, updated = process_repo("user+repo", cache_entry, "/tmp", MOCK_CONFIG)
     assert updated is True
     assert updated_entry["checkver_count"] == 1
     assert "app1.json" in updated_entry["entries"]
@@ -29,7 +33,7 @@ def test_process_repo_existing(mocker):
     mocker.patch("os.path.isfile", return_value=True)
     mocker.patch("maintenance.repo.validate_manifest_file", return_value=(True, False))
 
-    name, updated_entry, updated = process_repo("user+repo", cache_entry, "/tmp")
+    name, updated_entry, updated = process_repo("user+repo", cache_entry, "/tmp", MOCK_CONFIG)
     assert updated is True
     assert updated_entry["checkver_count"] == 0
     assert "bucket/app2.json" in updated_entry["entries"]
@@ -55,7 +59,7 @@ def test_discover_repositories(mocker):
     }
 
     cache = {"search_page": 1}
-    discover_repositories(cache)
+    discover_repositories(cache, MOCK_CONFIG)
 
     assert cache["search_page"] == 2
     assert "user+repo1" in cache
@@ -69,7 +73,7 @@ def test_update_repositories(mocker):
 
     cache = {"user+repo": {"last_checked": "2000-01-01T00:00:00Z"}}
 
-    update_repositories(cache, "/tmp")
+    update_repositories(cache, "/tmp", MOCK_CONFIG)
 
     # Check if the process_repo mock was called
     assert cache["user+repo"]["updated"] is True

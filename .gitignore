@@ -1,5 +1,6 @@
 venv/
 cache/
+*/cache/
 *.pickle
 __pycache__/
 *.py[cod]

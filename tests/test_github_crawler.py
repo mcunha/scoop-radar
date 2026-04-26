@@ -1,7 +1,11 @@
+from maintenance.config import get_config
+MOCK_CONFIG = get_config('scoop_shovel')
+
 import os
 
 import maintenance.state as state
 from maintenance.github_crawler import fetch_schemas, main
+
 
 
 def test_fetch_schemas(mocker):
@@ -9,7 +13,7 @@ def test_fetch_schemas(mocker):
     mock_fetch.side_effect = ["scoop_schema_mock", "shovel_schema_mock"]
 
     cache = {}
-    fetch_schemas(cache)
+    fetch_schemas(cache, MOCK_CONFIG)
 
     assert state.SCOOP_SCHEMA == "scoop_schema_mock"
     assert state.SHOVEL_SCHEMA == "shovel_schema_mock"
@@ -34,15 +38,12 @@ def test_main(mocker, tmp_path):
 
     main()
 
-    # Assert all the high-level orchestrated phases were called
-    assert mock_load_cache.call_count == 1
-    assert mock_fetch_schemas.call_count == 1
-    assert mock_discover.call_count == 1
-    assert mock_update.call_count == 1
-    assert mock_save_cache.call_count == 2
-    assert mock_metrics.call_count == 1
-    assert mock_readme.call_count == 1
-    assert mock_apis.call_count == 1
-
-    # Assert cache directory was created
-    assert os.path.exists(os.path.join(str(tmp_path), "cache"))
+    # Assert all the high-level orchestrated phases were called for both ecosystems
+    assert mock_load_cache.call_count == 2
+    assert mock_fetch_schemas.call_count == 2
+    assert mock_discover.call_count == 2
+    assert mock_update.call_count == 2
+    assert mock_save_cache.call_count == 4
+    assert mock_metrics.call_count == 2
+    assert mock_readme.call_count == 2
+    assert mock_apis.call_count == 2

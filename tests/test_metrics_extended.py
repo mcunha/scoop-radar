@@ -1,8 +1,12 @@
+from maintenance.config import get_config
+MOCK_CONFIG = get_config('scoop_shovel')
+
 from unittest.mock import patch
 
 import responses
 
 from maintenance.metrics import calculate_metrics, extract_github_repos
+
 
 
 @responses.activate
@@ -56,7 +60,7 @@ def test_calculate_metrics(mock_extract):
     }
 
     actual_repos, scoop_repos, shovel_repos, trending, hidden_gems, ecosystem_metrics = (
-        calculate_metrics(cache)
+        calculate_metrics(cache, MOCK_CONFIG)
     )
 
     assert len(actual_repos) == 3

@@ -1,3 +1,6 @@
+from maintenance.config import get_config
+MOCK_CONFIG = get_config('scoop_shovel')
+
 import requests
 import responses
 

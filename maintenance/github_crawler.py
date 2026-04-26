@@ -15,43 +15,82 @@ from maintenance.repo import discover_repositories, update_repositories
 dir_path = os.path.dirname(os.path.realpath(__file__))
 
 
-def fetch_schemas(cache):
-    """Fetch JSON schemas for Scoop and Shovel."""
-    print("[*] Fetching JSON schemas for validation...")
-    state.SCOOP_SCHEMA = fetch_schema_with_etag(
-        "https://raw.githubusercontent.com/ScoopInstaller/Scoop/master/schema.json",
-        "__scoop_schema",
-        cache,
-    )
-    state.SHOVEL_SCHEMA = fetch_schema_with_etag(
-        "https://raw.githubusercontent.com/Ash258/Scoop-Core/main/schema.json",
-        "__shovel_schema",
-        cache,
-    )
+def fetch_schemas(cache, config):
+    """Fetch JSON schemas for Ecosystem."""
+    print(f"[*] Fetching JSON schemas for validation... ({config.name})")
+    
+    if "scoop" in config.schemas:
+        state.SCOOP_SCHEMA = fetch_schema_with_etag(
+            config.schemas["scoop"],
+            "__scoop_schema",
+            cache,
+        )
+    if "shovel" in config.schemas:
+        state.SHOVEL_SCHEMA = fetch_schema_with_etag(
+            config.schemas["shovel"],
+            "__shovel_schema",
+            cache,
+        )
 
 
 def main():
     """Main entrypoint for the GitHub crawler process."""
     load_dotenv()
+    
+    import argparse
+    from maintenance.config import get_config
+
+    parser = argparse.ArgumentParser(description="Scoop Radar Crawler")
+    parser.add_argument(
+        "--force",
+        action="store_true",
+        help="Force writing outputs and saving cache when running locally",
+    )
+    parser.add_argument(
+        "--ecosystem",
+        type=str,
+        default="all",
+        choices=["all", "scoop_shovel", "chocolatey"],
+        help="Which ecosystem to crawl"
+    )
+    args, _ = parser.parse_known_args()
+    
+    ecosystems_to_run = ["scoop_shovel", "chocolatey"] if args.ecosystem == "all" else [args.ecosystem]
+    
+    for ecosystem_name in ecosystems_to_run:
+        print(f"\n{'='*50}\n[*] Starting crawler for ecosystem: {ecosystem_name}\n{'='*50}")
+        run_ecosystem(ecosystem_name, args.force)
+
+def run_ecosystem(ecosystem_name, force_save):
+    from maintenance.config import get_config
+    config = get_config(ecosystem_name)
+    
     start_time = time.time()
+    
+    is_ci = os.environ.get("GITHUB_ACTIONS") == "true"
+    if is_ci or force_save:
+        out_dir = os.path.normpath(os.path.join(dir_path, "..", config.out_dir))
+    else:
+        out_dir = os.path.join(dir_path, "..", "localonly-output", config.out_dir)
+        print(f"\n[INFO] Running in local mode. Writing generated outputs to '{out_dir}'.")
+    
+    os.makedirs(os.path.join(out_dir, "cache"), exist_ok=True)
 
-    os.makedirs(os.path.join(dir_path, "cache"), exist_ok=True)
+    cache = load_cache(out_dir)
 
-    cache = load_cache(dir_path)
-
-    fetch_schemas(cache)
+    fetch_schemas(cache, config)
     discover_start = time.time()
-    discover_repositories(cache)
+    discover_repositories(cache, config)
     discover_time = time.time() - discover_start
 
     update_start = time.time()
-    updated_count = update_repositories(cache, dir_path)
+    updated_count = update_repositories(cache, out_dir, config)
     update_time = time.time() - update_start
 
-    save_cache(cache, dir_path)
+    save_cache(cache, out_dir)
 
     actual_repos, scoop_repos, shovel_repos, trending, hidden_gems, ecosystem_metrics = (
-        calculate_metrics(cache)
+        calculate_metrics(cache, config)
     )
 
     total_buckets = len(actual_repos)
@@ -106,7 +145,7 @@ def main():
     )
 
     try:
-        cache_size_mb = os.path.getsize(os.path.join(dir_path, "cache.pickle")) / (1024 * 1024)
+        cache_size_mb = os.path.getsize(os.path.join(out_dir, "cache.pickle")) / (1024 * 1024)
     except OSError:
         cache_size_mb = 0.0
     global_metrics["cache_size_mb"] = cache_size_mb
@@ -143,6 +182,8 @@ def main():
     current_shovel_recipes_set = set()
 
     for repo in actual_repos:
+        # In Scoop Shovel ecosystem, distinguish scoop vs shovel
+        # In chocolatey, everything is just chocolatey
         is_shovel = "shovel-bucket" in repo.get("topics", []) or any(
             e.endswith(".yaml") or e.endswith(".yml") for e in repo.get("entries", [])
         )
@@ -151,7 +192,7 @@ def main():
             entry_name = entry.split("/")[-1]
             item = f"{repo['full_name']}:{entry_name}".lower()
             current_recipes_set.add(item)
-            if is_shovel:
+            if config.name == "scoop_shovel" and is_shovel:
                 current_shovel_recipes_set.add(item)
             else:
                 current_scoop_recipes_set.add(item)
@@ -180,7 +221,7 @@ def main():
             for entry in repo.get("entries", []):
                 item = f"{repo['full_name']}:{entry}".lower()
                 previous_recipes_set.add(item)
-                if is_shovel:
+                if config.name == "scoop_shovel" and is_shovel:
                     previous_shovel_recipes_set.add(item)
                 else:
                     previous_scoop_recipes_set.add(item)
@@ -241,29 +282,9 @@ def main():
     cache["previous_scoop_recipes_set"] = list(current_scoop_recipes_set)
     cache["previous_shovel_recipes_set"] = list(current_shovel_recipes_set)
 
-    import argparse
-
     from maintenance.output import generate_growth_charts
 
-    parser = argparse.ArgumentParser(description="Scoop Radar Crawler")
-    parser.add_argument(
-        "--force",
-        action="store_true",
-        help="Force writing outputs and saving cache when running locally",
-    )
-    args, _ = parser.parse_known_args()
-
-    is_ci = os.environ.get("GITHUB_ACTIONS") == "true"
-
-    if is_ci or args.force:
-        out_dir = os.path.normpath(os.path.join(dir_path, ".."))
-    else:
-        out_dir = os.path.join(dir_path, "..", "localonly-output")
-        os.makedirs(out_dir, exist_ok=True)
-        print(f"\n[INFO] Running in local mode. Writing generated outputs to '{out_dir}'.")
-        print("[INFO] To overwrite real repository files and cache, use --force.")
-
-    generate_growth_charts(timeseries, out_dir)
+    generate_growth_charts(timeseries, out_dir, config.name)
 
     generate_readme(
         actual_repos,
@@ -274,6 +295,7 @@ def main():
         global_metrics,
         out_dir,
         dir_path,
+        config.name
     )
     generate_apis(
         actual_repos,
@@ -286,15 +308,9 @@ def main():
         out_dir,
     )
 
-    if is_ci or args.force:
-        # Save cache AFTER all ranks and metrics have been calculated so they persist for the next run!
-        save_cache(cache, dir_path)
-    else:
-        # Also save cache locally so we don't refetch everything constantly
-        print("[INFO] Saving cache.pickle to localonly-output for debugging...")
-        save_cache(cache, out_dir)
-
-    print("[INFO] Script Finished and outputs written.")
+    # Save cache AFTER all ranks and metrics have been calculated so they persist for the next run!
+    save_cache(cache, out_dir)
+    print(f"[INFO] Script Finished and outputs written for {config.name}.")
 
 
 if __name__ == "__main__":

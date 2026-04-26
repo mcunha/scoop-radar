@@ -1,10 +1,14 @@
 from datetime import datetime, timezone
 
 import pytest
+from maintenance.config import get_config
+MOCK_CONFIG = get_config('scoop_shovel')
+
 
 import maintenance.state as state
 from maintenance.api import RateLimitExceededError
 from maintenance.repo import (
+
     discover_repositories,
     get_next_check_due,
     process_repo,
@@ -33,7 +37,7 @@ def test_validate_manifest_file_exception(tmp_path):
 def test_process_repo_abort_flag():
     # Covers line 85
     state.abort_flag = True
-    assert process_repo("repo", {}, "/tmp") is None
+    assert process_repo("repo", {}, "/tmp", MOCK_CONFIG) is None
     state.abort_flag = False
 
 
@@ -46,7 +50,7 @@ def test_process_repo_del_ignored_until(mocker):
     }
     mocker.patch("maintenance.repo.Repo")
     mocker.patch("os.path.isdir", return_value=False)
-    name, updated_entry, updated = process_repo("user+repo", cache_entry, "/tmp")
+    name, updated_entry, updated = process_repo("user+repo", cache_entry, "/tmp", MOCK_CONFIG)
     assert "ignored_until" not in updated_entry
 
 
@@ -62,14 +66,14 @@ def test_process_repo_not_official_tree_error(mocker):
         "maintenance.repo.make_request", side_effect=RateLimitExceededError
     )
     with pytest.raises(RateLimitExceededError):
-        process_repo("user+repo", cache_entry, "/tmp")
+        process_repo("user+repo", cache_entry, "/tmp", MOCK_CONFIG)
 
 
 def test_discover_repositories_rate_limit(mocker):
     # Covers lines 212-213
     mocker.patch("maintenance.repo.fetchjson", side_effect=RateLimitExceededError)
     cache = {"search_page": 1}
-    discover_repositories(cache)
+    discover_repositories(cache, MOCK_CONFIG)
     assert state.abort_flag is False
 
 
@@ -85,6 +89,6 @@ def test_update_repositories_rate_limit(mocker):
 
     mocker.patch("maintenance.repo.process_repo", side_effect=mock_process)
 
-    update_repositories(cache, "/tmp")
+    update_repositories(cache, "/tmp", MOCK_CONFIG)
 
     assert state.abort_flag is False

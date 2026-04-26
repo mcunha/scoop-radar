@@ -1,7 +1,11 @@
+from maintenance.config import get_config
+MOCK_CONFIG = get_config('scoop_shovel')
+
 from datetime import datetime, timezone
 
 import maintenance.state as state
 from maintenance.repo import get_next_check_due, is_manifest, process_repo, validate_manifest_file
+
 
 
 def test_is_manifest():
@@ -55,7 +59,7 @@ def test_process_repo_ignored(mocker):
     # If ignored_until is in the future, it should just return and update last_checked
     entry = {"full_name": "user/repo", "ignored_until": "2099-01-01T00:00:00Z"}
 
-    name, updated_entry, updated = process_repo("user+repo", entry, "/tmp")
+    name, updated_entry, updated = process_repo("user+repo", entry, "/tmp", MOCK_CONFIG)
     assert updated is False
     assert "last_checked" in updated_entry
     assert updated_entry["ignored_until"] == "2099-01-01T00:00:00Z"
