@@ -18,7 +18,7 @@ from maintenance.cache import upgrade_cache_entry
 
 def is_manifest(path):
     """Check if a file path represents a valid manifest file."""
-    return path.endswith(".json") or path.endswith(".yaml") or path.endswith(".yml")
+    return path.endswith(".json") or path.endswith(".yaml") or path.endswith(".yml") or path.endswith(".nuspec")
 
 
 def get_next_check_due(entry):
@@ -75,6 +75,21 @@ def discover_manifests(repo_path, is_shovel_repo, config):
                                 checkver_count += 1
             if entries:
                 break
+    elif config.name == "chocolatey":
+        for root, _, files in os.walk(repo_path):
+            if ".git" in root:
+                continue
+            for f in files:
+                file_path = os.path.join(root, f)
+                if os.path.isfile(file_path) and is_manifest(f):
+                    (is_valid, has_checkver) = validate_manifest_file(
+                        file_path, f, is_shovel_repo, config
+                    )
+                    if is_valid:
+                        rel_path = os.path.relpath(file_path, repo_path).replace("\\", "/")
+                        entries.append(rel_path)
+                        if has_checkver:
+                            checkver_count += 1
     else:
         for d in [repo_path, os.path.join(repo_path, "bucket")]:
             if os.path.isdir(d):
@@ -102,6 +117,22 @@ def validate_manifest_file(file_path, f, is_shovel_repo, config):
                 manifest_data = yaml.safe_load(mf)
             if not isinstance(manifest_data, dict) or "PackageIdentifier" not in manifest_data:
                 is_valid = False
+        except Exception:
+            is_valid = False
+        return is_valid, has_checkver
+
+    elif config.name == "chocolatey":
+        if not f.endswith(".nuspec"):
+            return False, False
+        try:
+            with open(file_path, encoding="utf-8", errors="ignore") as mf:
+                content = mf.read()
+            if "<package" not in content or "<metadata>" not in content:
+                is_valid = False
+            else:
+                dir_name = os.path.dirname(file_path)
+                if os.path.exists(os.path.join(dir_name, "update.ps1")):
+                    has_checkver = True
         except Exception:
             is_valid = False
         return is_valid, has_checkver
@@ -346,6 +377,11 @@ def update_repositories(cache, dir_path, config):
     repo_keys = [k for k in cache.keys() if "+" in k]
     for k in repo_keys:
         cache[k] = upgrade_cache_entry(k, cache[k])
+        # Force re-check for new ecosystems if they currently have 0 entries, 
+        # as our discovery logic may have been improved since they were first checked
+        if config.name in ("chocolatey", "winget") and not cache[k].get("entries"):
+            cache[k]["last_checked"] = "2000-01-01T00:00:00Z"
+            
     repo_keys.sort(key=(lambda k: get_next_check_due(cache[k])))
     now = datetime.now(timezone.utc)
     due_repos = [k for k in repo_keys if (get_next_check_due(cache[k]) <= now)]
