@@ -28,7 +28,7 @@ def test_process_repo_eviction_404(mocker):
     mock_rmtree = mocker.patch("shutil.rmtree")
     mocker.patch("os.path.exists", return_value=True)  # mock repo_path exists for rmtree
 
-    name, entry, updated = process_repo("user+repo", cache_entry, "/tmp", MOCK_CONFIG)
+    _name, entry, updated = process_repo("user+repo", cache_entry, "/tmp", MOCK_CONFIG)
 
     assert entry is None
     assert updated is True
@@ -57,7 +57,7 @@ def test_process_repo_eviction_not_404(mocker):
     mock_response.status_code = 200
     mock_make_request.return_value = mock_response
 
-    name, entry, updated = process_repo("user+repo", cache_entry, "/tmp", MOCK_CONFIG)
+    _name, entry, updated = process_repo("user+repo", cache_entry, "/tmp", MOCK_CONFIG)
 
     assert entry is not None
     assert entry["consecutive_failures"] == 3

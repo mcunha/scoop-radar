@@ -36,7 +36,7 @@ def test_process_repo_new_not_bucket(mocker):
     mock_response.json.return_value = {"tree": [{"path": "readme.md", "type": "blob"}]}
     mock_make_request.return_value = mock_response
 
-    name, updated_entry, updated = process_repo("user+repo", cache_entry, "/tmp", MOCK_CONFIG)
+    _name, updated_entry, updated = process_repo("user+repo", cache_entry, "/tmp", MOCK_CONFIG)
     assert updated is True
     assert updated_entry["checkver_count"] == 0
     assert "ignored_until" in updated_entry
@@ -50,7 +50,7 @@ def test_process_repo_existing_clone_error(mocker):
     mock_repo = mocker.patch("maintenance.repo.Repo")
     mock_repo.clone_from.side_effect = Exception("Clone failed")
 
-    name, updated_entry, updated = process_repo("user+repo", cache_entry, "/tmp", MOCK_CONFIG)
+    _name, updated_entry, updated = process_repo("user+repo", cache_entry, "/tmp", MOCK_CONFIG)
     assert updated is True
     assert updated_entry["checkver_count"] == 0
 
@@ -63,7 +63,7 @@ def test_process_repo_existing_pull(mocker):
 
     mock_repo = mocker.patch("maintenance.repo.Repo")
 
-    name, updated_entry, updated = process_repo("user+repo", cache_entry, "/tmp", MOCK_CONFIG)
+    _name, _updated_entry, updated = process_repo("user+repo", cache_entry, "/tmp", MOCK_CONFIG)
     assert updated is True
     assert mock_repo.call_count == 1
 
@@ -76,5 +76,5 @@ def test_process_repo_existing_pull_error(mocker):
     mock_repo = mocker.patch("maintenance.repo.Repo")
     mock_repo.return_value.remotes.origin.pull.side_effect = Exception("Pull failed")
 
-    name, updated_entry, updated = process_repo("user+repo", cache_entry, "/tmp", MOCK_CONFIG)
+    _name, _updated_entry, updated = process_repo("user+repo", cache_entry, "/tmp", MOCK_CONFIG)
     assert updated is True

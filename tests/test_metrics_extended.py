@@ -58,7 +58,7 @@ def test_calculate_metrics(mock_extract):
         },
     }
 
-    actual_repos, scoop_repos, shovel_repos, trending, hidden_gems, ecosystem_metrics = (
+    actual_repos, scoop_repos, shovel_repos, _trending, _hidden_gems, _ecosystem_metrics = (
         calculate_metrics(cache, MOCK_CONFIG)
     )
 

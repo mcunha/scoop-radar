@@ -14,7 +14,7 @@ def test_process_repo_new_clone_exception(mocker):
     }
     mocker.patch("maintenance.repo.Repo.clone_from", side_effect=Exception("Failed to clone"))
     mocker.patch("os.path.isdir", return_value=False)
-    name, updated_entry, updated = process_repo("user+repo", cache_entry, "/tmp", MOCK_CONFIG)
+    _name, _updated_entry, updated = process_repo("user+repo", cache_entry, "/tmp", MOCK_CONFIG)
     assert updated is True
 
 
@@ -25,7 +25,7 @@ def test_process_repo_existing_clone_exception(mocker):
     mocker.patch(
         "maintenance.repo.Repo.clone_from", side_effect=Exception("Failed to clone existing")
     )
-    name, updated_entry, updated = process_repo("user+repo", cache_entry, "/tmp", MOCK_CONFIG)
+    _name, _updated_entry, updated = process_repo("user+repo", cache_entry, "/tmp", MOCK_CONFIG)
     assert updated is True
 
 
@@ -47,7 +47,7 @@ def test_process_repo_new_not_bucket_manifest_in_tree(mocker):
     mocker.patch("maintenance.repo.Repo")
     mocker.patch("os.path.isdir", return_value=False)
 
-    name, updated_entry, updated = process_repo("user+repo", cache_entry, "/tmp", MOCK_CONFIG)
+    _name, _updated_entry, updated = process_repo("user+repo", cache_entry, "/tmp", MOCK_CONFIG)
     assert updated is True
 
 

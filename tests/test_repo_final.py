@@ -29,7 +29,7 @@ def test_validate_manifest_file_exception(tmp_path):
     state.SCHEMAS.pop("shovel", None)
     file_path = tmp_path / "app.json"
     file_path.write_text("invalid json")
-    is_valid, has_checkver = validate_manifest_file(str(file_path), "app.json", False, MOCK_CONFIG)
+    is_valid, _has_checkver = validate_manifest_file(str(file_path), "app.json", False, MOCK_CONFIG)
     assert is_valid is False
 
 
@@ -49,7 +49,7 @@ def test_process_repo_del_ignored_until(mocker):
     }
     mocker.patch("maintenance.repo.Repo")
     mocker.patch("os.path.isdir", return_value=False)
-    name, updated_entry, updated = process_repo("user+repo", cache_entry, "/tmp", MOCK_CONFIG)
+    _name, updated_entry, _updated = process_repo("user+repo", cache_entry, "/tmp", MOCK_CONFIG)
     assert "ignored_until" not in updated_entry
 
 

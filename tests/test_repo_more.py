@@ -51,6 +51,6 @@ def test_process_repo_new_fetch_tree(mocker):
     mocker.patch("os.path.isfile", return_value=True)
     mocker.patch("maintenance.repo.validate_manifest_file", return_value=(True, True))
 
-    name, updated_entry, updated = process_repo("user+repo", cache_entry, "/tmp", MOCK_CONFIG)
+    _name, _updated_entry, updated = process_repo("user+repo", cache_entry, "/tmp", MOCK_CONFIG)
     assert updated is True
     assert mock_make_request.call_count == 1

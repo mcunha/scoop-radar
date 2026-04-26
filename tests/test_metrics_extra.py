@@ -26,7 +26,7 @@ def test_calculate_metrics_missing_topics_and_entries():
         }
     }
     # Doesn't have entries, so it will be filtered out of actual_repos
-    actual_repos, scoop_repos, shovel_repos, trending, hidden_gems, ecosystem_metrics = (
+    actual_repos, _scoop_repos, _shovel_repos, _trending, _hidden_gems, _ecosystem_metrics = (
         calculate_metrics(cache, MOCK_CONFIG)
     )
     assert len(actual_repos) == 0

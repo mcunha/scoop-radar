@@ -107,17 +107,35 @@ def process_repository(repo, config):
 
     print(f"[*] Seeding {full_name}...")
 
-    if not os.path.exists(repo_dir):
-        try:
-            subprocess.run(["git", "clone", "--quiet", git_url, repo_dir], check=True)
-        except subprocess.CalledProcessError:
-            print(f"[!] Failed to clone {full_name}")
-            return None
-    else:
+    if os.path.exists(repo_dir):
         try:
             subprocess.run(["git", "pull", "--quiet"], cwd=repo_dir, check=True)
         except subprocess.CalledProcessError:
-            pass
+            print(f"[!] Failed to pull {full_name}, attempting fresh clone...")
+            try:
+
+                def remove_readonly(func, path, _):
+                    os.chmod(path, stat.S_IWRITE)
+                    func(path)
+
+                shutil.rmtree(repo_dir, onerror=remove_readonly)
+            except Exception:
+                pass
+
+    if not os.path.exists(repo_dir):
+        try:
+            shallow_date = (datetime.now(timezone.utc) - timedelta(days=100)).strftime("%Y-%m-%d")
+            subprocess.run(
+                ["git", "clone", "--quiet", f"--shallow-since={shallow_date}", git_url, repo_dir],
+                check=True,
+            )
+        except subprocess.CalledProcessError:
+            print(f"[!] Shallow clone failed for {full_name}, attempting full clone...")
+            try:
+                subprocess.run(["git", "clone", "--quiet", git_url, repo_dir], check=True)
+            except subprocess.CalledProcessError:
+                print(f"[!] Failed to clone {full_name}")
+                return None
 
     snapshots = get_daily_snapshots(repo_dir, full_name, is_shovel_bucket, config)
 

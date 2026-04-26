@@ -15,7 +15,7 @@ def test_process_repo_new(mocker):
     mocker.patch("os.path.isfile", return_value=True)
     mocker.patch("maintenance.repo.validate_manifest_file", return_value=(True, True))
 
-    name, updated_entry, updated = process_repo("user+repo", cache_entry, "/tmp", MOCK_CONFIG)
+    _name, updated_entry, updated = process_repo("user+repo", cache_entry, "/tmp", MOCK_CONFIG)
     assert updated is True
     assert updated_entry["checkver_count"] == 1
     assert "app1.json" in updated_entry["entries"]
@@ -32,7 +32,7 @@ def test_process_repo_existing(mocker):
     mocker.patch("os.path.isfile", return_value=True)
     mocker.patch("maintenance.repo.validate_manifest_file", return_value=(True, False))
 
-    name, updated_entry, updated = process_repo("user+repo", cache_entry, "/tmp", MOCK_CONFIG)
+    _name, updated_entry, updated = process_repo("user+repo", cache_entry, "/tmp", MOCK_CONFIG)
     assert updated is True
     assert updated_entry["checkver_count"] == 0
     assert "bucket/app2.json" in updated_entry["entries"]

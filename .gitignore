@@ -12,3 +12,6 @@ htmlcov/
 .venv/
 
 localonly-output/
+temp_seed_clones/
+temp_winget_test/
+temp_winget_test_seed/

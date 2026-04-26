@@ -58,7 +58,7 @@ def test_process_repo_ignored(mocker):
     # If ignored_until is in the future, it should just return and update last_checked
     entry = {"full_name": "user/repo", "ignored_until": "2099-01-01T00:00:00Z"}
 
-    name, updated_entry, updated = process_repo("user+repo", entry, "/tmp", MOCK_CONFIG)
+    _name, updated_entry, updated = process_repo("user+repo", entry, "/tmp", MOCK_CONFIG)
     assert updated is False
     assert "last_checked" in updated_entry
     assert updated_entry["ignored_until"] == "2099-01-01T00:00:00Z"
