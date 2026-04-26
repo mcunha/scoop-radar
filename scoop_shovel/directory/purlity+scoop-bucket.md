@@ -6,6 +6,7 @@
 
 
 
+
 ## 📦 Recipes (2)
 * [rectiq.json](https://github.com/purlity/scoop-bucket/blob/main/bucket/rectiq.json)
 * [rectiqctl.json](https://github.com/purlity/scoop-bucket/blob/main/bucket/rectiqctl.json)

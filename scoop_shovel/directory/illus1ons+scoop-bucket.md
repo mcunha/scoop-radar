@@ -6,5 +6,6 @@
 
 
 
+
 ## 📦 Recipes (1)
 * [spectre.json](https://github.com/illus1ons/scoop-bucket/blob/main/bucket/spectre.json)

@@ -6,6 +6,7 @@
 
 
 
+
 ## 📦 Recipes (2)
 * [quikgit.json](https://github.com/LvcasX1/scoop-bucket/blob/main/bucket/quikgit.json)
 * [ithil.json](https://github.com/LvcasX1/scoop-bucket/blob/main/bucket/ithil.json)

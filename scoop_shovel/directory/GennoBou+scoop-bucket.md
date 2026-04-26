@@ -6,5 +6,6 @@
 
 
 
+
 ## 📦 Recipes (1)
 * [gnb-envswap.json](https://github.com/GennoBou/scoop-bucket/blob/main/bucket/gnb-envswap.json)

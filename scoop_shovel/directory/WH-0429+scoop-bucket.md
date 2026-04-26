@@ -6,5 +6,6 @@
 
 
 
+
 ## 📦 Recipes (1)
 * [lceda-pro.json](https://github.com/WH-0429/scoop-bucket/blob/main/bucket/lceda-pro.json)

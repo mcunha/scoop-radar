@@ -6,5 +6,6 @@
 
 
 
+
 ## 📦 Recipes (1)
 * [hibi-ai.json](https://github.com/devsepnine/scoop-bucket/blob/main/bucket/hibi-ai.json)

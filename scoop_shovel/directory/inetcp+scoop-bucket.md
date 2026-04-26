@@ -6,6 +6,7 @@
 
 
 
+
 ## 📦 Recipes (9)
 * [clash-for-windows.json](https://github.com/inetcp/scoop-bucket/blob/main/bucket/clash-for-windows.json)
 * [winrar.json](https://github.com/inetcp/scoop-bucket/blob/main/bucket/winrar.json)

@@ -6,5 +6,6 @@
 
 
 
+
 ## 📦 Recipes (1)
 * [upftp.json](https://github.com/zy84338719/scoop-bucket/blob/main/bucket/upftp.json)

@@ -6,5 +6,6 @@
 
 
 
+
 ## 📦 Recipes (1)
 * [clj-kondo.json](https://github.com/borkdude/scoop-bucket/blob/master/bucket/clj-kondo.json)

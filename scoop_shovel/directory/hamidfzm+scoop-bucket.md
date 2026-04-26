@@ -6,5 +6,6 @@
 
 
 
+
 ## 📦 Recipes (1)
 * [glyph.json](https://github.com/hamidfzm/scoop-bucket/blob/main/bucket/glyph.json)

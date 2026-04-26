@@ -6,6 +6,7 @@
 
 
 
+
 ## 📦 Recipes (16)
 * [a5m2.json](https://github.com/seacanfly/scoop_bucket/blob/master/bucket/a5m2.json)
 * [shogi_gui.json](https://github.com/seacanfly/scoop_bucket/blob/master/bucket/shogi_gui.json)

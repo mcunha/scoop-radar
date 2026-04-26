@@ -6,5 +6,6 @@
 
 
 
+
 ## 📦 Recipes (1)
 * [gcc.json](https://github.com/Airr/scoop-bucket/blob/main/bucket/gcc.json)

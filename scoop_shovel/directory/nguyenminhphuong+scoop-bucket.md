@@ -6,5 +6,6 @@
 
 
 
+
 ## 📦 Recipes (1)
 * [azcx.json](https://github.com/nguyenminhphuong/scoop-bucket/blob/main/bucket/azcx.json)

@@ -6,5 +6,6 @@
 
 
 
+
 ## 📦 Recipes (1)
 * [sparkle.json](https://github.com/LengSword/scoop-yls/blob/master/bucket/sparkle.json)

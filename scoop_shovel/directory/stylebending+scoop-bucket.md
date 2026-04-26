@@ -6,5 +6,6 @@
 
 
 
+
 ## 📦 Recipes (1)
 * [Aperture.json](https://github.com/stylebending/scoop-bucket/blob/main/bucket/Aperture.json)

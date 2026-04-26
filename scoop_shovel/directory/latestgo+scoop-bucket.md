@@ -6,5 +6,6 @@
 
 
 
+
 ## 📦 Recipes (1)
 * [idea-portable.json](https://github.com/latestgo/scoop-bucket/blob/main/bucket/idea-portable.json)

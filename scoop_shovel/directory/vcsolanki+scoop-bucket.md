@@ -6,6 +6,7 @@
 
 
 
+
 ## 📦 Recipes (2)
 * [prism-launcher-cracked.json](https://github.com/vcsolanki/scoop-bucket/blob/main/bucket/prism-launcher-cracked.json)
 * [mactype.json](https://github.com/vcsolanki/scoop-bucket/blob/main/bucket/mactype.json)

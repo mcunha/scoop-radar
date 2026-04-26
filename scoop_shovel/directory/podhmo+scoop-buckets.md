@@ -6,5 +6,6 @@
 
 
 
+
 ## 📦 Recipes (1)
 * [go.json](https://github.com/podhmo/scoop-buckets/blob/master/go.json)

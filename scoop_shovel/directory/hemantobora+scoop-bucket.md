@@ -6,5 +6,6 @@
 
 
 
+
 ## 📦 Recipes (1)
 * [automock.json](https://github.com/hemantobora/scoop-bucket/blob/main/bucket/automock.json)

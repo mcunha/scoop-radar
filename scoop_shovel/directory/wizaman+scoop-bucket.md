@@ -6,6 +6,7 @@
 
 
 
+
 ## 📦 Recipes (5)
 * [just-lsp.json](https://github.com/wizaman/scoop-bucket/blob/master/bucket/just-lsp.json)
 * [nkf.json](https://github.com/wizaman/scoop-bucket/blob/master/bucket/nkf.json)

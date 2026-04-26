@@ -6,5 +6,6 @@
 
 
 
+
 ## 📦 Recipes (1)
 * [speechly.json](https://github.com/speechly/scoop-bucket/blob/master/bucket/speechly.json)

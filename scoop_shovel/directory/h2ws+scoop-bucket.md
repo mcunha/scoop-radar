@@ -6,6 +6,7 @@
 
 
 
+
 ## 📦 Recipes (2)
 * [wechatdevtools-rc.json](https://github.com/h2ws/scoop-bucket/blob/master/bucket/wechatdevtools-rc.json)
 * [wechatdevtools.json](https://github.com/h2ws/scoop-bucket/blob/master/bucket/wechatdevtools.json)

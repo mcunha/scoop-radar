@@ -6,5 +6,6 @@
 
 
 
+
 ## 📦 Recipes (1)
 * [clilol.json](https://github.com/mcornick/scoop-bucket/blob/main/bucket/clilol.json)
