@@ -6,6 +6,7 @@
 
 
 
+
 ## 📦 Recipes (5)
 * [voicevox-gpu.json](https://github.com/h-takesg/h-takesg_bucket/blob/master/bucket/voicevox-gpu.json)
 * [quickroute.json](https://github.com/h-takesg/h-takesg_bucket/blob/master/bucket/quickroute.json)

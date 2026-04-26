@@ -6,6 +6,7 @@
 
 
 
+
 ## 📦 Recipes (8)
 * [OpenTrace.json](https://github.com/Jenway/scoop/blob/master/bucket/OpenTrace.json)
 * [openjdk.json](https://github.com/Jenway/scoop/blob/master/bucket/openjdk.json)

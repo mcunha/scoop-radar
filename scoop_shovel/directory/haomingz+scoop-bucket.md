@@ -6,6 +6,7 @@
 
 
 
+
 ## 📦 Recipes (14)
 * [claude-code.json](https://github.com/haomingz/scoop-bucket/blob/master/bucket/claude-code.json)
 * [mcp-grafana.json](https://github.com/haomingz/scoop-bucket/blob/master/bucket/mcp-grafana.json)

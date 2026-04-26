@@ -6,6 +6,7 @@
 
 
 
+
 ## 📦 Recipes (13)
 * [clash-for-windows.json](https://github.com/GunMoe/scoop-bucket/blob/main/bucket/clash-for-windows.json)
 * [neteasemusic.json](https://github.com/GunMoe/scoop-bucket/blob/main/bucket/neteasemusic.json)

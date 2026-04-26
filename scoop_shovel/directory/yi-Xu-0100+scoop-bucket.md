@@ -6,6 +6,7 @@
 
 
 
+
 ## 📦 Recipes (10)
 * [PandaOCRPro.json](https://github.com/yi-Xu-0100/scoop-bucket/blob/main/bucket/PandaOCRPro.json)
 * [PDFPatcher.json](https://github.com/yi-Xu-0100/scoop-bucket/blob/main/bucket/PDFPatcher.json)

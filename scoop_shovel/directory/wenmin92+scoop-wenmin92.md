@@ -6,6 +6,7 @@
 
 
 
+
 ## 📦 Recipes (4)
 * [registryworkshop.json](https://github.com/wenmin92/scoop-wenmin92/blob/master/bucket/registryworkshop.json)
 * [ediary.json](https://github.com/wenmin92/scoop-wenmin92/blob/master/bucket/ediary.json)

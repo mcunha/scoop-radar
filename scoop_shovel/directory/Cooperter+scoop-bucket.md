@@ -6,6 +6,7 @@
 
 
 
+
 ## 📦 Recipes (4)
 * [SSTap.json](https://github.com/Cooperter/scoop-bucket/blob/main/bucket/SSTap.json)
 * [redisinsight.json](https://github.com/Cooperter/scoop-bucket/blob/main/bucket/redisinsight.json)

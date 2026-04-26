@@ -6,6 +6,7 @@
 
 
 
+
 ## 📦 Recipes (14)
 * [zigmod.json](https://github.com/santarl/scoop_bucket/blob/master/bucket/zigmod.json)
 * [fancywm.json](https://github.com/santarl/scoop_bucket/blob/master/bucket/fancywm.json)

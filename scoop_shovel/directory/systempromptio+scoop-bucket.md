@@ -6,5 +6,6 @@
 
 
 
+
 ## 📦 Recipes (1)
 * [cowork.json](https://github.com/systempromptio/scoop-bucket/blob/main/bucket/cowork.json)

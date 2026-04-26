@@ -6,6 +6,7 @@
 
 
 
+
 ## 📦 Recipes (288)
 * [cursor-2.6.20.json](https://github.com/wwvl/Scoop-Cursor/blob/main/bucket/cursor-2.6.20.json)
 * [cursor-1.6.14.json](https://github.com/wwvl/Scoop-Cursor/blob/main/bucket/cursor-1.6.14.json)
