@@ -6,5 +6,6 @@
 
 
 
+
 ## 📦 Recipes (1)
 * [hakuneko.json](https://github.com/MrMikeandike/MAIScoopBucket/blob/master/bucket/hakuneko.json)

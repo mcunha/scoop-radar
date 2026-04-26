@@ -6,6 +6,7 @@
 
 
 
+
 ## 📦 Recipes (9)
 * [lmstudio.json](https://github.com/coldmoon6261/panda/blob/master/bucket/lmstudio.json)
 * [zed.json](https://github.com/coldmoon6261/panda/blob/master/bucket/zed.json)

@@ -6,6 +6,7 @@
 
 
 
+
 ## 📦 Recipes (7)
 * [sequator.json](https://github.com/easternnl/ScoopEastern/blob/main/bucket/sequator.json)
 * [fastrawviewer.json](https://github.com/easternnl/ScoopEastern/blob/main/bucket/fastrawviewer.json)

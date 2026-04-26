@@ -7,9 +7,9 @@ A data-driven, automated discovery and ranking engine for the Chocolatey package
 
 # 📊 Ecosystem Health
 * **Total Unique Recipes**: 2932
-* **Ecosystem Auto-Update Health**: 35.94%
+* **Ecosystem Auto-Update Health**: 35.98%
 * **Ecosystem Reliability**: 100.0% (Sampled URL Health)
-* **Official vs. Community**: 477 Official / 2851 Community
+* **Official vs. Community**: 481 Official / 2849 Community
 
 * **Stale/Abandoned Sources (> 1 Year)**: 🪦 121
 
@@ -63,7 +63,7 @@ These repositories are actively maintained and feature a high percentage of **un
 A combined list of every source discovered in the ecosystem.
 
 <details>
-<summary><b>Click to expand all 227 discovered sources</b></summary>
+<summary><b>Click to expand all 228 discovered sources</b></summary>
 
 | Repository | Recipes | Score | Auto-Update | Badges |
 | :--- | :---: | :---: | :---: | :--- |
@@ -159,6 +159,7 @@ A combined list of every source discovered in the ecosystem.
 | **[brogers5/chocolatey-package-twinkle-tray](directory/brogers5+chocolatey-package-twinkle-tray.md)** | 📦 1 | ⭐ 1.0 | 🔄 100% |  |
 | **[open-circle-ltd/chocolatey.archi](directory/open-circle-ltd+chocolatey.archi.md)** | 📦 1 | ⭐ 1.0 | 🔄 0% |  |
 | **[brogers5/chocolatey-package-openrgb.portable](directory/brogers5+chocolatey-package-openrgb.portable.md)** | 📦 1 | ⭐ 1.0 | 🔄 100% |  |
+| **[chocolatey-community/chocolatey-packages-template](directory/chocolatey-community+chocolatey-packages-template.md)** | 📦 2 | ⭐ 1.0 | 🔄 100% | 👑 Official |
 | **[open-circle-ltd/chocolatey.epson-iprojection](directory/open-circle-ltd+chocolatey.epson-iprojection.md)** | 📦 1 | ⭐ 1.0 | 🔄 0% |  |
 | **[open-circle-ltd/chocolatey.airtame](directory/open-circle-ltd+chocolatey.airtame.md)** | 📦 1 | ⭐ 1.0 | 🔄 0% |  |
 | **[open-circle-ltd/chocolatey.lexmark-universal-driver-pcl-xl](directory/open-circle-ltd+chocolatey.lexmark-universal-driver-pcl-xl.md)** | 📦 1 | ⭐ 1.0 | 🔄 0% |  |
@@ -298,15 +299,15 @@ A combined list of every source discovered in the ecosystem.
 </details>
 
 # 🛠️ Operational Health (Crawler Metrics)
-* **Total Crawler Runs**: 18
-* **Total Repo Updates**: 1094
+* **Total Crawler Runs**: 19
+* **Total Repo Updates**: 1154
 * **Ecosystem Growth (Since Last Run)**:
   * 🪣 +1 Repositories
-  * 📦 +113 Recipes
+  * 📦 +2 Recipes
 * **Eviction Count**: 🗑️ 0
 * **API Rate Limit Retries**: ⏳ 0
-* **Cache Size**: 💾 0.64 MB
+* **Cache Size**: 💾 0.67 MB
 * **Pipeline Times (Last Run)**:
-  * 🔍 Discovery: 3.03s
-  * 📥 Update: 2.20s
-* **Cumulative Compute Time**: 1.0 minutes
+  * 🔍 Discovery: 3.02s
+  * 📥 Update: 1.54s
+* **Cumulative Compute Time**: 1.1 minutes

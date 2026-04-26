@@ -6,6 +6,7 @@
 
 
 
+
 ## 📦 Recipes (44)
 * [furious.json](https://github.com/woyxiang/slug/blob/master/bucket/furious.json)
 * [proxy-bridge.json](https://github.com/woyxiang/slug/blob/master/bucket/proxy-bridge.json)

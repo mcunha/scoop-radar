@@ -6,6 +6,7 @@
 
 
 
+
 ## 📦 Recipes (2)
 * [git-absorb.json](https://github.com/kergoth/scoop-bucket/blob/master/bucket/git-absorb.json)
 * [bat-extras.json](https://github.com/kergoth/scoop-bucket/blob/master/bucket/bat-extras.json)

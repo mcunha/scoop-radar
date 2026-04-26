@@ -6,5 +6,6 @@
 
 
 
+
 ## 📦 Recipes (1)
 * [goldendict-ng.json](https://github.com/twikou/scoop-utils/blob/main/bucket/goldendict-ng.json)

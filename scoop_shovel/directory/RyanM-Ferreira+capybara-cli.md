@@ -6,5 +6,6 @@
 
 
 
+
 ## 📦 Recipes (1)
 * [capybara.json](https://github.com/RyanM-Ferreira/capybara-cli/blob/main/bucket/capybara.json)

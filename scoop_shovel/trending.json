@@ -1,68 +1,29 @@
 {
-  "trending": [
-    {
-      "name": "bgsulz-Bucket",
-      "full_name": "bgsulz/bgsulz-Bucket",
-      "git_url": "https://github.com/bgsulz/bgsulz-Bucket.git",
-      "html_url": "https://github.com/bgsulz/bgsulz-Bucket",
-      "score": 1.0,
-      "default_branch": "master",
-      "topics": [
-        "scoop-bucket"
-      ],
-      "last_checked": "2026-04-26T20:55:29Z",
-      "pushed_at": "2026-04-24T21:09:28Z",
-      "archived": false,
-      "disabled": false,
-      "entries": [
-        "bucket/native-access.json",
-        "bucket/flexasio-gui.json",
-        "bucket/zen-browser.json",
-        "bucket/t3code.json",
-        "bucket/matroska.json"
-      ],
-      "checkver_count": 3,
-      "consecutive_failures": 0,
-      "probe_success_rate": 1.0,
-      "valid_probes": 3,
-      "total_probes": 3,
-      "unique_count": 4,
-      "uniqueness_ratio": 0.8,
-      "auto_update_percentage": 60.0,
-      "final_score": 57.376392038420825,
-      "current_rank": 345,
-      "rank_velocity": 37,
-      "previous_rank": 345,
-      "is_scoop_official": false,
-      "is_scoop_known": false,
-      "is_shovel_official": false,
-      "is_shovel_known": false
-    }
-  ],
+  "trending": [],
   "metadata": {
-    "generated_at": "2026-04-26T20:55:31Z",
-    "count": 1,
+    "generated_at": "2026-04-26T21:00:53Z",
+    "count": 0,
     "global_metrics": {
-      "total_runs": 18,
-      "total_run_time_seconds": 2645.2238762378693,
-      "total_repo_updates": 1262,
-      "previous_total_buckets": 934,
-      "previous_total_recipes": 125666,
-      "bucket_velocity": 43,
-      "recipe_velocity": 294,
+      "total_runs": 19,
+      "total_run_time_seconds": 2654.7260208129883,
+      "total_repo_updates": 1323,
+      "previous_total_buckets": 982,
+      "previous_total_recipes": 125956,
+      "bucket_velocity": 48,
+      "recipe_velocity": 290,
       "total_evictions": 0,
       "total_api_retries": 0,
-      "last_run_discover_time": 2.4659390449523926,
-      "last_run_update_time": 11.787200212478638,
+      "last_run_discover_time": 2.427032470703125,
+      "last_run_update_time": 6.574248552322388,
       "ecosystem_reliability": 89.1,
-      "cache_size_mb": 9.29663372039795,
-      "total_unique_recipes": 30668,
-      "auto_update_percentage": 85.38,
-      "official_recipes": 47927,
-      "community_recipes": 77739,
-      "stale_buckets": 306,
+      "cache_size_mb": 9.344923973083496,
+      "total_unique_recipes": 30719,
+      "auto_update_percentage": 85.35,
+      "official_recipes": 48023,
+      "community_recipes": 77933,
+      "stale_buckets": 334,
       "shovel_buckets": 24,
-      "scoop_buckets": 910
+      "scoop_buckets": 958
     }
   }
 }

@@ -6,5 +6,6 @@
 
 
 
+
 ## 📦 Recipes (1)
 * [madedit.json](https://github.com/litp/my-scoop-bucket/blob/master/bucket/madedit.json)

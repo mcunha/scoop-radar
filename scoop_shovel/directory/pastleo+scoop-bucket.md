@@ -6,6 +6,7 @@
 
 
 
+
 ## 📦 Recipes (2)
 * [addShortCut.json](https://github.com/pastleo/scoop-bucket/blob/master/bucket/addShortCut.json)
 * [mBash.json](https://github.com/pastleo/scoop-bucket/blob/master/bucket/mBash.json)

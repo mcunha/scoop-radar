@@ -6,6 +6,7 @@
 
 
 
+
 ## 📦 Recipes (4)
 * [snes9x-nwa.json](https://github.com/NoNameWasDefined/private-scoop-bucket/blob/master/bucket/snes9x-nwa.json)
 * [mindustry-stable.json](https://github.com/NoNameWasDefined/private-scoop-bucket/blob/master/bucket/mindustry-stable.json)

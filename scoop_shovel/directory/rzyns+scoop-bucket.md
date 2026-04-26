@@ -6,6 +6,7 @@
 
 
 
+
 ## 📦 Recipes (2)
 * [diffusion-toolkit.json](https://github.com/rzyns/scoop-bucket/blob/master/bucket/diffusion-toolkit.json)
 * [imgbrd-grabber.json](https://github.com/rzyns/scoop-bucket/blob/master/bucket/imgbrd-grabber.json)

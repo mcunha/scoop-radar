@@ -6,5 +6,6 @@
 
 
 
+
 ## 📦 Recipes (1)
 * [busybox-no-applets.json](https://github.com/woa7dklb/scoop-bucket/blob/main/bucket/busybox-no-applets.json)

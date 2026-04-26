@@ -6,5 +6,6 @@
 
 
 
+
 ## 📦 Recipes (1)
 * [mason-standalone.json](https://github.com/nridwan/scoop-bucket/blob/main/bucket/mason-standalone.json)

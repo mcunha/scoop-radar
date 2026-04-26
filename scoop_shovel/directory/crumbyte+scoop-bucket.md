@@ -6,6 +6,7 @@
 
 
 
+
 ## 📦 Recipes (2)
 * [noxdir.json](https://github.com/crumbyte/scoop-bucket/blob/main/bucket/noxdir.json)
 * [noxdir-nightly.json](https://github.com/crumbyte/scoop-bucket/blob/main/bucket/noxdir-nightly.json)
