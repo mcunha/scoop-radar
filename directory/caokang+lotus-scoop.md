@@ -1,0 +1,40 @@
+# caokang/lotus-scoop
+
+* **Repository:** [https://github.com/caokang/lotus-scoop](https://github.com/caokang/lotus-scoop)
+* **Score:** 1.0
+* **Auto-Update:** 10%
+
+
+
+## 📦 Recipes (31)
+* [potplayer.json](https://github.com/caokang/lotus-scoop/blob/master/bucket/potplayer.json)
+* [eudic.json](https://github.com/caokang/lotus-scoop/blob/master/bucket/eudic.json)
+* [kodobrowser.json](https://github.com/caokang/lotus-scoop/blob/master/bucket/kodobrowser.json)
+* [xiuxiu.json](https://github.com/caokang/lotus-scoop/blob/master/bucket/xiuxiu.json)
+* [iobituninstaller.json](https://github.com/caokang/lotus-scoop/blob/master/bucket/iobituninstaller.json)
+* [ossutil.json](https://github.com/caokang/lotus-scoop/blob/master/bucket/ossutil.json)
+* [beyondcompare.json](https://github.com/caokang/lotus-scoop/blob/master/bucket/beyondcompare.json)
+* [wetool.json](https://github.com/caokang/lotus-scoop/blob/master/bucket/wetool.json)
+* [emeditor.json](https://github.com/caokang/lotus-scoop/blob/master/bucket/emeditor.json)
+* [fsresizer.json](https://github.com/caokang/lotus-scoop/blob/master/bucket/fsresizer.json)
+* [clash.json](https://github.com/caokang/lotus-scoop/blob/master/bucket/clash.json)
+* [picgo.json](https://github.com/caokang/lotus-scoop/blob/master/bucket/picgo.json)
+* [ditto.json](https://github.com/caokang/lotus-scoop/blob/master/bucket/ditto.json)
+* [claunch.json](https://github.com/caokang/lotus-scoop/blob/master/bucket/claunch.json)
+* [dismpp.json](https://github.com/caokang/lotus-scoop/blob/master/bucket/dismpp.json)
+* [notepad2.json](https://github.com/caokang/lotus-scoop/blob/master/bucket/notepad2.json)
+* [notepad2-mod.json](https://github.com/caokang/lotus-scoop/blob/master/bucket/notepad2-mod.json)
+* [lightproxy.json](https://github.com/caokang/lotus-scoop/blob/master/bucket/lightproxy.json)
+* [robo3t.json](https://github.com/caokang/lotus-scoop/blob/master/bucket/robo3t.json)
+* [foobar2000.json](https://github.com/caokang/lotus-scoop/blob/master/bucket/foobar2000.json)
+* [jianguoyun.json](https://github.com/caokang/lotus-scoop/blob/master/bucket/jianguoyun.json)
+* [xtools.json](https://github.com/caokang/lotus-scoop/blob/master/bucket/xtools.json)
+* [uninstalltool.json](https://github.com/caokang/lotus-scoop/blob/master/bucket/uninstalltool.json)
+* [renamer.json](https://github.com/caokang/lotus-scoop/blob/master/bucket/renamer.json)
+* [newfiletime.json](https://github.com/caokang/lotus-scoop/blob/master/bucket/newfiletime.json)
+* [acmekit.json](https://github.com/caokang/lotus-scoop/blob/master/bucket/acmekit.json)
+* [shadowsocksrr.json](https://github.com/caokang/lotus-scoop/blob/master/bucket/shadowsocksrr.json)
+* [fscapture.json](https://github.com/caokang/lotus-scoop/blob/master/bucket/fscapture.json)
+* [idm.json](https://github.com/caokang/lotus-scoop/blob/master/bucket/idm.json)
+* [totalcommander.json](https://github.com/caokang/lotus-scoop/blob/master/bucket/totalcommander.json)
+* [oss-browser.json](https://github.com/caokang/lotus-scoop/blob/master/bucket/oss-browser.json)
