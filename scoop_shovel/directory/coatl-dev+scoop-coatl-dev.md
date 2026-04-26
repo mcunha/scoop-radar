@@ -6,6 +6,7 @@
 
 
 
+
 ## 📦 Recipes (7)
 * [python314.json](https://github.com/coatl-dev/scoop-coatl-dev/blob/coatl/bucket/python314.json)
 * [ignition.json](https://github.com/coatl-dev/scoop-coatl-dev/blob/coatl/bucket/ignition.json)

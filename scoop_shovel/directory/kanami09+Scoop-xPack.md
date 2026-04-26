@@ -6,6 +6,7 @@
 
 
 
+
 ## 📦 Recipes (14)
 * [xpack-arm-none-eabi-gcc.json](https://github.com/kanami09/Scoop-xPack/blob/master/bucket/xpack-arm-none-eabi-gcc.json)
 * [xpack-gcc-x86.json](https://github.com/kanami09/Scoop-xPack/blob/master/bucket/xpack-gcc-x86.json)

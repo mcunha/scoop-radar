@@ -6,5 +6,6 @@
 
 
 
+
 ## 📦 Recipes (1)
 * [rc.json](https://github.com/rustfs/scoop-bucket/blob/master/bucket/rc.json)

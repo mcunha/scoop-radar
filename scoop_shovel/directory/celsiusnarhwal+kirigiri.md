@@ -6,5 +6,6 @@
 
 
 
+
 ## 📦 Recipes (1)
 * [pipx.json](https://github.com/celsiusnarhwal/kirigiri/blob/main/bucket/pipx.json)

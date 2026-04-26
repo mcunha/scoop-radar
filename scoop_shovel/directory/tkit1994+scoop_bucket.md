@@ -6,6 +6,7 @@
 
 
 
+
 ## 📦 Recipes (16)
 * [HearthstoneDeckTracker.json](https://github.com/tkit1994/scoop_bucket/blob/master/bucket/HearthstoneDeckTracker.json)
 * [seraphine.json](https://github.com/tkit1994/scoop_bucket/blob/master/bucket/seraphine.json)

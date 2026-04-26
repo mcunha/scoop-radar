@@ -6,10 +6,10 @@ A data-driven, automated discovery and ranking engine for the Chocolatey package
 ![Update Package Managers Radar](https://github.com/mcunha/scoop-radar/actions/workflows/update.yml/badge.svg)
 
 # 📊 Ecosystem Health
-* **Total Unique Recipes**: 0
+* **Total Unique Recipes**: 7
 * **Ecosystem Auto-Update Health**: 0.0%
 * **Ecosystem Reliability**: 100.0% (Sampled URL Health)
-* **Official vs. Community**: 0 Official / 0 Community
+* **Official vs. Community**: 0 Official / 7 Community
 
 * **Stale/Abandoned Sources (> 1 Year)**: 🪦 0
 
@@ -46,23 +46,24 @@ choco install <app-name> --source <source-name>
 A combined list of every source discovered in the ecosystem.
 
 <details>
-<summary><b>Click to expand all 0 discovered sources</b></summary>
+<summary><b>Click to expand all 1 discovered sources</b></summary>
 
 | Repository | Recipes | Score | Auto-Update | Badges |
 | :--- | :---: | :---: | :---: | :--- |
+| **[pact-foundation/choco](directory/pact-foundation+choco.md)** | 📦 7 | ⭐ 1.0 | 🔄 0% |  |
 
 </details>
 
 # 🛠️ Operational Health (Crawler Metrics)
-* **Total Crawler Runs**: 3
-* **Total Repo Updates**: 180
+* **Total Crawler Runs**: 4
+* **Total Repo Updates**: 240
 * **Ecosystem Growth (Since Last Run)**:
-  * 🪣 +0 Repositories
-  * 📦 +0 Recipes
+  * 🪣 +1 Repositories
+  * 📦 +7 Recipes
 * **Eviction Count**: 🗑️ 0
 * **API Rate Limit Retries**: ⏳ 0
 * **Cache Size**: 💾 0.12 MB
 * **Pipeline Times (Last Run)**:
-  * 🔍 Discovery: 2.35s
-  * 📥 Update: 4.03s
-* **Cumulative Compute Time**: 0.3 minutes
+  * 🔍 Discovery: 0.25s
+  * 📥 Update: 3.97s
+* **Cumulative Compute Time**: 0.4 minutes

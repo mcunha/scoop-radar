@@ -6,6 +6,7 @@
 
 
 
+
 ## 📦 Recipes (190)
 * [nomad-pack.json](https://github.com/Jadeiin/scoop/blob/master/bucket/nomad-pack.json)
 * [nebula.json](https://github.com/Jadeiin/scoop/blob/master/bucket/nebula.json)

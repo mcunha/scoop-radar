@@ -6,6 +6,7 @@
 
 
 
+
 ## 📦 Recipes (3)
 * [Jackett.json](https://github.com/heroku-miraheze/scoop-bucket/blob/master/bucket/Jackett.json)
 * [JDownloader.json](https://github.com/heroku-miraheze/scoop-bucket/blob/master/bucket/JDownloader.json)

@@ -6,6 +6,7 @@
 
 
 
+
 ## 📦 Recipes (18)
 * [ripgrep-all.json](https://github.com/danalec/scoop-alts/blob/master/bucket/ripgrep-all.json)
 * [usb-safely-remove.json](https://github.com/danalec/scoop-alts/blob/master/bucket/usb-safely-remove.json)

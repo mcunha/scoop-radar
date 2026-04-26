@@ -6,6 +6,7 @@
 
 
 
+
 ## 📦 Recipes (38)
 * [mumuplayer-cn-np.json](https://github.com/jbwfu/scoop-bucket/blob/master/bucket/mumuplayer-cn-np.json)
 * [gotify-server.json](https://github.com/jbwfu/scoop-bucket/blob/master/bucket/gotify-server.json)

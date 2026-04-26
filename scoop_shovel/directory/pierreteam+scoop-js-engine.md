@@ -6,6 +6,7 @@
 
 
 
+
 ## 📦 Recipes (10)
 * [quickjs.json](https://github.com/pierreteam/scoop-js-engine/blob/main/bucket/quickjs.json)
 * [chromium-v8-dbg.json](https://github.com/pierreteam/scoop-js-engine/blob/main/bucket/chromium-v8-dbg.json)

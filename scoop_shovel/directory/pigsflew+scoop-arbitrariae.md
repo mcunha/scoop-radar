@@ -6,6 +6,7 @@
 
 
 
+
 ## 📦 Recipes (5)
 * [ffxivquicklauncher.json](https://github.com/pigsflew/scoop-arbitrariae/blob/main/bucket/ffxivquicklauncher.json)
 * [fontbase.json](https://github.com/pigsflew/scoop-arbitrariae/blob/main/bucket/fontbase.json)

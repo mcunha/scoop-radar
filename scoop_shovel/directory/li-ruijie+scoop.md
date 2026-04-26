@@ -6,6 +6,7 @@
 
 
 
+
 ## 📦 Recipes (59)
 * [python-embedded.json](https://github.com/li-ruijie/scoop/blob/main/bucket/python-embedded.json)
 * [fonts-fontawesome-free.json](https://github.com/li-ruijie/scoop/blob/main/bucket/fonts-fontawesome-free.json)

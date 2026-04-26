@@ -6,6 +6,7 @@
 
 
 
+
 ## 📦 Recipes (46)
 * [UEFIFind.json](https://github.com/apeiraco/scoop-bucket/blob/master/bucket/UEFIFind.json)
 * [LMStudio.json](https://github.com/apeiraco/scoop-bucket/blob/master/bucket/LMStudio.json)

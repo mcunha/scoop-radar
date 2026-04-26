@@ -6,6 +6,7 @@
 
 
 
+
 ## 📦 Recipes (113)
 * [fx.json](https://github.com/huangnauh/carrot/blob/master/bucket/fx.json)
 * [alacritty.json](https://github.com/huangnauh/carrot/blob/master/bucket/alacritty.json)
