@@ -6,6 +6,7 @@
 
 
 
+
 ## 📦 Recipes (2)
 * [cosupload.json](https://github.com/onlyice/scoop-bucket/blob/master/bucket/cosupload.json)
 * [qshell.json](https://github.com/onlyice/scoop-bucket/blob/master/bucket/qshell.json)

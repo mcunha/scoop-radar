@@ -6,6 +6,7 @@
 
 
 
+
 ## 📦 Recipes (5)
 * [amenoma-cn.json](https://github.com/LazyGeniusMan/Scoop-Genshin/blob/master/bucket/amenoma-cn.json)
 * [inventory-kamera.json](https://github.com/LazyGeniusMan/Scoop-Genshin/blob/master/bucket/inventory-kamera.json)

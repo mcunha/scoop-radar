@@ -6,5 +6,6 @@
 
 
 
+
 ## 📦 Recipes (1)
 * [nanoprompt.json](https://github.com/Ideademic/bucket/blob/main/bucket/nanoprompt.json)

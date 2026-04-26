@@ -6,6 +6,7 @@
 
 
 
+
 ## 📦 Recipes (22)
 * [kaspersky-virus-removal-tool.json](https://github.com/Witchilich/scoop-witchilich/blob/main/bucket/kaspersky-virus-removal-tool.json)
 * [anihash.json](https://github.com/Witchilich/scoop-witchilich/blob/main/bucket/anihash.json)

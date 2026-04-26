@@ -6,5 +6,6 @@
 
 
 
+
 ## 📦 Recipes (1)
 * [go-phantom.json](https://github.com/hammadxcm/scoop-phantom/blob/main/bucket/go-phantom.json)

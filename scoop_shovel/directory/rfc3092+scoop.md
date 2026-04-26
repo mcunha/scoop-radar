@@ -6,5 +6,6 @@
 
 
 
+
 ## 📦 Recipes (1)
 * [naisdevice.json](https://github.com/rfc3092/scoop/blob/main/naisdevice.json)

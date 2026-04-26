@@ -6,6 +6,7 @@
 
 
 
+
 ## 📦 Recipes (2)
 * [f2.json](https://github.com/ayoisaiah/scoop-bucket/blob/master/bucket/f2.json)
 * [focus.json](https://github.com/ayoisaiah/scoop-bucket/blob/master/bucket/focus.json)

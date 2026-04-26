@@ -6,6 +6,7 @@
 
 
 
+
 ## 📦 Recipes (55)
 * [alacritty.json](https://github.com/JourneyOver/scoop-buckets/blob/main/bucket/alacritty.json)
 * [netcore.json](https://github.com/JourneyOver/scoop-buckets/blob/main/bucket/netcore.json)

@@ -6,5 +6,6 @@
 
 
 
+
 ## 📦 Recipes (1)
 * [gitcury.json](https://github.com/lakshyajain-0291/GitCury-Scoop-Bucket/blob/master/gitcury.json)

@@ -6,6 +6,7 @@
 
 
 
+
 ## 📦 Recipes (25)
 * [rust-hash@0.2.2.json](https://github.com/ropean/scoop/blob/main/bucket/rust-hash@0.2.2.json)
 * [myhosts@0.0.9.json](https://github.com/ropean/scoop/blob/main/bucket/myhosts@0.0.9.json)

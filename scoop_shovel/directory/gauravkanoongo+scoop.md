@@ -6,6 +6,7 @@
 
 
 
+
 ## 📦 Recipes (3)
 * [moneymanagerex.json](https://github.com/gauravkanoongo/scoop/blob/master/bucket/moneymanagerex.json)
 * [windows-terminal-preview.json](https://github.com/gauravkanoongo/scoop/blob/master/bucket/windows-terminal-preview.json)

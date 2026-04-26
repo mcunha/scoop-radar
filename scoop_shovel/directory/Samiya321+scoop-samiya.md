@@ -6,6 +6,7 @@
 
 
 
+
 ## 📦 Recipes (38)
 * [Quicker.json](https://github.com/Samiya321/scoop-samiya/blob/main/bucket/Quicker.json)
 * [idm-trial-reset.json](https://github.com/Samiya321/scoop-samiya/blob/main/bucket/idm-trial-reset.json)

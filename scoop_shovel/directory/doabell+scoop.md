@@ -6,6 +6,7 @@
 
 
 
+
 ## 📦 Recipes (7)
 * [just-lsp.json](https://github.com/doabell/scoop/blob/master/bucket/just-lsp.json)
 * [librescore.json](https://github.com/doabell/scoop/blob/master/bucket/librescore.json)

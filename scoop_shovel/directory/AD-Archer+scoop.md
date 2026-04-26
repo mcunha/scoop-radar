@@ -6,5 +6,6 @@
 
 
 
+
 ## 📦 Recipes (1)
 * [rustysound.json](https://github.com/AD-Archer/scoop/blob/main/bucket/rustysound.json)
