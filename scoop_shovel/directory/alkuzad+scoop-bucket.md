@@ -6,6 +6,7 @@
 
 
 
+
 ## 📦 Recipes (6)
 * [awless.json](https://github.com/alkuzad/scoop-bucket/blob/master/bucket/awless.json)
 * [ms-ripgrep.json](https://github.com/alkuzad/scoop-bucket/blob/master/bucket/ms-ripgrep.json)

@@ -6,5 +6,6 @@
 
 
 
+
 ## 📦 Recipes (1)
 * [secrethub-cli.json](https://github.com/secrethub/scoop-secrethub/blob/master/secrethub-cli.json)

@@ -6,6 +6,7 @@
 
 
 
+
 ## 📦 Recipes (20)
 * [potplayer.json](https://github.com/wateroader/scoop-iszy/blob/master/bucket/potplayer.json)
 * [clash-for-windows.json](https://github.com/wateroader/scoop-iszy/blob/master/bucket/clash-for-windows.json)

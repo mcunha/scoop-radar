@@ -6,7 +6,8 @@
 
 
 
-## 📦 Recipes (158)
+
+## 📦 Recipes (159)
 * [cherry-studio-portable.json](https://github.com/ShuguangSun/sgs-scoop-bucket/blob/master/bucket/cherry-studio-portable.json)
 * [tea.json](https://github.com/ShuguangSun/sgs-scoop-bucket/blob/master/bucket/tea.json)
 * [docsim.json](https://github.com/ShuguangSun/sgs-scoop-bucket/blob/master/bucket/docsim.json)
@@ -77,6 +78,7 @@
 * [JetBrainsMono.json](https://github.com/ShuguangSun/sgs-scoop-bucket/blob/master/bucket/JetBrainsMono.json)
 * [r-4.2.1.json](https://github.com/ShuguangSun/sgs-scoop-bucket/blob/master/bucket/r-4.2.1.json)
 * [jags-4.3.1.json](https://github.com/ShuguangSun/sgs-scoop-bucket/blob/master/bucket/jags-4.3.1.json)
+* [emacs.json](https://github.com/ShuguangSun/sgs-scoop-bucket/blob/master/bucket/emacs.json)
 * [Maple-Mono-otf.json](https://github.com/ShuguangSun/sgs-scoop-bucket/blob/master/bucket/Maple-Mono-otf.json)
 * [git-lfs.json](https://github.com/ShuguangSun/sgs-scoop-bucket/blob/master/bucket/git-lfs.json)
 * [xpdf-tools.json](https://github.com/ShuguangSun/sgs-scoop-bucket/blob/master/bucket/xpdf-tools.json)

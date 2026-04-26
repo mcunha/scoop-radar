@@ -6,6 +6,7 @@
 
 
 
+
 ## 📦 Recipes (49)
 * [php74-nts.json](https://github.com/aoisummer/scoop-bucket/blob/master/bucket/php74-nts.json)
 * [firefox-developer-zh-cn.json](https://github.com/aoisummer/scoop-bucket/blob/master/bucket/firefox-developer-zh-cn.json)

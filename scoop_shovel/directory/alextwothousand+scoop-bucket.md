@@ -6,6 +6,7 @@
 
 
 
+
 ## 📦 Recipes (4)
 * [winfetch.json](https://github.com/alextwothousand/scoop-bucket/blob/main/bucket/winfetch.json)
 * [openssl-developer.json](https://github.com/alextwothousand/scoop-bucket/blob/main/bucket/openssl-developer.json)

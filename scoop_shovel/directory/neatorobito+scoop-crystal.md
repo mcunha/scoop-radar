@@ -6,5 +6,6 @@
 
 
 
+
 ## 📦 Recipes (1)
 * [crystal.json](https://github.com/neatorobito/scoop-crystal/blob/main/bucket/crystal.json)

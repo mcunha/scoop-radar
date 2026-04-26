@@ -6,6 +6,7 @@
 
 
 
+
 ## 📦 Recipes (292)
 * [Noto-Font.json](https://github.com/go2sun/scoop-bucket-1/blob/master/Noto-Font.json)
 * [wxMEdit.json](https://github.com/go2sun/scoop-bucket-1/blob/master/wxMEdit.json)

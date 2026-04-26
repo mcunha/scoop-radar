@@ -6,5 +6,6 @@
 
 
 
+
 ## 📦 Recipes (1)
 * [spotify-tui.json](https://github.com/Rigellute/scoop-bucket/blob/master/bucket/spotify-tui.json)

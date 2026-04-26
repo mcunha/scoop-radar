@@ -6,6 +6,7 @@
 
 
 
+
 ## 📦 Recipes (7)
 * [nkf.json](https://github.com/dooteeen/scoop-for-jp/blob/master/nkf.json)
 * [myrica.json](https://github.com/dooteeen/scoop-for-jp/blob/master/myrica.json)

@@ -6,6 +6,7 @@
 
 
 
+
 ## 📦 Recipes (10)
 * [filetypesman.json](https://github.com/AStupidBear/scoop-bear/blob/master/filetypesman.json)
 * [wkhtmltopdf.json](https://github.com/AStupidBear/scoop-bear/blob/master/wkhtmltopdf.json)

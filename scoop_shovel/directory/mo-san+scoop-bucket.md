@@ -6,6 +6,7 @@
 
 
 
+
 ## 📦 Recipes (133)
 * [__template.json](https://github.com/mo-san/scoop-bucket/blob/main/bucket/__template.json)
 * [whois.json](https://github.com/mo-san/scoop-bucket/blob/main/bucket/whois.json)

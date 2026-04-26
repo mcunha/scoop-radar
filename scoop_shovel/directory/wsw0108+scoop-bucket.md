@@ -6,6 +6,7 @@
 
 
 
+
 ## 📦 Recipes (12)
 * [aspell.json](https://github.com/wsw0108/scoop-bucket/blob/main/bucket/aspell.json)
 * [gopass-jsonapi.json](https://github.com/wsw0108/scoop-bucket/blob/main/bucket/gopass-jsonapi.json)

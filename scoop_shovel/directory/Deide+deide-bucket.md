@@ -6,6 +6,7 @@
 
 
 
+
 ## 📦 Recipes (38)
 * [alacritty.json](https://github.com/Deide/deide-bucket/blob/master/bucket/alacritty.json)
 * [mindustry.json](https://github.com/Deide/deide-bucket/blob/master/bucket/mindustry.json)

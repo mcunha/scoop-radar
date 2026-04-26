@@ -6,6 +6,7 @@
 
 
 
+
 ## 📦 Recipes (17)
 * [msiafterburner.json](https://github.com/starise/Scoop-Gaming/blob/main/bucket/msiafterburner.json)
 * [uniws-patcher.json](https://github.com/starise/Scoop-Gaming/blob/main/bucket/uniws-patcher.json)
