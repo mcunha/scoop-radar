@@ -1,7 +1,7 @@
 {
   "evictions": [],
   "metadata": {
-    "generated_at": "2026-04-25T23:34:58Z",
+    "generated_at": "2026-04-25T23:43:37Z",
     "count": 0,
     "global_metrics": {
       "total_runs": 24,
@@ -17,10 +17,10 @@
       "last_run_update_time": 12.493123769760132,
       "ecosystem_reliability": 89.8,
       "cache_size_mb": 9.438627243041992,
-      "total_unique_recipes": 37122,
+      "total_unique_recipes": 30851,
       "auto_update_percentage": 85.38,
-      "official_recipes": 0,
-      "community_recipes": 126891,
+      "official_recipes": 48216,
+      "community_recipes": 78675,
       "stale_buckets": 375,
       "shovel_buckets": 24,
       "scoop_buckets": 1060
