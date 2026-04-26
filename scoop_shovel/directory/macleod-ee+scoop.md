@@ -6,5 +6,6 @@
 
 
 
+
 ## 📦 Recipes (1)
 * [hoppscotch.json](https://github.com/macleod-ee/scoop/blob/master/bucket/hoppscotch.json)

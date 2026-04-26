@@ -4,7 +4,8 @@
 * **Score:** 1.0
 * **Auto-Update:** 89%
 
-* **Status:** 👑 Official Shovel Bucket
+
+
 
 ## 📦 Recipes (291)
 * [SimpleVHDManager.yml](https://github.com/Ash258/Shovel-Ash258/blob/main/bucket/SimpleVHDManager.yml)

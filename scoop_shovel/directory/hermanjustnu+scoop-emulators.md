@@ -6,6 +6,7 @@
 
 
 
+
 ## 📦 Recipes (83)
 * [duckstation-preview.json](https://github.com/hermanjustnu/scoop-emulators/blob/master/bucket/duckstation-preview.json)
 * [pcsx2-avx2-qt.json](https://github.com/hermanjustnu/scoop-emulators/blob/master/bucket/pcsx2-avx2-qt.json)

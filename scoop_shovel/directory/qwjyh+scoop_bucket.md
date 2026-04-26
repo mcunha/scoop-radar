@@ -6,6 +6,7 @@
 
 
 
+
 ## 📦 Recipes (6)
 * [ghc.json](https://github.com/qwjyh/scoop_bucket/blob/master/bucket/ghc.json)
 * [powershell-editorservice.json](https://github.com/qwjyh/scoop_bucket/blob/master/bucket/powershell-editorservice.json)

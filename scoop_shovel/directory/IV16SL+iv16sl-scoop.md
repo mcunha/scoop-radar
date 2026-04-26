@@ -6,6 +6,7 @@
 
 
 
+
 ## 📦 Recipes (17)
 * [stranslate.json](https://github.com/IV16SL/iv16sl-scoop/blob/master/bucket/stranslate.json)
 * [pot.json](https://github.com/IV16SL/iv16sl-scoop/blob/master/bucket/pot.json)

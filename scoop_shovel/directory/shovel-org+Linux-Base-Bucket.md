@@ -4,7 +4,8 @@
 * **Score:** 1.0
 * **Auto-Update:** 100%
 
-* **Status:** 👑 Official Shovel Bucket
+
+
 
 ## 📦 Recipes (6)
 * [rclone.yml](https://github.com/shovel-org/Linux-Base-Bucket/blob/main/bucket/rclone.yml)

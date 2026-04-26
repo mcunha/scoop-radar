@@ -4,7 +4,8 @@
 * **Score:** 1.0
 * **Auto-Update:** 99%
 
-* **Status:** 👑 Official Shovel Bucket
+
+
 
 ## 📦 Recipes (108)
 * [PyCharm-np.yml](https://github.com/shovel-org/Windows-JetBrains-Bucket/blob/main/bucket/PyCharm-np.yml)

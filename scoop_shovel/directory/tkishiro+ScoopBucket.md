@@ -6,5 +6,6 @@
 
 
 
+
 ## 📦 Recipes (1)
 * [TablacusExplorer.json](https://github.com/tkishiro/ScoopBucket/blob/master/TablacusExplorer.json)

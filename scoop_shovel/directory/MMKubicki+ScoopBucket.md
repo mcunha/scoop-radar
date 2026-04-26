@@ -6,6 +6,7 @@
 
 
 
+
 ## 📦 Recipes (43)
 * [alacritty.json](https://github.com/MMKubicki/ScoopBucket/blob/main/bucket/alacritty.json)
 * [godot-3-mono.json](https://github.com/MMKubicki/ScoopBucket/blob/main/bucket/godot-3-mono.json)

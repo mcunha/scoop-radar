@@ -6,5 +6,6 @@
 
 
 
+
 ## 📦 Recipes (1)
 * [kbcli.json](https://github.com/apecloud-inc/scoop-bucket/blob/main/bucket/kbcli.json)

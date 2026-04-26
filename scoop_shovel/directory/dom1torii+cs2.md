@@ -6,5 +6,6 @@
 
 
 
+
 ## 📦 Recipes (1)
 * [yasp.json](https://github.com/dom1torii/cs2/blob/master/bucket/yasp.json)

@@ -6,6 +6,7 @@
 
 
 
+
 ## 📦 Recipes (20)
 * [nebula.json](https://github.com/crisipa/scoopbucket/blob/master/bucket/nebula.json)
 * [saladict-chromium.json](https://github.com/crisipa/scoopbucket/blob/master/bucket/saladict-chromium.json)

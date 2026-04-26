@@ -4,7 +4,8 @@
 * **Score:** 1.0
 * **Auto-Update:** 100%
 
-* **Status:** 👑 Official Shovel Bucket
+
+
 
 ## 📦 Recipes (251)
 * [ProcessActivityView.yml](https://github.com/shovel-org/Windows-NirSoft-Bucket/blob/main/bucket/ProcessActivityView.yml)

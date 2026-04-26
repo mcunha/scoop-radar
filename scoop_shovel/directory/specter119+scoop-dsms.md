@@ -6,6 +6,7 @@
 
 
 
+
 ## 📦 Recipes (47)
 * [lingma.yml](https://github.com/specter119/scoop-dsms/blob/main/bucket/lingma.yml)
 * [sarasa-term-sc-nerd.yml](https://github.com/specter119/scoop-dsms/blob/main/bucket/sarasa-term-sc-nerd.yml)

@@ -4,7 +4,8 @@
 * **Score:** 1.0
 * **Auto-Update:** 100%
 
-* **Status:** 👑 Official Shovel Bucket
+
+
 
 ## 📦 Recipes (35)
 * [conftest.yml](https://github.com/shovel-org/Base/blob/main/bucket/conftest.yml)

@@ -6,6 +6,7 @@
 
 
 
+
 ## 📦 Recipes (33)
 * [yasb.json](https://github.com/LucasOe/scoop-lucasoe/blob/master/bucket/yasb.json)
 * [proton-drive.json](https://github.com/LucasOe/scoop-lucasoe/blob/master/bucket/proton-drive.json)

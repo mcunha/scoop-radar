@@ -6,6 +6,7 @@
 
 
 
+
 ## 📦 Recipes (10)
 * [ps-rust-docs.json](https://github.com/insomnimus/scoop-bucket/blob/main/bucket/ps-rust-docs.json)
 * [wh.json](https://github.com/insomnimus/scoop-bucket/blob/main/bucket/wh.json)

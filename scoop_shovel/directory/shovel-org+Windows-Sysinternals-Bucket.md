@@ -4,7 +4,8 @@
 * **Score:** 1.0
 * **Auto-Update:** 99%
 
-* **Status:** 👑 Official Shovel Bucket
+
+
 
 ## 📦 Recipes (74)
 * [PsFile.yml](https://github.com/shovel-org/Windows-Sysinternals-Bucket/blob/main/bucket/PsFile.yml)

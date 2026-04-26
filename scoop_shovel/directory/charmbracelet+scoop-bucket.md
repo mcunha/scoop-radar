@@ -6,6 +6,7 @@
 
 
 
+
 ## 📦 Recipes (16)
 * [crush.json](https://github.com/charmbracelet/scoop-bucket/blob/main/bucket/crush.json)
 * [charm.json](https://github.com/charmbracelet/scoop-bucket/blob/main/bucket/charm.json)
