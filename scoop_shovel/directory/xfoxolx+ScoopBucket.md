@@ -6,6 +6,7 @@
 
 
 
+
 ## 📦 Recipes (10)
 * [yasb.json](https://github.com/xfoxolx/ScoopBucket/blob/master/bucket/yasb.json)
 * [glazewm.json](https://github.com/xfoxolx/ScoopBucket/blob/master/bucket/glazewm.json)

@@ -6,5 +6,6 @@
 
 
 
+
 ## 📦 Recipes (1)
 * [jj-spice.json](https://github.com/alejoborbo/scoop-bucket/blob/main/bucket/jj-spice.json)

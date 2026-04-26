@@ -6,6 +6,7 @@
 
 
 
+
 ## 📦 Recipes (2)
 * [shcopy.json](https://github.com/aymanbagabas/scoop-bucket/blob/main/bucket/shcopy.json)
 * [wstty.json](https://github.com/aymanbagabas/scoop-bucket/blob/main/bucket/wstty.json)

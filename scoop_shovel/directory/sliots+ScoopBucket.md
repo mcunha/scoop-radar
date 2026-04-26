@@ -6,7 +6,8 @@
 
 
 
-## 📦 Recipes (14)
+
+## 📦 Recipes (15)
 * [PhotoTimeFix.json](https://github.com/sliots/ScoopBucket/blob/master/bucket/PhotoTimeFix.json)
 * [CompactGUI.json](https://github.com/sliots/ScoopBucket/blob/master/bucket/CompactGUI.json)
 * [arc_unpacker.json](https://github.com/sliots/ScoopBucket/blob/master/bucket/arc_unpacker.json)
@@ -20,4 +21,5 @@
 * [BiliCLOnline.json](https://github.com/sliots/ScoopBucket/blob/master/bucket/BiliCLOnline.json)
 * [exhentai-manga-manager-portable.json](https://github.com/sliots/ScoopBucket/blob/master/bucket/exhentai-manga-manager-portable.json)
 * [BilibiliDown.json](https://github.com/sliots/ScoopBucket/blob/master/bucket/BilibiliDown.json)
+* [GithubStarsManager.json](https://github.com/sliots/ScoopBucket/blob/master/bucket/GithubStarsManager.json)
 * [beszel-agent.json](https://github.com/sliots/ScoopBucket/blob/master/bucket/beszel-agent.json)

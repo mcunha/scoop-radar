@@ -6,6 +6,7 @@
 
 
 
+
 ## 📦 Recipes (18)
 * [faraday.json](https://github.com/NeonTowel/scoop-bucket/blob/master/bucket/faraday.json)
 * [fancywm.json](https://github.com/NeonTowel/scoop-bucket/blob/master/bucket/fancywm.json)

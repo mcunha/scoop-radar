@@ -6,5 +6,6 @@
 
 
 
+
 ## 📦 Recipes (1)
 * [python2.json](https://github.com/analogrelay/scoop-bucket/blob/master/bucket/python2.json)

@@ -6,5 +6,6 @@
 
 
 
+
 ## 📦 Recipes (1)
 * [wavosaur.json](https://github.com/perivar/scoop-apps/blob/master/bucket/wavosaur.json)

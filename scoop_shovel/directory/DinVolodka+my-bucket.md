@@ -6,5 +6,6 @@
 
 
 
+
 ## 📦 Recipes (1)
 * [vagrant.json](https://github.com/DinVolodka/my-bucket/blob/master/bucket/vagrant.json)

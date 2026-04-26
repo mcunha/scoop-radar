@@ -6,5 +6,6 @@
 
 
 
+
 ## 📦 Recipes (1)
 * [plugin-modernizer.json](https://github.com/jonesbusy/scoop-bucket/blob/main/bucket/plugin-modernizer.json)

@@ -6,5 +6,6 @@
 
 
 
+
 ## 📦 Recipes (1)
 * [foundry.json](https://github.com/xiphux/scoop-bucket/blob/main/bucket/foundry.json)

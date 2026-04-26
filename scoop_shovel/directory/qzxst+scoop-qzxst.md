@@ -6,6 +6,7 @@
 
 
 
+
 ## 📦 Recipes (151)
 * [yasb.json](https://github.com/qzxst/scoop-qzxst/blob/master/bucket/yasb.json)
 * [huaweibrowser.json](https://github.com/qzxst/scoop-qzxst/blob/master/bucket/huaweibrowser.json)

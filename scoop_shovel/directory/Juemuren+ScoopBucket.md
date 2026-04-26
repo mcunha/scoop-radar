@@ -6,6 +6,7 @@
 
 
 
+
 ## 📦 Recipes (6)
 * [quarto.json](https://github.com/Juemuren/ScoopBucket/blob/main/bucket/quarto.json)
 * [mise.json](https://github.com/Juemuren/ScoopBucket/blob/main/bucket/mise.json)

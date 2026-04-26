@@ -6,5 +6,6 @@
 
 
 
+
 ## 📦 Recipes (1)
 * [QQ.json](https://github.com/go2sun/scoop-bucket-2/blob/master/QQ.json)

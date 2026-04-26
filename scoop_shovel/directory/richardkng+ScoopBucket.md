@@ -6,6 +6,7 @@
 
 
 
+
 ## 📦 Recipes (52)
 * [alacritty.json](https://github.com/richardkng/ScoopBucket/blob/master/bucket/alacritty.json)
 * [sysinternals.json](https://github.com/richardkng/ScoopBucket/blob/master/bucket/sysinternals.json)
