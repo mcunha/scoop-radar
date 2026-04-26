@@ -85,7 +85,7 @@ fn get_daily_snapshots(
         .and_hms_opt(23, 59, 59)
         .unwrap()
         .and_utc();
-    
+
     let mut dates = Vec::new();
     for i in (0..=91).rev() {
         let d = today - chrono::Duration::days(i);
@@ -97,7 +97,7 @@ fn get_daily_snapshots(
     let mut revwalk = repo.revwalk()?;
     revwalk.push_head()?;
     revwalk.set_sorting(Sort::TIME)?;
-    
+
     // Collect commits with their timestamps
     let mut commits = Vec::new();
     for oid in revwalk {
@@ -110,7 +110,7 @@ fn get_daily_snapshots(
 
     for (d, date_str) in &dates {
         let timestamp = d.timestamp();
-        
+
         let mut target_oid: Option<Oid> = None;
         for (commit_time, oid) in &commits {
             if *commit_time <= timestamp {
@@ -132,19 +132,19 @@ fn get_daily_snapshots(
                         };
                         let mut f = root.to_string();
                         f.push_str(name);
-                        
+
                         let f_lower = f.to_lowercase();
-                        
+
                         if ecosystem == "winget" {
                             if f.contains(".installer.") || f.contains(".locale.") {
                                 return TreeWalkResult::Ok;
                             }
                             let normalized_f = f.replace("\\", "/");
-                            if normalized_f.ends_with(".yaml") && 
-                                (normalized_f.contains("manifests/") || 
-                                 normalized_f.contains("packages/") || 
-                                 normalized_f.contains("automatic/") || 
-                                 normalized_f.contains("manual/")) 
+                            if normalized_f.ends_with(".yaml") &&
+                                (normalized_f.contains("manifests/") ||
+                                 normalized_f.contains("packages/") ||
+                                 normalized_f.contains("automatic/") ||
+                                 normalized_f.contains("manual/"))
                             {
                                 let parts: Vec<&str> = normalized_f.split('/').collect();
                                 if let Some(last) = parts.last() {
@@ -155,13 +155,13 @@ fn get_daily_snapshots(
                         } else if f.ends_with(".json") || f.ends_with(".yaml") || f.ends_with(".yml") || f.ends_with(".nuspec") {
                             let normalized_f = f.replace("\\", "/");
                             let parts: Vec<&str> = normalized_f.split('/').collect();
-                            
+
                             if parts.len() == 1 || (parts.len() == 2 && parts[0] == "bucket") {
                                 let recipe_name = parts.last().unwrap();
                                 let item = format!("{}:{}", full_name.to_lowercase(), recipe_name.to_lowercase());
-                                
+
                                 let is_shovel = is_shovel_bucket || f.ends_with(".yaml") || f.ends_with(".yml");
-                                
+
                                 snap.all.insert(item.clone());
                                 if ecosystem == "scoop_shovel" {
                                     if is_shovel {
@@ -179,13 +179,13 @@ fn get_daily_snapshots(
                                 }
                             }
                         }
-                        
+
                         TreeWalkResult::Ok
                     }).ok();
                 }
             }
         }
-        
+
         snapshots.insert(date_str.clone(), snap);
     }
 
@@ -214,7 +214,7 @@ fn process_repository(repo_entry: &RepoEntry, ecosystem: &str) -> Result<HashMap
     let full_name = &repo_entry.full_name;
     let git_url = &repo_entry.git_url;
     let is_shovel_bucket = repo_entry.topics.contains(&"shovel-bucket".to_string());
-    
+
     let safe_name = full_name.replace('/', "+");
     let repo_dir = PathBuf::from("../../temp_seed_clones").join(&safe_name);
 
@@ -225,7 +225,7 @@ fn process_repository(repo_entry: &RepoEntry, ecosystem: &str) -> Result<HashMap
             .args(&["pull", "--quiet"])
             .current_dir(&repo_dir)
             .status();
-            
+
         if status.is_err() || !status.unwrap().success() {
             println!("[!] Failed to pull {}, attempting fresh clone...", full_name);
             force_remove_dir_all(&repo_dir);
@@ -237,13 +237,13 @@ fn process_repository(repo_entry: &RepoEntry, ecosystem: &str) -> Result<HashMap
         let status = Command::new("git")
             .args(&["clone", "--quiet", &format!("--shallow-since={}", shallow_date), git_url, repo_dir.to_str().unwrap()])
             .status();
-            
+
         if status.is_err() || !status.unwrap().success() {
             println!("[!] Shallow clone failed for {}, attempting full clone...", full_name);
             let status = Command::new("git")
                 .args(&["clone", "--quiet", git_url, repo_dir.to_str().unwrap()])
                 .status();
-                
+
             if status.is_err() || !status.unwrap().success() {
                 println!("[!] Failed to clone {}", full_name);
                 return Err(anyhow::anyhow!("Clone failed"));
@@ -261,11 +261,11 @@ fn process_repository(repo_entry: &RepoEntry, ecosystem: &str) -> Result<HashMap
 
 fn seed_ecosystem(ecosystem_name: &str) -> Result<()> {
     println!("\n{}\n[*] Starting seed generation for: {}\n{}", "=".repeat(50), ecosystem_name, "=".repeat(50));
-    
+
     // Paths are relative to the rust executable which is inside scripts/seed_generator
     let root_dir = PathBuf::from("../..");
     let json_path = root_dir.join(ecosystem_name).join("all.json");
-    
+
     if !json_path.exists() {
         println!("[!] {} not found. Run the crawler first.", json_path.display());
         return Ok(());
@@ -351,7 +351,7 @@ fn seed_ecosystem(ecosystem_name: &str) -> Result<()> {
 
 fn main() -> Result<()> {
     let args = Args::parse();
-    
+
     let ecosystems = if args.ecosystem == "all" {
         vec!["scoop_shovel", "chocolatey", "winget"]
     } else {
