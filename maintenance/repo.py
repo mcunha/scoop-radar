@@ -74,6 +74,8 @@ def discover_manifests(repo_path, is_shovel_repo, config):
                 if ".git" in root:
                     continue
                 for f in files:
+                    if ".installer." in f or ".locale." in f:
+                        continue
                     file_path = os.path.join(root, f)
                     if os.path.isfile(file_path) and is_manifest(f):
                         (is_valid, has_checkver) = validate_manifest_file(
