@@ -6,6 +6,7 @@
 
 
 
+
 ## 📦 Recipes (8)
 * [devtoys-cli.json](https://github.com/RuiNtD/my-scoop-bucket/blob/main/bucket/devtoys-cli.json)
 * [cava.json](https://github.com/RuiNtD/my-scoop-bucket/blob/main/bucket/cava.json)

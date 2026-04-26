@@ -6,6 +6,7 @@
 
 
 
+
 ## 📦 Recipes (9)
 * [BeatSaberModManager.json](https://github.com/pynappo/scoop-bucket/blob/master/bucket/BeatSaberModManager.json)
 * [yj.json](https://github.com/pynappo/scoop-bucket/blob/master/bucket/yj.json)

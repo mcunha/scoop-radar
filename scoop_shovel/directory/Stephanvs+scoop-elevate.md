@@ -6,5 +6,6 @@
 
 
 
+
 ## 📦 Recipes (1)
 * [elevate.json](https://github.com/Stephanvs/scoop-elevate/blob/main/elevate.json)

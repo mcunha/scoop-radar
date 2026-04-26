@@ -6,6 +6,7 @@
 
 
 
+
 ## 📦 Recipes (6)
 * [gpt-cli.json](https://github.com/goark/scoop-bucket/blob/master/bucket/gpt-cli.json)
 * [depm.json](https://github.com/goark/scoop-bucket/blob/master/bucket/depm.json)

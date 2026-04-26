@@ -6,5 +6,6 @@
 
 
 
+
 ## 📦 Recipes (1)
 * [vesktop.json](https://github.com/ddodogames/scooper/blob/master/bucket/vesktop.json)

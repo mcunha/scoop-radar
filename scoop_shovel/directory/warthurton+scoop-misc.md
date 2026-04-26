@@ -6,6 +6,7 @@
 
 
 
+
 ## 📦 Recipes (10)
 * [open-in.json](https://github.com/warthurton/scoop-misc/blob/master/bucket/open-in.json)
 * [jump-desktop.json](https://github.com/warthurton/scoop-misc/blob/master/bucket/jump-desktop.json)

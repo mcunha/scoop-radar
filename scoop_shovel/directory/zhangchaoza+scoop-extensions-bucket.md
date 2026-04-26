@@ -6,6 +6,7 @@
 
 
 
+
 ## 📦 Recipes (10)
 * [sysinternals-suite-nano.json](https://github.com/zhangchaoza/scoop-extensions-bucket/blob/master/bucket/sysinternals-suite-nano.json)
 * [cangjie-lts.json](https://github.com/zhangchaoza/scoop-extensions-bucket/blob/master/bucket/cangjie-lts.json)

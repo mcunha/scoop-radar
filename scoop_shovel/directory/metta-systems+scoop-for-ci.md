@@ -6,6 +6,7 @@
 
 
 
+
 ## 📦 Recipes (3)
 * [qemu-510.json](https://github.com/metta-systems/scoop-for-ci/blob/main/bucket/qemu-510.json)
 * [qemu-1010.json](https://github.com/metta-systems/scoop-for-ci/blob/main/bucket/qemu-1010.json)

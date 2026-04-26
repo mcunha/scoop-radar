@@ -6,5 +6,6 @@
 
 
 
+
 ## 📦 Recipes (1)
 * [teru.json](https://github.com/nicholasglazer/scoop-teru/blob/master/bucket/teru.json)

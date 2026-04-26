@@ -6,6 +6,7 @@
 
 
 
+
 ## 📦 Recipes (19)
 * [miniserve.json](https://github.com/Br1ght0ne/scoop-bucket/blob/master/bucket/miniserve.json)
 * [ticker.json](https://github.com/Br1ght0ne/scoop-bucket/blob/master/bucket/ticker.json)

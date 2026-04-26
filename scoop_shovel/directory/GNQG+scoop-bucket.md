@@ -6,5 +6,6 @@
 
 
 
+
 ## 📦 Recipes (1)
 * [cross.json](https://github.com/GNQG/scoop-bucket/blob/master/bucket/cross.json)

@@ -6,5 +6,6 @@
 
 
 
+
 ## 📦 Recipes (1)
 * [tidyup.json](https://github.com/004Ongoro/scoop-bucket/blob/main/bucket/tidyup.json)

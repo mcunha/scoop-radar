@@ -6,6 +6,7 @@
 
 
 
+
 ## 📦 Recipes (3)
 * [ungoogled-chromium.json](https://github.com/mvietri/scoop-hela/blob/main/ungoogled-chromium.json)
 * [schildichat-desktop.json](https://github.com/mvietri/scoop-hela/blob/main/schildichat-desktop.json)
