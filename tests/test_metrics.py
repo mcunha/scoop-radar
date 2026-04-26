@@ -1,13 +1,12 @@
-from maintenance.config import get_config
-
-MOCK_CONFIG = get_config("scoop_shovel")
-
 from datetime import datetime, timezone
 
 from hypothesis import given
 from hypothesis import strategies as st
 
+from maintenance.config import get_config
 from maintenance.metrics import get_repo_score
+
+MOCK_CONFIG = get_config("scoop_shovel")
 
 
 @given(

@@ -19,16 +19,10 @@ def fetch_schemas(cache, config):
     """Fetch JSON schemas for Ecosystem."""
     print(f"[*] Fetching JSON schemas for validation... ({config.name})")
 
-    if "scoop" in config.schemas:
-        state.SCOOP_SCHEMA = fetch_schema_with_etag(
-            config.schemas["scoop"],
-            "__scoop_schema",
-            cache,
-        )
-    if "shovel" in config.schemas:
-        state.SHOVEL_SCHEMA = fetch_schema_with_etag(
-            config.schemas["shovel"],
-            "__shovel_schema",
+    for schema_key, schema_url in config.schemas.items():
+        state.SCHEMAS[schema_key] = fetch_schema_with_etag(
+            schema_url,
+            f"__{schema_key}_schema",
             cache,
         )
 
@@ -61,6 +55,68 @@ def main():
     for ecosystem_name in ecosystems_to_run:
         print(f"\n{'='*50}\n[*] Starting crawler for ecosystem: {ecosystem_name}\n{'='*50}")
         run_ecosystem(ecosystem_name, args.force)
+
+    # Generate Top-Level Dashboard
+    if len(ecosystems_to_run) > 1:  # Only aggregate if we're running all ecosystems or it's forced
+        print(f"\n{'='*50}\n[*] Generating Top-Level Ecosystem Dashboard\n{'='*50}")
+        generate_dashboard()
+
+
+def generate_dashboard():
+    """Aggregate metrics across ecosystems and render the root dashboard."""
+    import json
+
+    from maintenance.config import get_config
+
+    dashboard_data = {}
+
+    for eco in ["scoop_shovel", "chocolatey", "winget"]:
+        config = get_config(eco)
+        json_path = os.path.join(
+            "localonly-output" if not os.environ.get("GITHUB_ACTIONS") else ".",
+            config.out_dir,
+            "all.json",
+        )
+        try:
+            with open(json_path, encoding="utf-8") as f:
+                data = json.load(f)
+            metrics = data.get("metadata", {}).get("global_metrics", {})
+            dashboard_data[eco] = {
+                "repos": metrics.get("previous_total_buckets", 0),
+                "recipes": metrics.get("previous_total_recipes", 0),
+            }
+        except Exception:
+            dashboard_data[eco] = {"repos": 0, "recipes": 0}
+
+    readme_path = "README.md"
+    try:
+        with open(readme_path, encoding="utf-8") as f:
+            content = f.read()
+
+        import re
+
+        # Regex replacements for dashboard badges/text
+        content = re.sub(
+            r"\[\*\*Scoop & Shovel\*\*\]\(\./scoop_shovel/README\.md\):.*",
+            f'[**Scoop & Shovel**](./scoop_shovel/README.md): Tracking 📦 **{dashboard_data["scoop_shovel"]["recipes"]:,}** Packages across 🪣 **{dashboard_data["scoop_shovel"]["repos"]:,}** Repositories',
+            content,
+        )
+        content = re.sub(
+            r"\[\*\*Chocolatey\*\*\]\(\./chocolatey/README\.md\):.*",
+            f'[**Chocolatey**](./chocolatey/README.md): Tracking 📦 **{dashboard_data["chocolatey"]["recipes"]:,}** Packages across 🪣 **{dashboard_data["chocolatey"]["repos"]:,}** Sources',
+            content,
+        )
+        content = re.sub(
+            r"\[\*\*WinGet\*\*\]\(\./winget/README\.md\):.*",
+            f'[**WinGet**](./winget/README.md): Tracking 📦 **{dashboard_data["winget"]["recipes"]:,}** Packages across 🪣 **{dashboard_data["winget"]["repos"]:,}** Repositories',
+            content,
+        )
+
+        with open(readme_path, "w", encoding="utf-8") as f:
+            f.write(content)
+        print("[*] Successfully updated top-level README.md dashboard.")
+    except Exception as e:
+        print(f"[!] Failed to generate dashboard: {e}")
 
 
 def run_ecosystem(ecosystem_name, force_save):

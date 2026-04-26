@@ -2,12 +2,9 @@ from datetime import datetime, timezone
 
 import pytest
 
-from maintenance.config import get_config
-
-MOCK_CONFIG = get_config("scoop_shovel")
-
 import maintenance.state as state
 from maintenance.api import RateLimitExceededError
+from maintenance.config import get_config
 from maintenance.repo import (
     discover_repositories,
     get_next_check_due,
@@ -15,6 +12,8 @@ from maintenance.repo import (
     update_repositories,
     validate_manifest_file,
 )
+
+MOCK_CONFIG = get_config("scoop_shovel")
 
 
 def test_get_next_check_due_no_pushed_at():
@@ -26,8 +25,8 @@ def test_get_next_check_due_no_pushed_at():
 
 def test_validate_manifest_file_exception(tmp_path):
     # Covers lines 76-77
-    state.SCOOP_SCHEMA = None
-    state.SHOVEL_SCHEMA = None
+    state.SCHEMAS.pop("scoop", None)
+    state.SCHEMAS.pop("shovel", None)
     file_path = tmp_path / "app.json"
     file_path.write_text("invalid json")
     is_valid, has_checkver = validate_manifest_file(str(file_path), "app.json", False, MOCK_CONFIG)

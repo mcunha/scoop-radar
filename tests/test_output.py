@@ -1,15 +1,14 @@
-from maintenance.config import get_config
-
-MOCK_CONFIG = get_config("scoop_shovel")
-
 import json
 
+from maintenance.config import get_config
 from maintenance.output import (
     generate_apis,
     generate_growth_charts,
     generate_readme,
     write_api_file,
 )
+
+MOCK_CONFIG = get_config("scoop_shovel")
 
 
 def test_generate_growth_charts(tmp_path):

@@ -1,10 +1,9 @@
-from maintenance.config import get_config
-
-MOCK_CONFIG = get_config("scoop_shovel")
-
 import os
 
 from maintenance.cache import load_cache, save_cache, upgrade_cache_entry
+from maintenance.config import get_config
+
+MOCK_CONFIG = get_config("scoop_shovel")
 
 
 def test_load_cache_empty(tmp_path):

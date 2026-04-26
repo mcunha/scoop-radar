@@ -2,11 +2,6 @@ import json
 from unittest.mock import patch
 
 import pytest
-
-from maintenance.config import get_config
-
-MOCK_CONFIG = get_config("scoop_shovel")
-
 import responses
 
 import maintenance.state as state
@@ -17,6 +12,9 @@ from maintenance.api import (
     get_headers,
     make_request,
 )
+from maintenance.config import get_config
+
+MOCK_CONFIG = get_config("scoop_shovel")
 
 
 def test_get_headers_no_token(monkeypatch):

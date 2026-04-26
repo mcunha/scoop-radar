@@ -31,8 +31,8 @@ def test_get_next_check_due():
 
 
 def test_validate_manifest_file_no_schema(tmp_path):
-    state.SCOOP_SCHEMA = None
-    state.SHOVEL_SCHEMA = None
+    state.SCHEMAS.pop("scoop", None)
+    state.SCHEMAS.pop("shovel", None)
 
     file_path = tmp_path / "app.json"
     file_path.write_text('{"version": "1.0", "checkver": "regex"}')
@@ -43,8 +43,8 @@ def test_validate_manifest_file_no_schema(tmp_path):
 
 
 def test_validate_manifest_file_invalid_no_version(tmp_path):
-    state.SCOOP_SCHEMA = None
-    state.SHOVEL_SCHEMA = None
+    state.SCHEMAS.pop("scoop", None)
+    state.SCHEMAS.pop("shovel", None)
 
     file_path = tmp_path / "app.json"
     file_path.write_text('{"description": "no version"}')

@@ -1,8 +1,7 @@
+from maintenance.cache import load_cache, save_cache, upgrade_cache_entry
 from maintenance.config import get_config
 
 MOCK_CONFIG = get_config("scoop_shovel")
-
-from maintenance.cache import load_cache, save_cache, upgrade_cache_entry
 
 
 def test_load_cache_oserror(mocker):

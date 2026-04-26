@@ -1,13 +1,12 @@
-from maintenance.config import get_config
-
-MOCK_CONFIG = get_config("scoop_shovel")
-
 import json
 from unittest.mock import patch
 
 import responses
 
 from maintenance.api import fetch_schema_with_etag, make_request
+from maintenance.config import get_config
+
+MOCK_CONFIG = get_config("scoop_shovel")
 
 
 @responses.activate

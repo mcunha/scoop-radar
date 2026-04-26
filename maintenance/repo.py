@@ -106,7 +106,7 @@ def validate_manifest_file(file_path, f, is_shovel_repo, config):
             is_valid = False
         return is_valid, has_checkver
 
-    schema_to_use = state.SHOVEL_SCHEMA if is_shovel_repo else state.SCOOP_SCHEMA
+    schema_to_use = state.SCHEMAS.get("shovel") if is_shovel_repo else state.SCHEMAS.get("scoop")
     try:
         with open(file_path, encoding="utf-8") as mf:
             if f.endswith(".json"):

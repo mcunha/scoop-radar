@@ -6,8 +6,8 @@ MOCK_CONFIG = get_config("scoop_shovel")
 
 
 def test_validate_manifest_yaml(tmp_path):
-    state.SCOOP_SCHEMA = None
-    state.SHOVEL_SCHEMA = None
+    state.SCHEMAS.pop("scoop", None)
+    state.SCHEMAS.pop("shovel", None)
 
     file_path = tmp_path / "app.yaml"
     file_path.write_text('version: "1.0"\ncheckver: "regex"')
@@ -18,8 +18,8 @@ def test_validate_manifest_yaml(tmp_path):
 
 
 def test_validate_manifest_json_with_schema(tmp_path):
-    state.SCOOP_SCHEMA = {"type": "object", "properties": {"version": {"type": "string"}}}
-    state.SHOVEL_SCHEMA = None
+    state.SCHEMAS["scoop"] = {"type": "object", "properties": {"version": {"type": "string"}}}
+    state.SCHEMAS.pop("shovel", None)
 
     file_path = tmp_path / "app.json"
     file_path.write_text('{"version": "1.0", "checkver": "regex"}')

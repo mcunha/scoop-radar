@@ -12,8 +12,8 @@ def test_fetch_schemas(mocker):
     cache = {}
     fetch_schemas(cache, MOCK_CONFIG)
 
-    assert state.SCOOP_SCHEMA == "scoop_schema_mock"
-    assert state.SHOVEL_SCHEMA == "shovel_schema_mock"
+    assert state.SCHEMAS["scoop"] == "scoop_schema_mock"
+    assert state.SCHEMAS["shovel"] == "shovel_schema_mock"
     assert mock_fetch.call_count == 2
 
 

@@ -3,7 +3,7 @@ A data-driven, automated discovery and ranking engine for the {{ ecosystem_name|
 
 # Build Status
 ![Tests & Linting](https://github.com/mcunha/scoop-radar/actions/workflows/test.yml/badge.svg)
-![Update Scoop Radar README](https://github.com/mcunha/scoop-radar/actions/workflows/update.yml/badge.svg)
+![Update Package Managers Radar](https://github.com/mcunha/scoop-radar/actions/workflows/update.yml/badge.svg)
 
 # 📊 Ecosystem Health
 * **Total Unique Recipes**: {{ metrics.total_unique_recipes }}

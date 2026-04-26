@@ -59,7 +59,7 @@ ignore = ["C901", "N806", "E501", "D100", "D103", "F841"]
 line-length = 100
 
 [project.scripts]
-scoop-radar-updater = "maintenance.github_crawler:main"
+package-managers-radar-updater = "maintenance.github_crawler:main"
 
 [tool.pytest.ini_options]
 minversion = "6.0"

@@ -1,11 +1,10 @@
-from maintenance.config import get_config
-
-MOCK_CONFIG = get_config("scoop_shovel")
-
 import requests
 import responses
 
+from maintenance.config import get_config
 from maintenance.probe import extract_urls_from_manifest, probe_url
+
+MOCK_CONFIG = get_config("scoop_shovel")
 
 
 def test_extract_urls_from_manifest():

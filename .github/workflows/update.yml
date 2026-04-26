@@ -1,5 +1,5 @@
-name: Update Scoop Radar README
-run-name: Update Scoop Radar README (${{ github.event_name }}) by @${{ github.actor }}
+name: Update Package Managers Radar
+run-name: Update Package Managers Radar (${{ github.event_name }}) by @${{ github.actor }}
 
 env:
   ACTIONS_ALLOW_USE_UNSECURE_NODE_VERSION: true
@@ -55,7 +55,7 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          uv run scoop-radar-updater
+          uv run package-managers-radar-updater
 
       - name: Commit and push changes
         uses: stefanzweifel/git-auto-commit-action@v7.1.0

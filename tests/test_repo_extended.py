@@ -1,8 +1,7 @@
 from maintenance.config import get_config
+from maintenance.repo import discover_repositories, process_repo, update_repositories
 
 MOCK_CONFIG = get_config("scoop_shovel")
-
-from maintenance.repo import discover_repositories, process_repo, update_repositories
 
 
 def test_process_repo_new(mocker):
