@@ -6,10 +6,10 @@ A data-driven, automated discovery and ranking engine for the Winget package man
 ![Update Package Managers Radar](https://github.com/mcunha/scoop-radar/actions/workflows/update.yml/badge.svg)
 
 # 📊 Ecosystem Health
-* **Total Unique Recipes**: 2139
+* **Total Unique Recipes**: 2127
 * **Ecosystem Auto-Update Health**: 0.0%
 * **Ecosystem Reliability**: 100.0% (Sampled URL Health)
-* **Official vs. Community**: 5946 Official / 3245 Community
+* **Official vs. Community**: 5946 Official / 3233 Community
 
 * **Stale/Abandoned Sources (> 1 Year)**: 🪦 2
 
@@ -41,7 +41,6 @@ These repositories are actively maintained and feature a high percentage of **un
 | Repository | Unique Recipes | Total Recipes | Score | Auto-Update |
 | :--- | :---: | :---: | :---: | :---: |
 | **[voicemeet/winget-updater](directory/voicemeet+winget-updater.md)** | 💎 26 (100.0%) | 📦 26 | ⭐ 1.0 | 🔄 0% |
-| **[picguard/winget-updater](directory/picguard+winget-updater.md)** | 💎 16 (100.0%) | 📦 16 | ⭐ 1.0 | 🔄 0% |
 | **[pl4nty/winget-pkgs-selfhost](directory/pl4nty+winget-pkgs-selfhost.md)** | 💎 41 (95.3%) | 📦 43 | ⭐ 1.0 | 🔄 0% |
 
 
@@ -65,7 +64,7 @@ A combined list of every source discovered in the ecosystem.
 | **[vedantmgoyal9/winget-pkgs-automation](directory/vedantmgoyal9+winget-pkgs-automation.md)** | 📦 342 | ⭐ 1.0 | 🔄 0% |  |
 | **[pl4nty/winget-pkgs-selfhost](directory/pl4nty+winget-pkgs-selfhost.md)** | 📦 43 | ⭐ 1.0 | 🔄 0% |  |
 | **[voicemeet/winget-updater](directory/voicemeet+winget-updater.md)** | 📦 26 | ⭐ 1.0 | 🔄 0% |  |
-| **[picguard/winget-updater](directory/picguard+winget-updater.md)** | 📦 16 | ⭐ 1.0 | 🔄 0% |  |
+| **[picguard/winget-updater](directory/picguard+winget-updater.md)** | 📦 4 | ⭐ 1.0 | 🔄 0% |  |
 | **[223n/winget-usacloud](directory/223n+winget-usacloud.md)** | 📦 2 | ⭐ 1.0 | 🔄 0% |  |
 | **[cloudflightio/winget-pkgs](directory/cloudflightio+winget-pkgs.md)** | 📦 1 | ⭐ 1.0 | 🔄 0% |  |
 | **[RadikaRules/scripts](directory/RadikaRules+scripts.md)** | 📦 9 | ⭐ 1.0 | 🔄 0% |  |
@@ -73,15 +72,15 @@ A combined list of every source discovered in the ecosystem.
 </details>
 
 # 🛠️ Operational Health (Crawler Metrics)
-* **Total Crawler Runs**: 40
-* **Total Repo Updates**: 1227
+* **Total Crawler Runs**: 41
+* **Total Repo Updates**: 1261
 * **Ecosystem Growth (Since Last Run)**:
   * 🪣 +0 Repositories
-  * 📦 +0 Recipes
+  * 📦 -12 Recipes
 * **Eviction Count**: 🗑️ 1
 * **API Rate Limit Retries**: ⏳ 0
 * **Cache Size**: 💾 0.97 MB
 * **Pipeline Times (Last Run)**:
-  * 🔍 Discovery: 0.78s
-  * 📥 Update: 14.68s
-* **Cumulative Compute Time**: 9.9 minutes
+  * 🔍 Discovery: 4.24s
+  * 📥 Update: 11.82s
+* **Cumulative Compute Time**: 10.1 minutes
