@@ -6,10 +6,10 @@ A data-driven, automated discovery and ranking engine for the Winget package man
 ![Update Package Managers Radar](https://github.com/mcunha/scoop-radar/actions/workflows/update.yml/badge.svg)
 
 # 📊 Ecosystem Health
-* **Total Unique Recipes**: 2207
+* **Total Unique Recipes**: 2139
 * **Ecosystem Auto-Update Health**: 0.0%
 * **Ecosystem Reliability**: 100.0% (Sampled URL Health)
-* **Official vs. Community**: 5946 Official / 3331 Community
+* **Official vs. Community**: 5946 Official / 3245 Community
 
 * **Stale/Abandoned Sources (> 1 Year)**: 🪦 2
 
@@ -42,7 +42,7 @@ These repositories are actively maintained and feature a high percentage of **un
 | :--- | :---: | :---: | :---: | :---: |
 | **[voicemeet/winget-updater](directory/voicemeet+winget-updater.md)** | 💎 26 (100.0%) | 📦 26 | ⭐ 1.0 | 🔄 0% |
 | **[picguard/winget-updater](directory/picguard+winget-updater.md)** | 💎 16 (100.0%) | 📦 16 | ⭐ 1.0 | 🔄 0% |
-| **[pl4nty/winget-pkgs-selfhost](directory/pl4nty+winget-pkgs-selfhost.md)** | 💎 127 (98.4%) | 📦 129 | ⭐ 1.0 | 🔄 0% |
+| **[pl4nty/winget-pkgs-selfhost](directory/pl4nty+winget-pkgs-selfhost.md)** | 💎 41 (95.3%) | 📦 43 | ⭐ 1.0 | 🔄 0% |
 
 
 
@@ -63,7 +63,7 @@ A combined list of every source discovered in the ecosystem.
 | **[microsoft/winget-pkgs-submission-test](directory/microsoft+winget-pkgs-submission-test.md)** | 📦 5352 | ⭐ 1.0 | 🔄 0% | 👑 Official |
 | **[eliaor/winget-pkgs](directory/eliaor+winget-pkgs.md)** | 📦 3400 | ⭐ 1.0 | 🔄 0% |  |
 | **[vedantmgoyal9/winget-pkgs-automation](directory/vedantmgoyal9+winget-pkgs-automation.md)** | 📦 342 | ⭐ 1.0 | 🔄 0% |  |
-| **[pl4nty/winget-pkgs-selfhost](directory/pl4nty+winget-pkgs-selfhost.md)** | 📦 129 | ⭐ 1.0 | 🔄 0% |  |
+| **[pl4nty/winget-pkgs-selfhost](directory/pl4nty+winget-pkgs-selfhost.md)** | 📦 43 | ⭐ 1.0 | 🔄 0% |  |
 | **[voicemeet/winget-updater](directory/voicemeet+winget-updater.md)** | 📦 26 | ⭐ 1.0 | 🔄 0% |  |
 | **[picguard/winget-updater](directory/picguard+winget-updater.md)** | 📦 16 | ⭐ 1.0 | 🔄 0% |  |
 | **[223n/winget-usacloud](directory/223n+winget-usacloud.md)** | 📦 2 | ⭐ 1.0 | 🔄 0% |  |
@@ -73,15 +73,15 @@ A combined list of every source discovered in the ecosystem.
 </details>
 
 # 🛠️ Operational Health (Crawler Metrics)
-* **Total Crawler Runs**: 27
-* **Total Repo Updates**: 795
+* **Total Crawler Runs**: 28
+* **Total Repo Updates**: 829
 * **Ecosystem Growth (Since Last Run)**:
   * 🪣 +0 Repositories
-  * 📦 +0 Recipes
+  * 📦 -86 Recipes
 * **Eviction Count**: 🗑️ 0
 * **API Rate Limit Retries**: ⏳ 0
-* **Cache Size**: 💾 0.98 MB
+* **Cache Size**: 💾 0.97 MB
 * **Pipeline Times (Last Run)**:
-  * 🔍 Discovery: 0.19s
-  * 📥 Update: 15.14s
-* **Cumulative Compute Time**: 6.3 minutes
+  * 🔍 Discovery: 0.41s
+  * 📥 Update: 15.85s
+* **Cumulative Compute Time**: 6.6 minutes
