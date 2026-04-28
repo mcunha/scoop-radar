@@ -8,9 +8,9 @@
 
 
 ## 📦 Recipes (6)
+* [spotx.json](https://github.com/hashdashme/ScoopBucket/blob/master/bucket/spotx.json)
+* [jan.json](https://github.com/hashdashme/ScoopBucket/blob/master/bucket/jan.json)
+* [nuclei.json](https://github.com/hashdashme/ScoopBucket/blob/master/bucket/nuclei.json)
 * [od-explorer.json](https://github.com/hashdashme/ScoopBucket/blob/master/bucket/od-explorer.json)
 * [packet-tracer.json](https://github.com/hashdashme/ScoopBucket/blob/master/bucket/packet-tracer.json)
-* [spotx.json](https://github.com/hashdashme/ScoopBucket/blob/master/bucket/spotx.json)
 * [edmc.json](https://github.com/hashdashme/ScoopBucket/blob/master/bucket/edmc.json)
-* [nuclei.json](https://github.com/hashdashme/ScoopBucket/blob/master/bucket/nuclei.json)
-* [jan.json](https://github.com/hashdashme/ScoopBucket/blob/master/bucket/jan.json)

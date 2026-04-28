@@ -8,6 +8,6 @@
 
 
 ## 📦 Recipes (3)
-* [animalese-typing-desktop.json](https://github.com/ghost64/scoop-apps/blob/master/bucket/animalese-typing-desktop.json)
 * [royalts.json](https://github.com/ghost64/scoop-apps/blob/master/bucket/royalts.json)
+* [animalese-typing-desktop.json](https://github.com/ghost64/scoop-apps/blob/master/bucket/animalese-typing-desktop.json)
 * [teamshider.json](https://github.com/ghost64/scoop-apps/blob/master/bucket/teamshider.json)

@@ -9,5 +9,5 @@
 
 ## 📦 Recipes (3)
 * [supabase-beta.json](https://github.com/supabase/scoop-bucket/blob/main/bucket/supabase-beta.json)
-* [supabase.json](https://github.com/supabase/scoop-bucket/blob/main/bucket/supabase.json)
 * [dbdev.json](https://github.com/supabase/scoop-bucket/blob/main/bucket/dbdev.json)
+* [supabase.json](https://github.com/supabase/scoop-bucket/blob/main/bucket/supabase.json)

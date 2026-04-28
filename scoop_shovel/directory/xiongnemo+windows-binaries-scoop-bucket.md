@@ -8,6 +8,6 @@
 
 
 ## 📦 Recipes (3)
-* [SonicLair.Cli.json](https://github.com/xiongnemo/windows-binaries-scoop-bucket/blob/master/bucket/SonicLair.Cli.json)
 * [nermius-nightly.json](https://github.com/xiongnemo/windows-binaries-scoop-bucket/blob/master/bucket/nermius-nightly.json)
+* [SonicLair.Cli.json](https://github.com/xiongnemo/windows-binaries-scoop-bucket/blob/master/bucket/SonicLair.Cli.json)
 * [saki-nightly.json](https://github.com/xiongnemo/windows-binaries-scoop-bucket/blob/master/bucket/saki-nightly.json)

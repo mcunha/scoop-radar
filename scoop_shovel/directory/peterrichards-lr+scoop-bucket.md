@@ -8,6 +8,6 @@
 
 
 ## 📦 Recipes (3)
-* [lwu.json](https://github.com/peterrichards-lr/scoop-bucket/blob/main/bucket/lwu.json)
-* [lcp-db-reset.json](https://github.com/peterrichards-lr/scoop-bucket/blob/main/bucket/lcp-db-reset.json)
 * [lcp-sql-fetch.json](https://github.com/peterrichards-lr/scoop-bucket/blob/main/bucket/lcp-sql-fetch.json)
+* [lcp-db-reset.json](https://github.com/peterrichards-lr/scoop-bucket/blob/main/bucket/lcp-db-reset.json)
+* [lwu.json](https://github.com/peterrichards-lr/scoop-bucket/blob/main/bucket/lwu.json)

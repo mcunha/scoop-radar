@@ -8,11 +8,11 @@
 
 
 ## 📦 Recipes (8)
-* [equilotl.json](https://github.com/RuiNtD/my-scoop-bucket/blob/main/bucket/equilotl.json)
 * [devtoys-cli.json](https://github.com/RuiNtD/my-scoop-bucket/blob/main/bucket/devtoys-cli.json)
-* [tacklecast.json](https://github.com/RuiNtD/my-scoop-bucket/blob/main/bucket/tacklecast.json)
-* [framework-tool.json](https://github.com/RuiNtD/my-scoop-bucket/blob/main/bucket/framework-tool.json)
 * [cava.json](https://github.com/RuiNtD/my-scoop-bucket/blob/main/bucket/cava.json)
-* [portablemc.json](https://github.com/RuiNtD/my-scoop-bucket/blob/main/bucket/portablemc.json)
-* [headlessmc.json](https://github.com/RuiNtD/my-scoop-bucket/blob/main/bucket/headlessmc.json)
 * [copyparty.json](https://github.com/RuiNtD/my-scoop-bucket/blob/main/bucket/copyparty.json)
+* [equilotl.json](https://github.com/RuiNtD/my-scoop-bucket/blob/main/bucket/equilotl.json)
+* [headlessmc.json](https://github.com/RuiNtD/my-scoop-bucket/blob/main/bucket/headlessmc.json)
+* [portablemc.json](https://github.com/RuiNtD/my-scoop-bucket/blob/main/bucket/portablemc.json)
+* [framework-tool.json](https://github.com/RuiNtD/my-scoop-bucket/blob/main/bucket/framework-tool.json)
+* [tacklecast.json](https://github.com/RuiNtD/my-scoop-bucket/blob/main/bucket/tacklecast.json)

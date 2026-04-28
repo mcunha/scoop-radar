@@ -9,7 +9,7 @@
 
 ## 📦 Recipes (5)
 * [marktext-tkaixiang.json](https://github.com/Fleafa/myBucket/blob/master/bucket/marktext-tkaixiang.json)
-* [filepilot.json](https://github.com/Fleafa/myBucket/blob/master/bucket/filepilot.json)
+* [zen-browser.json](https://github.com/Fleafa/myBucket/blob/master/bucket/zen-browser.json)
 * [gloriouscore.json](https://github.com/Fleafa/myBucket/blob/master/bucket/gloriouscore.json)
 * [duckduckgo-browser.json](https://github.com/Fleafa/myBucket/blob/master/bucket/duckduckgo-browser.json)
-* [zen-browser.json](https://github.com/Fleafa/myBucket/blob/master/bucket/zen-browser.json)
+* [filepilot.json](https://github.com/Fleafa/myBucket/blob/master/bucket/filepilot.json)
