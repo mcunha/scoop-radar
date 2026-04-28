@@ -8,5 +8,5 @@
 
 
 ## 📦 Recipes (2)
-* [livestreamer-twitch-gui.nuspec](https://github.com/streamlink/streamlink-twitch-gui-chocolatey/blob/published/Livestreamer Twitch GUI/livestreamer-twitch-gui.nuspec)
 * [streamlink-twitch-gui.nuspec](https://github.com/streamlink/streamlink-twitch-gui-chocolatey/blob/published/Streamlink Twitch GUI/streamlink-twitch-gui.nuspec)
+* [livestreamer-twitch-gui.nuspec](https://github.com/streamlink/streamlink-twitch-gui-chocolatey/blob/published/Livestreamer Twitch GUI/livestreamer-twitch-gui.nuspec)
