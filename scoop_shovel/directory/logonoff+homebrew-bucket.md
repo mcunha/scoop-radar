@@ -8,6 +8,6 @@
 
 
 ## 📦 Recipes (3)
-* [vs-rename.json](https://github.com/logonoff/homebrew-bucket/blob/main/bucket/vs-rename.json)
-* [windynworkspaces.json](https://github.com/logonoff/homebrew-bucket/blob/main/bucket/windynworkspaces.json)
 * [persistentaccent.json](https://github.com/logonoff/homebrew-bucket/blob/main/bucket/persistentaccent.json)
+* [windynworkspaces.json](https://github.com/logonoff/homebrew-bucket/blob/main/bucket/windynworkspaces.json)
+* [vs-rename.json](https://github.com/logonoff/homebrew-bucket/blob/main/bucket/vs-rename.json)

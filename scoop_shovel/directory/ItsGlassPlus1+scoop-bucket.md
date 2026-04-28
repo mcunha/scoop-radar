@@ -8,6 +8,6 @@
 
 
 ## 📦 Recipes (3)
-* [copyparty.json](https://github.com/ItsGlassPlus1/scoop-bucket/blob/master/bucket/copyparty.json)
 * [flaresolverr.json](https://github.com/ItsGlassPlus1/scoop-bucket/blob/master/bucket/flaresolverr.json)
 * [suwayomi-server-preview.json](https://github.com/ItsGlassPlus1/scoop-bucket/blob/master/bucket/suwayomi-server-preview.json)
+* [copyparty.json](https://github.com/ItsGlassPlus1/scoop-bucket/blob/master/bucket/copyparty.json)
