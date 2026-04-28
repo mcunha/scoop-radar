@@ -6,10 +6,10 @@ A data-driven, automated discovery and ranking engine for the Winget package man
 ![Update Package Managers Radar](https://github.com/mcunha/scoop-radar/actions/workflows/update.yml/badge.svg)
 
 # 📊 Ecosystem Health
-* **Total Unique Recipes**: 2127
+* **Total Unique Recipes**: 2025
 * **Ecosystem Auto-Update Health**: 0.0%
 * **Ecosystem Reliability**: 100.0% (Sampled URL Health)
-* **Official vs. Community**: 5946 Official / 3233 Community
+* **Official vs. Community**: 4965 Official / 3729 Community
 
 * **Stale/Abandoned Sources (> 1 Year)**: 🪦 2
 
@@ -59,7 +59,7 @@ A combined list of every source discovered in the ecosystem.
 
 | Repository | Recipes | Score | Auto-Update | Badges |
 | :--- | :---: | :---: | :---: | :--- |
-| **[microsoft/winget-pkgs-submission-test](directory/microsoft+winget-pkgs-submission-test.md)** | 📦 5352 | ⭐ 1.0 | 🔄 0% | 👑 Official |
+| **[microsoft/winget-pkgs-submission-test](directory/microsoft+winget-pkgs-submission-test.md)** | 📦 4867 | ⭐ 1.0 | 🔄 0% | 👑 Official |
 | **[eliaor/winget-pkgs](directory/eliaor+winget-pkgs.md)** | 📦 3400 | ⭐ 1.0 | 🔄 0% |  |
 | **[vedantmgoyal9/winget-pkgs-automation](directory/vedantmgoyal9+winget-pkgs-automation.md)** | 📦 342 | ⭐ 1.0 | 🔄 0% |  |
 | **[pl4nty/winget-pkgs-selfhost](directory/pl4nty+winget-pkgs-selfhost.md)** | 📦 43 | ⭐ 1.0 | 🔄 0% |  |
@@ -72,15 +72,15 @@ A combined list of every source discovered in the ecosystem.
 </details>
 
 # 🛠️ Operational Health (Crawler Metrics)
-* **Total Crawler Runs**: 49
-* **Total Repo Updates**: 1527
+* **Total Crawler Runs**: 50
+* **Total Repo Updates**: 1561
 * **Ecosystem Growth (Since Last Run)**:
   * 🪣 +0 Repositories
-  * 📦 +0 Recipes
+  * 📦 -485 Recipes
 * **Eviction Count**: 🗑️ 1
 * **API Rate Limit Retries**: ⏳ 0
-* **Cache Size**: 💾 0.97 MB
+* **Cache Size**: 💾 0.94 MB
 * **Pipeline Times (Last Run)**:
-  * 🔍 Discovery: 0.16s
-  * 📥 Update: 15.75s
-* **Cumulative Compute Time**: 12.4 minutes
+  * 🔍 Discovery: 0.38s
+  * 📥 Update: 15.54s
+* **Cumulative Compute Time**: 12.6 minutes
