@@ -8,7 +8,7 @@
 
 
 ## 📦 Recipes (4)
-* [service-fabric-tools.nuspec](https://github.com/darinegan/chocolatey-packages/blob/master/automatic/service-fabric-tools/service-fabric-tools.nuspec)
-* [service-fabric.nuspec](https://github.com/darinegan/chocolatey-packages/blob/master/automatic/service-fabric/service-fabric.nuspec)
 * [smimesign.nuspec](https://github.com/darinegan/chocolatey-packages/blob/master/automatic/smimesign/smimesign.nuspec)
+* [service-fabric.nuspec](https://github.com/darinegan/chocolatey-packages/blob/master/automatic/service-fabric/service-fabric.nuspec)
 * [service-fabric-sdk.nuspec](https://github.com/darinegan/chocolatey-packages/blob/master/automatic/service-fabric-sdk/service-fabric-sdk.nuspec)
+* [service-fabric-tools.nuspec](https://github.com/darinegan/chocolatey-packages/blob/master/automatic/service-fabric-tools/service-fabric-tools.nuspec)
