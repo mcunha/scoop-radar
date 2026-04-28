@@ -6,5 +6,6 @@
 
 
 
+
 ## 📦 Recipes (1)
 * [snipe.json](https://github.com/onurogut/scoop-bucket/blob/main/bucket/snipe.json)
