@@ -8,6 +8,6 @@
 
 
 ## 📦 Recipes (3)
-* [fafarunner.json](https://github.com/qiazo/scoop-bucket/blob/master/bucket/fafarunner.json)
-* [picguard.json](https://github.com/qiazo/scoop-bucket/blob/master/bucket/picguard.json)
 * [picguard-pro.json](https://github.com/qiazo/scoop-bucket/blob/master/bucket/picguard-pro.json)
+* [picguard.json](https://github.com/qiazo/scoop-bucket/blob/master/bucket/picguard.json)
+* [fafarunner.json](https://github.com/qiazo/scoop-bucket/blob/master/bucket/fafarunner.json)

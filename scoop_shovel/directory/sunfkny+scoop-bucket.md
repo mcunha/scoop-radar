@@ -8,7 +8,7 @@
 
 
 ## 📦 Recipes (4)
-* [vscode185.json](https://github.com/sunfkny/scoop-bucket/blob/master/bucket/vscode185.json)
-* [tcping.json](https://github.com/sunfkny/scoop-bucket/blob/master/bucket/tcping.json)
 * [jadx-gui.json](https://github.com/sunfkny/scoop-bucket/blob/master/bucket/jadx-gui.json)
 * [everything-cli.json](https://github.com/sunfkny/scoop-bucket/blob/master/bucket/everything-cli.json)
+* [tcping.json](https://github.com/sunfkny/scoop-bucket/blob/master/bucket/tcping.json)
+* [vscode185.json](https://github.com/sunfkny/scoop-bucket/blob/master/bucket/vscode185.json)
