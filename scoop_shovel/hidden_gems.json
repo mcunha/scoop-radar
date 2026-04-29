@@ -433,7 +433,7 @@
       "topics": [
         "scoop-bucket"
       ],
-      "last_checked": "2026-04-28T19:57:32Z",
+      "last_checked": "2026-04-29T17:53:41Z",
       "pushed_at": "2026-04-20T17:19:26Z",
       "archived": false,
       "disabled": false,
@@ -1018,22 +1018,22 @@
     }
   ],
   "metadata": {
-    "generated_at": "2026-04-29T17:02:47Z",
+    "generated_at": "2026-04-29T17:53:47Z",
     "count": 10,
     "global_metrics": {
-      "total_runs": 82,
-      "total_run_time_seconds": 12784.114326238632,
-      "total_repo_updates": 5301,
+      "total_runs": 83,
+      "total_run_time_seconds": 12796.37177681923,
+      "total_repo_updates": 5326,
       "previous_total_buckets": 1230,
       "previous_total_recipes": 127496,
       "bucket_velocity": 0,
       "recipe_velocity": 0,
       "total_evictions": 0,
       "total_api_retries": 0,
-      "last_run_discover_time": 3.227388381958008,
-      "last_run_update_time": 379.7010600566864,
+      "last_run_discover_time": 2.8485748767852783,
+      "last_run_update_time": 8.771912097930908,
       "ecosystem_reliability": 88.7,
-      "cache_size_mb": 9.534719467163086,
+      "cache_size_mb": 9.534570693969727,
       "total_unique_recipes": 30978,
       "auto_update_percentage": 85.35,
       "official_recipes": 48362,
