@@ -158,10 +158,10 @@ A combined list of every source discovered in the ecosystem.
 | **[brogers5/chocolatey-package-twinkle-tray](directory/brogers5+chocolatey-package-twinkle-tray.md)** | 📦 1 | ⭐ 1.0 | 🔄 100% |  |
 | **[open-circle-ltd/chocolatey.archi](directory/open-circle-ltd+chocolatey.archi.md)** | 📦 1 | ⭐ 1.0 | 🔄 0% |  |
 | **[brogers5/chocolatey-package-openrgb.portable](directory/brogers5+chocolatey-package-openrgb.portable.md)** | 📦 1 | ⭐ 1.0 | 🔄 100% |  |
+| **[chocolatey-community/chocolatey-packages-template](directory/chocolatey-community+chocolatey-packages-template.md)** | 📦 2 | ⭐ 1.0 | 🔄 100% | 👑 Official |
 | **[open-circle-ltd/chocolatey.epson-iprojection](directory/open-circle-ltd+chocolatey.epson-iprojection.md)** | 📦 1 | ⭐ 1.0 | 🔄 0% |  |
 | **[open-circle-ltd/chocolatey.airtame](directory/open-circle-ltd+chocolatey.airtame.md)** | 📦 1 | ⭐ 1.0 | 🔄 0% |  |
 | **[open-circle-ltd/chocolatey.lexmark-universal-driver-pcl-xl](directory/open-circle-ltd+chocolatey.lexmark-universal-driver-pcl-xl.md)** | 📦 1 | ⭐ 1.0 | 🔄 0% |  |
-| **[chocolatey-community/chocolatey-packages-template](directory/chocolatey-community+chocolatey-packages-template.md)** | 📦 2 | ⭐ 1.0 | 🔄 100% | 👑 Official |
 | **[willjasen/chocolatey-duo-auth-proxy](directory/willjasen+chocolatey-duo-auth-proxy.md)** | 📦 1 | ⭐ 1.0 | 🔄 0% |  |
 | **[blaiz2023/Blaiz-Tools](directory/blaiz2023+Blaiz-Tools.md)** | 📦 1 | ⭐ 1.0 | 🔄 0% |  |
 | **[brogers5/chocolatey-package-wd-kitfox](directory/brogers5+chocolatey-package-wd-kitfox.md)** | 📦 1 | ⭐ 1.0 | 🔄 100% |  |
@@ -298,8 +298,8 @@ A combined list of every source discovered in the ecosystem.
 </details>
 
 # 🛠️ Operational Health (Crawler Metrics)
-* **Total Crawler Runs**: 73
-* **Total Repo Updates**: 4502
+* **Total Crawler Runs**: 74
+* **Total Repo Updates**: 4566
 * **Ecosystem Growth (Since Last Run)**:
   * 🪣 +0 Repositories
   * 📦 +0 Recipes
@@ -307,6 +307,6 @@ A combined list of every source discovered in the ecosystem.
 * **API Rate Limit Retries**: ⏳ 0
 * **Cache Size**: 💾 0.80 MB
 * **Pipeline Times (Last Run)**:
-  * 🔍 Discovery: 0.23s
-  * 📥 Update: 2.30s
+  * 🔍 Discovery: 0.38s
+  * 📥 Update: 2.05s
 * **Cumulative Compute Time**: 4.3 minutes
