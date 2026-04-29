@@ -272,8 +272,8 @@ A combined list of every source discovered in the ecosystem.
 | **[belidzs/chocolatey-amt](directory/belidzs+chocolatey-amt.md)** | 📦 1 | ⭐ 1.0 | 🔄 0% |  |
 | **[belidzs/chocolatey-ultradmm](directory/belidzs+chocolatey-ultradmm.md)** | 📦 1 | ⭐ 1.0 | 🔄 0% |  |
 | **[Xalaxis/choc-inssider-lite](directory/Xalaxis+choc-inssider-lite.md)** | 📦 1 | ⭐ 1.0 | 🔄 0% |  |
-| **[leandrosimoes/chocolatey-packages](directory/leandrosimoes+chocolatey-packages.md)** | 📦 2 | ⭐ 1.0 | 🔄 0% |  |
 | **[leewilson86/chocolatey-package-templates](directory/leewilson86+chocolatey-package-templates.md)** | 📦 1 | ⭐ 1.0 | 🔄 0% |  |
+| **[leandrosimoes/chocolatey-packages](directory/leandrosimoes+chocolatey-packages.md)** | 📦 2 | ⭐ 1.0 | 🔄 0% |  |
 | **[johndkane/Chocolatey-Packages-Repository](directory/johndkane+Chocolatey-Packages-Repository.md)** | 📦 1 | ⭐ 1.0 | 🔄 0% |  |
 | **[JamieMagee/chocolatey-packages](directory/JamieMagee+chocolatey-packages.md)** | 📦 9 | ⭐ 1.0 | 🔄 100% |  |
 | **[flcdrg/chocolatey-dellcommandupdate](directory/flcdrg+chocolatey-dellcommandupdate.md)** | 📦 1 | ⭐ 1.0 | 🔄 0% |  |
@@ -298,8 +298,8 @@ A combined list of every source discovered in the ecosystem.
 </details>
 
 # 🛠️ Operational Health (Crawler Metrics)
-* **Total Crawler Runs**: 76
-* **Total Repo Updates**: 4688
+* **Total Crawler Runs**: 77
+* **Total Repo Updates**: 4751
 * **Ecosystem Growth (Since Last Run)**:
   * 🪣 +0 Repositories
   * 📦 +0 Recipes
@@ -307,6 +307,6 @@ A combined list of every source discovered in the ecosystem.
 * **API Rate Limit Retries**: ⏳ 0
 * **Cache Size**: 💾 0.80 MB
 * **Pipeline Times (Last Run)**:
-  * 🔍 Discovery: 0.58s
-  * 📥 Update: 1.46s
+  * 🔍 Discovery: 0.20s
+  * 📥 Update: 1.70s
 * **Cumulative Compute Time**: 4.4 minutes
