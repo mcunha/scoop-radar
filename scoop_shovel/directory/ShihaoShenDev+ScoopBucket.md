@@ -8,7 +8,7 @@
 
 
 ## 📦 Recipes (4)
+* [easinote.json](https://github.com/ShihaoShenDev/ScoopBucket/blob/main/bucket/easinote.json)
+* [classisland.json](https://github.com/ShihaoShenDev/ScoopBucket/blob/main/bucket/classisland.json)
 * [windsurf.json](https://github.com/ShihaoShenDev/ScoopBucket/blob/main/bucket/windsurf.json)
 * [trae.json](https://github.com/ShihaoShenDev/ScoopBucket/blob/main/bucket/trae.json)
-* [classisland.json](https://github.com/ShihaoShenDev/ScoopBucket/blob/main/bucket/classisland.json)
-* [easinote.json](https://github.com/ShihaoShenDev/ScoopBucket/blob/main/bucket/easinote.json)

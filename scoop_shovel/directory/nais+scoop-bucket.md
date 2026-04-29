@@ -8,6 +8,6 @@
 
 
 ## 📦 Recipes (3)
-* [naisdevice.json](https://github.com/nais/scoop-bucket/blob/main/bucket/naisdevice.json)
-* [naisdevice-tenant.json](https://github.com/nais/scoop-bucket/blob/main/bucket/naisdevice-tenant.json)
 * [nais-cli.json](https://github.com/nais/scoop-bucket/blob/main/bucket/nais-cli.json)
+* [naisdevice-tenant.json](https://github.com/nais/scoop-bucket/blob/main/bucket/naisdevice-tenant.json)
+* [naisdevice.json](https://github.com/nais/scoop-bucket/blob/main/bucket/naisdevice.json)
