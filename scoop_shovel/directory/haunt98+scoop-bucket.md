@@ -6,5 +6,6 @@
 
 
 
+
 ## 📦 Recipes (1)
 * [mingit-c.json](https://github.com/haunt98/scoop-bucket/blob/master/bucket/mingit-c.json)

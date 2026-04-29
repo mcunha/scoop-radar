@@ -176,8 +176,8 @@ A combined list of every source discovered in the ecosystem.
 | **[brogers5/chocolatey-package-isx](directory/brogers5+chocolatey-package-isx.md)** | 📦 1 | ⭐ 1.0 | 🔄 100% |  |
 | **[Twingate-Labs/chocolatey-packages](directory/Twingate-Labs+chocolatey-packages.md)** | 📦 1 | ⭐ 1.0 | 🔄 100% |  |
 | **[drasyl/drasyl-choco](directory/drasyl+drasyl-choco.md)** | 📦 1 | ⭐ 1.0 | 🔄 0% |  |
-| **[agabrys/chocolatey-packages](directory/agabrys+chocolatey-packages.md)** | 📦 13 | ⭐ 1.0 | 🔄 0% |  |
 | **[brogers5/chocolatey-package-vivetool](directory/brogers5+chocolatey-package-vivetool.md)** | 📦 1 | ⭐ 1.0 | 🔄 100% |  |
+| **[agabrys/chocolatey-packages](directory/agabrys+chocolatey-packages.md)** | 📦 13 | ⭐ 1.0 | 🔄 0% |  |
 | **[therion-fr/therion-chocolatey](directory/therion-fr+therion-chocolatey.md)** | 📦 1 | ⭐ 1.0 | 🔄 0% |  |
 | **[brogers5/chocolatey-package-verpatch](directory/brogers5+chocolatey-package-verpatch.md)** | 📦 1 | ⭐ 1.0 | 🔄 100% |  |
 | **[brogers5/chocolatey-package-localsend.install](directory/brogers5+chocolatey-package-localsend.install.md)** | 📦 1 | ⭐ 1.0 | 🔄 100% |  |
@@ -298,8 +298,8 @@ A combined list of every source discovered in the ecosystem.
 </details>
 
 # 🛠️ Operational Health (Crawler Metrics)
-* **Total Crawler Runs**: 83
-* **Total Repo Updates**: 5114
+* **Total Crawler Runs**: 84
+* **Total Repo Updates**: 5174
 * **Ecosystem Growth (Since Last Run)**:
   * 🪣 +0 Repositories
   * 📦 +0 Recipes
@@ -307,6 +307,6 @@ A combined list of every source discovered in the ecosystem.
 * **API Rate Limit Retries**: ⏳ 0
 * **Cache Size**: 💾 0.80 MB
 * **Pipeline Times (Last Run)**:
-  * 🔍 Discovery: 3.84s
-  * 📥 Update: 1.53s
-* **Cumulative Compute Time**: 4.8 minutes
+  * 🔍 Discovery: 3.56s
+  * 📥 Update: 1.66s
+* **Cumulative Compute Time**: 4.9 minutes
