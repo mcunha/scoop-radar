@@ -8,5 +8,5 @@
 
 
 ## 📦 Recipes (2)
-* [chocolatestore.nuspec](https://github.com/robertZaufall/ChocolateStoreCore/blob/main/ChocolateyPackages/chocolatestore/chocolatestore.nuspec)
 * [azcopy.nuspec](https://github.com/robertZaufall/ChocolateStoreCore/blob/main/ChocolateStoreCoreTests/Resources/azcopy.nuspec)
+* [chocolatestore.nuspec](https://github.com/robertZaufall/ChocolateStoreCore/blob/main/ChocolateyPackages/chocolatestore/chocolatestore.nuspec)
