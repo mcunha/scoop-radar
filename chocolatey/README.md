@@ -243,8 +243,8 @@ A combined list of every source discovered in the ecosystem.
 | **[eargollo/choco-rssowlnix](directory/eargollo+choco-rssowlnix.md)** | 📦 1 | ⭐ 1.0 | 🔄 0% |  |
 | **[sbaerlocher/chocolatey.veeam-agent](directory/sbaerlocher+chocolatey.veeam-agent.md)** | 📦 1 | ⭐ 1.0 | 🔄 0% |  |
 | **[itigoag/chocolatey.synology-activebackup-for-business-agent](directory/itigoag+chocolatey.synology-activebackup-for-business-agent.md)** | 📦 1 | ⭐ 1.0 | 🔄 0% |  |
-| **[picolino/chocolatey-packages](directory/picolino+chocolatey-packages.md)** | 📦 2 | ⭐ 1.0 | 🔄 0% |  |
 | **[belidzs/chocolatey-nledger](directory/belidzs+chocolatey-nledger.md)** | 📦 1 | ⭐ 1.0 | 🔄 0% |  |
+| **[picolino/chocolatey-packages](directory/picolino+chocolatey-packages.md)** | 📦 2 | ⭐ 1.0 | 🔄 0% |  |
 | **[rgl/liteide-chocolatey-package](directory/rgl+liteide-chocolatey-package.md)** | 📦 1 | ⭐ 1.0 | 🔄 0% |  |
 | **[marcinbojko/forticlient](directory/marcinbojko+forticlient.md)** | 📦 1 | ⭐ 1.0 | 🔄 0% |  |
 | **[jgeorgeson/chocolatey-packages](directory/jgeorgeson+chocolatey-packages.md)** | 📦 1 | ⭐ 1.0 | 🔄 100% |  |
@@ -298,8 +298,8 @@ A combined list of every source discovered in the ecosystem.
 </details>
 
 # 🛠️ Operational Health (Crawler Metrics)
-* **Total Crawler Runs**: 128
-* **Total Repo Updates**: 7852
+* **Total Crawler Runs**: 129
+* **Total Repo Updates**: 7915
 * **Ecosystem Growth (Since Last Run)**:
   * 🪣 +0 Repositories
   * 📦 +0 Recipes
@@ -307,6 +307,6 @@ A combined list of every source discovered in the ecosystem.
 * **API Rate Limit Retries**: ⏳ 0
 * **Cache Size**: 💾 0.80 MB
 * **Pipeline Times (Last Run)**:
-  * 🔍 Discovery: 2.41s
-  * 📥 Update: 1.47s
+  * 🔍 Discovery: 0.27s
+  * 📥 Update: 2.32s
 * **Cumulative Compute Time**: 7.5 minutes
