@@ -54,14 +54,6 @@ These repositories are actively maintained and feature a high percentage of **un
 
 
 
-## 🔥 Trending
-These active repositories are rapidly climbing the ranks due to recent, high-quality updates and growing recipe counts!
-
-| Repository | Rank Change | Current Rank | Recipes | Score | Auto-Update |
-| :--- | :---: | :---: | :---: | :---: | :---: |
-| **[robertZaufall/chocolatey-packages](directory/robertZaufall+chocolatey-packages.md)** | 📈 +1 | 🏆 #33 | 📦 5 | ⭐ 1.0 | 🔄 60% |
-
-
 
 
 
@@ -306,8 +298,8 @@ A combined list of every source discovered in the ecosystem.
 </details>
 
 # 🛠️ Operational Health (Crawler Metrics)
-* **Total Crawler Runs**: 155
-* **Total Repo Updates**: 9497
+* **Total Crawler Runs**: 156
+* **Total Repo Updates**: 9558
 * **Ecosystem Growth (Since Last Run)**:
   * 🪣 +0 Repositories
   * 📦 +0 Recipes
@@ -315,6 +307,6 @@ A combined list of every source discovered in the ecosystem.
 * **API Rate Limit Retries**: ⏳ 0
 * **Cache Size**: 💾 0.80 MB
 * **Pipeline Times (Last Run)**:
-  * 🔍 Discovery: 3.13s
-  * 📥 Update: 1.39s
-* **Cumulative Compute Time**: 8.8 minutes
+  * 🔍 Discovery: 3.00s
+  * 📥 Update: 1.12s
+* **Cumulative Compute Time**: 8.9 minutes
