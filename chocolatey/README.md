@@ -129,10 +129,10 @@ A combined list of every source discovered in the ecosystem.
 | **[voicemeet/chocolatey-packages](directory/voicemeet+chocolatey-packages.md)** | 📦 1 | ⭐ 1.0 | 🔄 100% |  |
 | **[ggarns-gh/chocolatey-packages](directory/ggarns-gh+chocolatey-packages.md)** | 📦 1 | ⭐ 1.0 | 🔄 0% |  |
 | **[schlotter/choco-packages](directory/schlotter+choco-packages.md)** | 📦 1 | ⭐ 1.0 | 🔄 100% |  |
+| **[LogtalkDotOrg/chocolatey-packages](directory/LogtalkDotOrg+chocolatey-packages.md)** | 📦 1 | ⭐ 1.0 | 🔄 0% |  |
 | **[sacloud/chocolatey-usacloud](directory/sacloud+chocolatey-usacloud.md)** | 📦 1 | ⭐ 1.0 | 🔄 0% |  |
 | **[sacloud/chocolatey-docker-machine-sakuracloud](directory/sacloud+chocolatey-docker-machine-sakuracloud.md)** | 📦 1 | ⭐ 1.0 | 🔄 0% |  |
 | **[sacloud/chocolatey-terraform-provider-sakuracloud](directory/sacloud+chocolatey-terraform-provider-sakuracloud.md)** | 📦 1 | ⭐ 1.0 | 🔄 0% |  |
-| **[LogtalkDotOrg/chocolatey-packages](directory/LogtalkDotOrg+chocolatey-packages.md)** | 📦 1 | ⭐ 1.0 | 🔄 0% |  |
 | **[zarethrex/chocolatey-openbve](directory/zarethrex+chocolatey-openbve.md)** | 📦 1 | ⭐ 1.0 | 🔄 0% |  |
 | **[treeverse/chocolatey-dvc](directory/treeverse+chocolatey-dvc.md)** | 📦 1 | ⭐ 1.0 | 🔄 0% |  |
 | **[gsmitheidw/visualparadigm-ce](directory/gsmitheidw+visualparadigm-ce.md)** | 📦 1 | ⭐ 1.0 | 🔄 0% |  |
@@ -298,8 +298,8 @@ A combined list of every source discovered in the ecosystem.
 </details>
 
 # 🛠️ Operational Health (Crawler Metrics)
-* **Total Crawler Runs**: 135
-* **Total Repo Updates**: 8281
+* **Total Crawler Runs**: 136
+* **Total Repo Updates**: 8341
 * **Ecosystem Growth (Since Last Run)**:
   * 🪣 +0 Repositories
   * 📦 +0 Recipes
@@ -307,6 +307,6 @@ A combined list of every source discovered in the ecosystem.
 * **API Rate Limit Retries**: ⏳ 0
 * **Cache Size**: 💾 0.80 MB
 * **Pipeline Times (Last Run)**:
-  * 🔍 Discovery: 0.20s
-  * 📥 Update: 1.34s
-* **Cumulative Compute Time**: 7.7 minutes
+  * 🔍 Discovery: 2.77s
+  * 📥 Update: 1.14s
+* **Cumulative Compute Time**: 7.8 minutes
