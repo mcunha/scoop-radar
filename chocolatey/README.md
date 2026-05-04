@@ -54,14 +54,6 @@ These repositories are actively maintained and feature a high percentage of **un
 
 
 
-## 🔥 Trending
-These active repositories are rapidly climbing the ranks due to recent, high-quality updates and growing recipe counts!
-
-| Repository | Rank Change | Current Rank | Recipes | Score | Auto-Update |
-| :--- | :---: | :---: | :---: | :---: | :---: |
-| **[naveen521kk/au-packages](directory/naveen521kk+au-packages.md)** | 📈 +1 | 🏆 #21 | 📦 12 | ⭐ 1.0 | 🔄 83% |
-
-
 
 
 
@@ -306,8 +298,8 @@ A combined list of every source discovered in the ecosystem.
 </details>
 
 # 🛠️ Operational Health (Crawler Metrics)
-* **Total Crawler Runs**: 179
-* **Total Repo Updates**: 10940
+* **Total Crawler Runs**: 180
+* **Total Repo Updates**: 10999
 * **Ecosystem Growth (Since Last Run)**:
   * 🪣 +0 Repositories
   * 📦 +0 Recipes
@@ -315,6 +307,6 @@ A combined list of every source discovered in the ecosystem.
 * **API Rate Limit Retries**: ⏳ 0
 * **Cache Size**: 💾 0.81 MB
 * **Pipeline Times (Last Run)**:
-  * 🔍 Discovery: 0.20s
-  * 📥 Update: 1.08s
-* **Cumulative Compute Time**: 9.7 minutes
+  * 🔍 Discovery: 2.29s
+  * 📥 Update: 1.51s
+* **Cumulative Compute Time**: 9.8 minutes
